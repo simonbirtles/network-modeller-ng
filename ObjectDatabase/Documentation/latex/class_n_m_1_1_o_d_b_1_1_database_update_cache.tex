@@ -1,0 +1,87 @@
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_cache}{}\section{N\+M\+:\+:O\+D\+B\+:\+:Database\+Update\+Cache Class Reference}
+\label{class_n_m_1_1_o_d_b_1_1_database_update_cache}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache}}
+
+
+{\ttfamily \#include $<$Database\+Update\+Cache.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue}{Database\+Update\+Queue} \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_cache_a3276437d24ef54dd3d31e2c27f34e84a}{queue}
+\item 
+typedef \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_cache_a3276437d24ef54dd3d31e2c27f34e84a}{queue} $\ast$ \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_cache_ae031bccefd897ef3c1d44a4e6c7ca99c}{queue\+\_\+ptr}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_cache_af064cf7160af5df46ebdd80d3df71434}{$\sim$\+Database\+Update\+Cache} (void)
+\item 
+void \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_cache_a2e906ecc8b45275c3f810afe40657a0f}{Insert\+Update} (\+::std\+::set$<$ \hyperlink{class_n_m_1_1_o_d_b_1_1_c_database_observer}{C\+Database\+Observer} $\ast$ $>$ \&, \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_record}{Database\+Update\+Record} \&)
+\item 
+void \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_cache_a69668e83a0c3ca8e6b9cdf9cc2e20a83}{Get\+Observer\+Queue} (I\+N \hyperlink{class_n_m_1_1_o_d_b_1_1_c_database_observer}{C\+Database\+Observer} $\ast$obs, I\+N O\+U\+T \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue}{Database\+Update\+Queue} $\ast$$\ast$pp\+Queue)
+\item 
+int \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_cache_af316bb9d19bcec424929e70f79ac81f1}{Get\+Observer\+Queue\+Size} (\hyperlink{class_n_m_1_1_o_d_b_1_1_c_database_observer}{C\+Database\+Observer} $\ast$)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_cache}{Database\+Update\+Cache} $\ast$ \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_cache_a5fa9e7ca0980ec0a8f3a275a45d6c32d}{get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_cache_a3276437d24ef54dd3d31e2c27f34e84a}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache}!queue@{queue}}
+\index{queue@{queue}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache}}
+\subsubsection[{queue}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf Database\+Update\+Queue} {\bf N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache\+::queue}}\label{class_n_m_1_1_o_d_b_1_1_database_update_cache_a3276437d24ef54dd3d31e2c27f34e84a}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_cache_ae031bccefd897ef3c1d44a4e6c7ca99c}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache}!queue\+\_\+ptr@{queue\+\_\+ptr}}
+\index{queue\+\_\+ptr@{queue\+\_\+ptr}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache}}
+\subsubsection[{queue\+\_\+ptr}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf queue}$\ast$ {\bf N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache\+::queue\+\_\+ptr}}\label{class_n_m_1_1_o_d_b_1_1_database_update_cache_ae031bccefd897ef3c1d44a4e6c7ca99c}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_cache_af064cf7160af5df46ebdd80d3df71434}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache}!````~Database\+Update\+Cache@{$\sim$\+Database\+Update\+Cache}}
+\index{````~Database\+Update\+Cache@{$\sim$\+Database\+Update\+Cache}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache}}
+\subsubsection[{$\sim$\+Database\+Update\+Cache(void)}]{\setlength{\rightskip}{0pt plus 5cm}N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache\+::$\sim$\+Database\+Update\+Cache (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_database_update_cache_af064cf7160af5df46ebdd80d3df71434}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_cache_a5fa9e7ca0980ec0a8f3a275a45d6c32d}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache}}
+\subsubsection[{get\+Instance()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Database\+Update\+Cache} $\ast$ N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache\+::get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_n_m_1_1_o_d_b_1_1_database_update_cache_a5fa9e7ca0980ec0a8f3a275a45d6c32d}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_cache_a69668e83a0c3ca8e6b9cdf9cc2e20a83}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache}!Get\+Observer\+Queue@{Get\+Observer\+Queue}}
+\index{Get\+Observer\+Queue@{Get\+Observer\+Queue}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache}}
+\subsubsection[{Get\+Observer\+Queue(\+I\+N C\+Database\+Observer $\ast$obs, I\+N O\+U\+T Database\+Update\+Queue $\ast$$\ast$pp\+Queue)}]{\setlength{\rightskip}{0pt plus 5cm}void N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache\+::\+Get\+Observer\+Queue (
+\begin{DoxyParamCaption}
+\item[{I\+N {\bf C\+Database\+Observer} $\ast$}]{obs, }
+\item[{I\+N O\+U\+T {\bf Database\+Update\+Queue} $\ast$$\ast$}]{pp\+Queue}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_database_update_cache_a69668e83a0c3ca8e6b9cdf9cc2e20a83}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_cache_af316bb9d19bcec424929e70f79ac81f1}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache}!Get\+Observer\+Queue\+Size@{Get\+Observer\+Queue\+Size}}
+\index{Get\+Observer\+Queue\+Size@{Get\+Observer\+Queue\+Size}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache}}
+\subsubsection[{Get\+Observer\+Queue\+Size(\+C\+Database\+Observer $\ast$)}]{\setlength{\rightskip}{0pt plus 5cm}int N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache\+::\+Get\+Observer\+Queue\+Size (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Database\+Observer} $\ast$}]{obs}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_database_update_cache_af316bb9d19bcec424929e70f79ac81f1}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_cache_a2e906ecc8b45275c3f810afe40657a0f}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache}!Insert\+Update@{Insert\+Update}}
+\index{Insert\+Update@{Insert\+Update}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache}}
+\subsubsection[{Insert\+Update(\+::std\+::set$<$ C\+Database\+Observer $\ast$ $>$ \&, Database\+Update\+Record \&)}]{\setlength{\rightskip}{0pt plus 5cm}void N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Cache\+::\+Insert\+Update (
+\begin{DoxyParamCaption}
+\item[{\+::std\+::set$<$ {\bf C\+Database\+Observer} $\ast$ $>$ \&}]{obs\+\_\+list, }
+\item[{{\bf Database\+Update\+Record} \&}]{db\+\_\+update}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_database_update_cache_a2e906ecc8b45275c3f810afe40657a0f}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Database\+Update\+Elements/\hyperlink{_database_update_cache_8h}{Database\+Update\+Cache.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Database\+Update\+Elements/\hyperlink{_database_update_cache_8cpp}{Database\+Update\+Cache.\+cpp}\end{DoxyCompactItemize}

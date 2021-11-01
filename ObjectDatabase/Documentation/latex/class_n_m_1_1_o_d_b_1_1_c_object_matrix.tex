@@ -1,0 +1,114 @@
+\hypertarget{class_n_m_1_1_o_d_b_1_1_c_object_matrix}{}\section{N\+M\+:\+:O\+D\+B\+:\+:C\+Object\+Matrix$<$ T $>$ Class Template Reference}
+\label{class_n_m_1_1_o_d_b_1_1_c_object_matrix}\index{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix$<$ T $>$@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Adjacency\+Matrix.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a2f702b1c3b0edfc871c42d85fb13e991}{C\+Object\+Matrix} ()
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a1c31e501cad45149394a6dac84bc4214}{C\+Object\+Matrix} (int rows, int cols, T defaultvalue)
+\item 
+virtual \hyperlink{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a475f0dcfe1e32a5c7cf6201925f49398}{$\sim$\+C\+Object\+Matrix} ()
+\item 
+T \& \hyperlink{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a39bab1a03e295f7d6f7b7d564bc81ec6}{operator()} (unsigned int row, unsigned int col)
+\item 
+void \hyperlink{class_n_m_1_1_o_d_b_1_1_c_object_matrix_ae438bd3d06da216c4b8a80559fd35e71}{erase} ()
+\item 
+void \hyperlink{class_n_m_1_1_o_d_b_1_1_c_object_matrix_aea13ec76f15561bba1e97758a3f0c5f4}{clear} (T defaultvalue=\+\_\+defaultvalue)
+\item 
+unsigned int \hyperlink{class_n_m_1_1_o_d_b_1_1_c_object_matrix_ac2f8c2889c99c7ab2ca180c2db07db85}{Get\+Row\+Count} ()
+\item 
+unsigned int \hyperlink{class_n_m_1_1_o_d_b_1_1_c_object_matrix_adf265fffcfa3501f1142cadebafabeeb}{Get\+Col\+Count} ()
+\item 
+int \hyperlink{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a6aadd0bff6c92b0eec0362e862b1ccf5}{Insert\+Row} (unsigned int insertbeforeindex=0)
+\item 
+int \hyperlink{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a121375ca4820cc58cdc70e868d167c72}{Insert\+Column} (unsigned int insertbeforeindex=0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a2f702b1c3b0edfc871c42d85fb13e991}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}!C\+Object\+Matrix@{C\+Object\+Matrix}}
+\index{C\+Object\+Matrix@{C\+Object\+Matrix}!N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}}
+\subsubsection[{C\+Object\+Matrix()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}$<$ T $>$\+::{\bf C\+Object\+Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a2f702b1c3b0edfc871c42d85fb13e991}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a1c31e501cad45149394a6dac84bc4214}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}!C\+Object\+Matrix@{C\+Object\+Matrix}}
+\index{C\+Object\+Matrix@{C\+Object\+Matrix}!N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}}
+\subsubsection[{C\+Object\+Matrix(int rows, int cols, T defaultvalue)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}$<$ T $>$\+::{\bf C\+Object\+Matrix} (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{cols, }
+\item[{T}]{defaultvalue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a1c31e501cad45149394a6dac84bc4214}
+Constructor Build a matrix of rows x cols. T defaultvalue is used when creating the matrix and when new rows or columns are added. \hypertarget{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a475f0dcfe1e32a5c7cf6201925f49398}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}!````~C\+Object\+Matrix@{$\sim$\+C\+Object\+Matrix}}
+\index{````~C\+Object\+Matrix@{$\sim$\+C\+Object\+Matrix}!N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}}
+\subsubsection[{$\sim$\+C\+Object\+Matrix()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual {\bf N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}$<$ T $>$\+::$\sim${\bf C\+Object\+Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a475f0dcfe1e32a5c7cf6201925f49398}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_c_object_matrix_aea13ec76f15561bba1e97758a3f0c5f4}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}!clear@{clear}}
+\index{clear@{clear}!N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}}
+\subsubsection[{clear(\+T defaultvalue=\+\_\+defaultvalue)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}$<$ T $>$\+::clear (
+\begin{DoxyParamCaption}
+\item[{T}]{defaultvalue = {\ttfamily \+\_\+defaultvalue}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_c_object_matrix_aea13ec76f15561bba1e97758a3f0c5f4}
+clears/resets all values in every cell \hypertarget{class_n_m_1_1_o_d_b_1_1_c_object_matrix_ae438bd3d06da216c4b8a80559fd35e71}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}!erase@{erase}}
+\index{erase@{erase}!N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}}
+\subsubsection[{erase()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}$<$ T $>$\+::erase (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_c_object_matrix_ae438bd3d06da216c4b8a80559fd35e71}
+removes all elements from the matrix \hypertarget{class_n_m_1_1_o_d_b_1_1_c_object_matrix_adf265fffcfa3501f1142cadebafabeeb}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}!Get\+Col\+Count@{Get\+Col\+Count}}
+\index{Get\+Col\+Count@{Get\+Col\+Count}!N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}}
+\subsubsection[{Get\+Col\+Count()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ unsigned int {\bf N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}$<$ T $>$\+::Get\+Col\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_c_object_matrix_adf265fffcfa3501f1142cadebafabeeb}
+return the number of columns in the matrix \hypertarget{class_n_m_1_1_o_d_b_1_1_c_object_matrix_ac2f8c2889c99c7ab2ca180c2db07db85}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}!Get\+Row\+Count@{Get\+Row\+Count}}
+\index{Get\+Row\+Count@{Get\+Row\+Count}!N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}}
+\subsubsection[{Get\+Row\+Count()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ unsigned int {\bf N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}$<$ T $>$\+::Get\+Row\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_c_object_matrix_ac2f8c2889c99c7ab2ca180c2db07db85}
+return the number of rows in the matrix. \hypertarget{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a121375ca4820cc58cdc70e868d167c72}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}!Insert\+Column@{Insert\+Column}}
+\index{Insert\+Column@{Insert\+Column}!N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}}
+\subsubsection[{Insert\+Column(unsigned int insertbeforeindex=0)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}$<$ T $>$\+::Insert\+Column (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{insertbeforeindex = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a121375ca4820cc58cdc70e868d167c72}
+Insert a new column into the matrix. unsigned int insertbeforeindex; the one based index of where to insert the new column before All existing rows will have the new column added and the default value applied. \hypertarget{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a6aadd0bff6c92b0eec0362e862b1ccf5}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}!Insert\+Row@{Insert\+Row}}
+\index{Insert\+Row@{Insert\+Row}!N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}}
+\subsubsection[{Insert\+Row(unsigned int insertbeforeindex=0)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}$<$ T $>$\+::Insert\+Row (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{insertbeforeindex = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a6aadd0bff6c92b0eec0362e862b1ccf5}
+Insert a new row into the matrix. unsigned int insertbeforeindex; the one based index of where to insert the new row before \hypertarget{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a39bab1a03e295f7d6f7b7d564bc81ec6}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix@{N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}}
+\subsubsection[{operator()(unsigned int row, unsigned int col)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T\& {\bf N\+M\+::\+O\+D\+B\+::\+C\+Object\+Matrix}$<$ T $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{row, }
+\item[{unsigned int}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_c_object_matrix_a39bab1a03e295f7d6f7b7d564bc81ec6}
+Get/\+Set value at row,col 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Matrix/\hyperlink{_adjacency_matrix_8h}{Adjacency\+Matrix.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Matrix/\hyperlink{_matrix_8h}{Matrix.\+h}\end{DoxyCompactItemize}

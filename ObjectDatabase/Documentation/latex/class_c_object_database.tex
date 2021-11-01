@@ -1,0 +1,474 @@
+\hypertarget{class_c_object_database}{}\section{C\+Object\+Database Class Reference}
+\label{class_c_object_database}\index{C\+Object\+Database@{C\+Object\+Database}}
+
+
+{\ttfamily \#include $<$Object\+Database.\+h$>$}
+
+Inheritance diagram for C\+Object\+Database\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_object_database}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_object_database_aa0aa75b7f8685e54d75b0ef166c503a8}{N\+O\+T\+I\+F\+Y\+\_\+\+T\+Y\+P\+E} \{ \hyperlink{class_c_object_database_aa0aa75b7f8685e54d75b0ef166c503a8ad32c7592a66e6e96f15b43c9d9f13846}{N\+O\+T\+I\+F\+Y\+\_\+\+T\+Y\+P\+E\+::\+N\+O\+T\+I\+F\+Y\+\_\+\+A\+D\+D} = 1, 
+\hyperlink{class_c_object_database_aa0aa75b7f8685e54d75b0ef166c503a8a3d2b0ba9bc47406c9c5abeccfcdba46e}{N\+O\+T\+I\+F\+Y\+\_\+\+T\+Y\+P\+E\+::\+N\+O\+T\+I\+F\+Y\+\_\+\+D\+E\+L\+E\+T\+E} = 2, 
+\hyperlink{class_c_object_database_aa0aa75b7f8685e54d75b0ef166c503a8aa9649df4997d00fcfd6e3747944bcff7}{N\+O\+T\+I\+F\+Y\+\_\+\+T\+Y\+P\+E\+::\+N\+O\+T\+I\+F\+Y\+\_\+\+C\+H\+A\+N\+G\+E} = 4
+ \}
+\item 
+typedef \+::std\+::vector$<$\+::std\+::wstring $>$ \hyperlink{class_c_object_database_a9df75a00043b777e5fc5857577003db2}{Object\+Attribute\+List}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_object_database_aafcabfcbf56829277b0a7d348ca92947}{$\sim$\+C\+Object\+Database} ()
+\item 
+bool \hyperlink{class_c_object_database_a8ff1ff15b2318b2985cb7a819a380c9a}{Register\+Observer} (\hyperlink{class_c_database_observer}{C\+Database\+Observer} $\ast$p\+Observer,\+::std\+::wstring \&obsname, \hyperlink{_object_database_defines_8h_a842c5e2e69277690b064bf363c017980}{Object\+Type},\+::std\+::vector$<$\+::std\+::wstring $>$ \&attribute\+\_\+list)
+\item 
+void \hyperlink{class_c_object_database_a5cd2a2ea23f1b2fd4449314527057014}{Un\+Register\+Observer} (\hyperlink{class_c_database_observer}{C\+Database\+Observer} $\ast$p\+Observer)
+\item 
+\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_c_object_database_ab5da2dc19766d1d3ef888b247e03919c}{Create\+Vertex} (\hyperlink{_object_database_defines_8h_afa099a55c5746eff5a0e1ffc04f53cc0}{Vertex\+Type} vertex\+Type, \hyperlink{_object_database_defines_8h_a52d1b76b66b20eeaf0c5dc8127da21d7}{O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$attribute\+Map)
+\item 
+\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_c_object_database_a06aed2f22616c9dcffb3ba1839ab427f}{Create\+Edge} (\hyperlink{_object_database_defines_8h_a52d1b76b66b20eeaf0c5dc8127da21d7}{O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$attribute\+Map)
+\item 
+\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_c_object_database_accd1eb8d54f27727bdce1599871995d7}{Create\+Layer} (\hyperlink{_object_database_defines_8h_a52d1b76b66b20eeaf0c5dc8127da21d7}{O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$attribute\+Map)
+\item 
+\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_c_object_database_a59f6259914665a2ee19c14e8d8346fec}{Copy\+Vertex} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} source\+Object\+U\+I\+D)
+\item 
+void \hyperlink{class_c_object_database_add42984094166319b7c50df34827b9ce}{Delete\+Object} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} object\+U\+I\+D, bool notify)
+\item 
+\hyperlink{_object_database_defines_8h_a842c5e2e69277690b064bf363c017980}{Object\+Type} \hyperlink{class_c_object_database_afee3ccff8a7bd6b185eec9bf96439f4a}{Get\+Object\+Type} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} object\+U\+I\+D)
+\item 
+bool \hyperlink{class_c_object_database_a4609fe112c35837deafa53394bdbf5f2}{Validate\+Object\+U\+I\+D} (\hyperlink{_object_database_defines_8h_a52d1b76b66b20eeaf0c5dc8127da21d7}{O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$attribute\+Map)
+\item 
+bool \hyperlink{class_c_object_database_a40c3ebf55f58e39a2dbc23f160041838}{Set\+Value} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} objectuid, size\+\_\+t attribute\+Index, \hyperlink{class_value}{Value} const \&v)
+\item 
+bool \hyperlink{class_c_object_database_a085daae73e1da05e641289b2aebd952b}{Set\+Value} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} objectuid, const \+::std\+::wstring \&attrname, \hyperlink{class_value}{Value} const \&v)
+\item 
+\hyperlink{_object_database_defines_8h_adb988003a1a002d7305cf476a0dbee1d}{S\+P\+V\+A\+L\+U\+E} \hyperlink{class_c_object_database_ae52aeb4df0246261114830aadbfdab40}{Get\+Value} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} objectuid, size\+\_\+t attribute\+Index) const 
+\item 
+\hyperlink{_object_database_defines_8h_adb988003a1a002d7305cf476a0dbee1d}{S\+P\+V\+A\+L\+U\+E} \hyperlink{class_c_object_database_a07d2705ee35ba10d6051cd4eea220e1c}{Get\+Value} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} objectuid, const \+::std\+::wstring \&attrname)
+\item 
+\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_c_object_database_af1fea10ecb69437f5a1c6d777d729eda}{Get\+Vertex\+Sibling} (\hyperlink{_object_database_defines_8h_afa099a55c5746eff5a0e1ffc04f53cc0}{Vertex\+Type} v\+Type, \hyperlink{_object_database_defines_8h_a9507b0b115184061c7002f25c82fc6d7}{Sibling\+Position} position)
+\item 
+\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_c_object_database_a029a3dc8a83f184ae785d7be1e81fbb3}{Get\+Edge\+Sibling} (\hyperlink{_object_database_defines_8h_a424a64da753a3cd5e96ab8d0553a04c4}{Edge\+Type} e\+Type, \hyperlink{_object_database_defines_8h_a9507b0b115184061c7002f25c82fc6d7}{Sibling\+Position} position)
+\item 
+bool \hyperlink{class_c_object_database_a7c7fbf4adf110d18cc81bc5ec8c55ae2}{Load\+X\+M\+L\+Data} (tinyxml2\+::\+X\+M\+L\+Document $\ast$dest\+Doc, tinyxml2\+::\+X\+M\+L\+Node $\ast$current\+Node)
+\item 
+bool \hyperlink{class_c_object_database_a51194193be949a369d971a6acc63ebc4}{Save\+X\+M\+L\+Data} (tinyxml2\+::\+X\+M\+L\+Document $\ast$dest\+Doc, tinyxml2\+::\+X\+M\+L\+Node $\ast$current\+Node)
+\item 
+void \hyperlink{class_c_object_database_aee3ac7ac97950a082cfa3e6925e4f8aa}{Clear} ()
+\item 
+unsigned int \hyperlink{class_c_object_database_a3e897451a54d47966f8de1eee37062aa}{Begin\+Update} ()
+\item 
+unsigned int \hyperlink{class_c_object_database_a3b0b9540c90abfd007f657546e9ed7da}{End\+Update} ()
+\item 
+\hyperlink{class_i_adjacency_matrix}{I\+Adjacency\+Matrix} \hyperlink{class_c_object_database_abcb416613289bdbb30bf7c84832b78df}{Get\+Adjacency\+Matrix} ()
+\item 
+size\+\_\+t \hyperlink{class_c_object_database_ad321df9f3e265412663711c3c4d1c16c}{Get\+Vertex\+Count} ()
+\item 
+size\+\_\+t \hyperlink{class_c_object_database_a2af534c449f0637162063ee72080fbc3}{Get\+Edge\+Count} ()
+\item 
+size\+\_\+t \hyperlink{class_c_object_database_acb12aeadc82d7d64523a251b35154514}{Get\+Vertex\+Degree} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} vertexid)
+\item 
+void \hyperlink{class_c_object_database_a7a813d22a36465e8fb77a3b18bd2a2f9}{Get\+Vertex\+Edges} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} Vertex\+Src\+I\+D,\+::std\+::vector$<$ \hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \&edgelist)
+\item 
+void \hyperlink{class_c_object_database_a0b63943450c88148db6584257afd55a0}{Enable\+Object} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} object\+U\+I\+D, bool notify)
+\item 
+void \hyperlink{class_c_object_database_a7f90d1319bf941561d563bbd4ef0d0fb}{Disable\+Object} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} object\+U\+I\+D, bool notify)
+\item 
+bool \hyperlink{class_c_object_database_a4ba55f0f2719dad828feb48767e282d8}{Edit\+Edge\+Properties} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} object\+U\+I\+D)
+\item 
+bool \hyperlink{class_c_object_database_a75bcb8391778808649d5c3a32b33ab95}{Edit\+Vertex\+Properties} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} object\+U\+I\+D)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_object_database}{C\+Object\+Database} $\ast$ \hyperlink{class_c_object_database_afa1bffc3892eb582b8017b582e445071}{get\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+const char $\ast$ \hyperlink{class_c_object_database_af5c011e783985858f571b07750298936}{R\+O\+O\+T\+\_\+\+N\+O\+D\+E}
+\item 
+const char $\ast$ \hyperlink{class_c_object_database_a23d016284e7c7d76a10b2e50d132711a}{V\+E\+R\+T\+E\+X\+\_\+\+N\+O\+D\+E}
+\item 
+const char $\ast$ \hyperlink{class_c_object_database_a02d47c62bb58cced09ded02772773f9d}{E\+D\+G\+E\+\_\+\+N\+O\+D\+E}
+\item 
+const char $\ast$ \hyperlink{class_c_object_database_a4cf4f0714a05dccfabfacaf0694b22e4}{L\+A\+Y\+E\+R\+\_\+\+N\+O\+D\+E}
+\item 
+const char $\ast$ \hyperlink{class_c_object_database_a36329774e26fac45fa4e7d691a1b6b63}{G\+R\+O\+U\+P\+\_\+\+N\+O\+D\+E}
+\item 
+const char $\ast$ \hyperlink{class_c_object_database_a965cae785a3f37147b579146f339a7de}{V\+E\+R\+T\+E\+X\+\_\+\+E\+L\+E\+M\+E\+N\+T}
+\item 
+const char $\ast$ \hyperlink{class_c_object_database_a0f14765279c94010464f24192f762fd0}{E\+D\+G\+E\+\_\+\+E\+L\+E\+M\+E\+N\+T}
+\item 
+const char $\ast$ \hyperlink{class_c_object_database_aa46e1fcbe98cd370a678c0379da2f5e4}{L\+A\+Y\+E\+R\+\_\+\+E\+L\+E\+M\+E\+N\+T}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_c_object_database_a9df75a00043b777e5fc5857577003db2}{}\index{C\+Object\+Database@{C\+Object\+Database}!Object\+Attribute\+List@{Object\+Attribute\+List}}
+\index{Object\+Attribute\+List@{Object\+Attribute\+List}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Object\+Attribute\+List}]{\setlength{\rightskip}{0pt plus 5cm}typedef \+::std\+::vector$<$\+::std\+::wstring$>$ {\bf C\+Object\+Database\+::\+Object\+Attribute\+List}}\label{class_c_object_database_a9df75a00043b777e5fc5857577003db2}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_c_object_database_aa0aa75b7f8685e54d75b0ef166c503a8}{}\index{C\+Object\+Database@{C\+Object\+Database}!N\+O\+T\+I\+F\+Y\+\_\+\+T\+Y\+P\+E@{N\+O\+T\+I\+F\+Y\+\_\+\+T\+Y\+P\+E}}
+\index{N\+O\+T\+I\+F\+Y\+\_\+\+T\+Y\+P\+E@{N\+O\+T\+I\+F\+Y\+\_\+\+T\+Y\+P\+E}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{N\+O\+T\+I\+F\+Y\+\_\+\+T\+Y\+P\+E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+Object\+Database\+::\+N\+O\+T\+I\+F\+Y\+\_\+\+T\+Y\+P\+E}\hspace{0.3cm}{\ttfamily [strong]}}\label{class_c_object_database_aa0aa75b7f8685e54d75b0ef166c503a8}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{N\+O\+T\+I\+F\+Y\+\_\+\+A\+D\+D@{N\+O\+T\+I\+F\+Y\+\_\+\+A\+D\+D}!C\+Object\+Database@{C\+Object\+Database}}\index{C\+Object\+Database@{C\+Object\+Database}!N\+O\+T\+I\+F\+Y\+\_\+\+A\+D\+D@{N\+O\+T\+I\+F\+Y\+\_\+\+A\+D\+D}}\item[{\em 
+\hypertarget{class_c_object_database_aa0aa75b7f8685e54d75b0ef166c503a8ad32c7592a66e6e96f15b43c9d9f13846}{}N\+O\+T\+I\+F\+Y\+\_\+\+A\+D\+D\label{class_c_object_database_aa0aa75b7f8685e54d75b0ef166c503a8ad32c7592a66e6e96f15b43c9d9f13846}
+}]\index{N\+O\+T\+I\+F\+Y\+\_\+\+D\+E\+L\+E\+T\+E@{N\+O\+T\+I\+F\+Y\+\_\+\+D\+E\+L\+E\+T\+E}!C\+Object\+Database@{C\+Object\+Database}}\index{C\+Object\+Database@{C\+Object\+Database}!N\+O\+T\+I\+F\+Y\+\_\+\+D\+E\+L\+E\+T\+E@{N\+O\+T\+I\+F\+Y\+\_\+\+D\+E\+L\+E\+T\+E}}\item[{\em 
+\hypertarget{class_c_object_database_aa0aa75b7f8685e54d75b0ef166c503a8a3d2b0ba9bc47406c9c5abeccfcdba46e}{}N\+O\+T\+I\+F\+Y\+\_\+\+D\+E\+L\+E\+T\+E\label{class_c_object_database_aa0aa75b7f8685e54d75b0ef166c503a8a3d2b0ba9bc47406c9c5abeccfcdba46e}
+}]\index{N\+O\+T\+I\+F\+Y\+\_\+\+C\+H\+A\+N\+G\+E@{N\+O\+T\+I\+F\+Y\+\_\+\+C\+H\+A\+N\+G\+E}!C\+Object\+Database@{C\+Object\+Database}}\index{C\+Object\+Database@{C\+Object\+Database}!N\+O\+T\+I\+F\+Y\+\_\+\+C\+H\+A\+N\+G\+E@{N\+O\+T\+I\+F\+Y\+\_\+\+C\+H\+A\+N\+G\+E}}\item[{\em 
+\hypertarget{class_c_object_database_aa0aa75b7f8685e54d75b0ef166c503a8aa9649df4997d00fcfd6e3747944bcff7}{}N\+O\+T\+I\+F\+Y\+\_\+\+C\+H\+A\+N\+G\+E\label{class_c_object_database_aa0aa75b7f8685e54d75b0ef166c503a8aa9649df4997d00fcfd6e3747944bcff7}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_object_database_aafcabfcbf56829277b0a7d348ca92947}{}\index{C\+Object\+Database@{C\+Object\+Database}!````~C\+Object\+Database@{$\sim$\+C\+Object\+Database}}
+\index{````~C\+Object\+Database@{$\sim$\+C\+Object\+Database}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{$\sim$\+C\+Object\+Database()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Object\+Database\+::$\sim$\+C\+Object\+Database (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_aafcabfcbf56829277b0a7d348ca92947}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_object_database_a3e897451a54d47966f8de1eee37062aa}{}\index{C\+Object\+Database@{C\+Object\+Database}!Begin\+Update@{Begin\+Update}}
+\index{Begin\+Update@{Begin\+Update}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Begin\+Update()}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\+Object\+Database\+::\+Begin\+Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a3e897451a54d47966f8de1eee37062aa}
+Begin\+Update
+
+Starts a bulk update; stops the D\+B from sending out updates until all bulk updates are complete
+
+Returns the number of bulk updates currently in progress (including the one called) \hypertarget{class_c_object_database_aee3ac7ac97950a082cfa3e6925e4f8aa}{}\index{C\+Object\+Database@{C\+Object\+Database}!Clear@{Clear}}
+\index{Clear@{Clear}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Clear()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Object\+Database\+::\+Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_aee3ac7ac97950a082cfa3e6925e4f8aa}
+\hyperlink{class_c_object_database_aee3ac7ac97950a082cfa3e6925e4f8aa}{Clear()}
+
+Deletes all data from the attached tables, clears the adj table and resets the object factory U\+I\+D counter \hypertarget{class_c_object_database_a59f6259914665a2ee19c14e8d8346fec}{}\index{C\+Object\+Database@{C\+Object\+Database}!Copy\+Vertex@{Copy\+Vertex}}
+\index{Copy\+Vertex@{Copy\+Vertex}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Copy\+Vertex(\+O\+B\+J\+E\+C\+T\+U\+I\+D source\+Object\+U\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} C\+Object\+Database\+::\+Copy\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{source\+Object\+U\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a59f6259914665a2ee19c14e8d8346fec}
+Copy\+Vertex
+
+Creates a copy of an existing vertex and adds to the vertex db \hypertarget{class_c_object_database_a06aed2f22616c9dcffb3ba1839ab427f}{}\index{C\+Object\+Database@{C\+Object\+Database}!Create\+Edge@{Create\+Edge}}
+\index{Create\+Edge@{Create\+Edge}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Create\+Edge(\+O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S $\ast$attribute\+Map)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} C\+Object\+Database\+::\+Create\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$}]{attribute\+Map}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a06aed2f22616c9dcffb3ba1839ab427f}
+Create\+Edge
+
+Calls Edge\+Table to create the vertex, if success, updates the incidence matrix and sets observer notify \hypertarget{class_c_object_database_accd1eb8d54f27727bdce1599871995d7}{}\index{C\+Object\+Database@{C\+Object\+Database}!Create\+Layer@{Create\+Layer}}
+\index{Create\+Layer@{Create\+Layer}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Create\+Layer(\+O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S $\ast$attribute\+Map)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} C\+Object\+Database\+::\+Create\+Layer (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$}]{attribute\+Map}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_accd1eb8d54f27727bdce1599871995d7}
+Create\+Layer
+
+Calls Layer\+Table to create the layer, if success, sets observer notify \hypertarget{class_c_object_database_ab5da2dc19766d1d3ef888b247e03919c}{}\index{C\+Object\+Database@{C\+Object\+Database}!Create\+Vertex@{Create\+Vertex}}
+\index{Create\+Vertex@{Create\+Vertex}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Create\+Vertex(\+Vertex\+Type vertex\+Type, O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S $\ast$attribute\+Map)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} C\+Object\+Database\+::\+Create\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex\+Type}}]{vertex\+Type, }
+\item[{{\bf O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$}]{attribute\+Map}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_ab5da2dc19766d1d3ef888b247e03919c}
+Create\+Vertex
+
+Calls Vertex\+Table to create the vertex, if success, updates the incidence matrix and sets observer notify \hypertarget{class_c_object_database_add42984094166319b7c50df34827b9ce}{}\index{C\+Object\+Database@{C\+Object\+Database}!Delete\+Object@{Delete\+Object}}
+\index{Delete\+Object@{Delete\+Object}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Delete\+Object(\+O\+B\+J\+E\+C\+T\+U\+I\+D object\+U\+I\+D, bool notify)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Object\+Database\+::\+Delete\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{object\+U\+I\+D, }
+\item[{bool}]{notify}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_add42984094166319b7c50df34827b9ce}
+Delete\+Object
+
+Deletes an object from the database, cleans up other infomation stores within the db too. \hypertarget{class_c_object_database_a7f90d1319bf941561d563bbd4ef0d0fb}{}\index{C\+Object\+Database@{C\+Object\+Database}!Disable\+Object@{Disable\+Object}}
+\index{Disable\+Object@{Disable\+Object}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Disable\+Object(\+O\+B\+J\+E\+C\+T\+U\+I\+D object\+U\+I\+D, bool notify)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Object\+Database\+::\+Disable\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{object\+U\+I\+D, }
+\item[{bool}]{notify}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a7f90d1319bf941561d563bbd4ef0d0fb}
+Disable\+Object \hypertarget{class_c_object_database_a4ba55f0f2719dad828feb48767e282d8}{}\index{C\+Object\+Database@{C\+Object\+Database}!Edit\+Edge\+Properties@{Edit\+Edge\+Properties}}
+\index{Edit\+Edge\+Properties@{Edit\+Edge\+Properties}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Edit\+Edge\+Properties(\+O\+B\+J\+E\+C\+T\+U\+I\+D object\+U\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Object\+Database\+::\+Edit\+Edge\+Properties (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{object\+U\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a4ba55f0f2719dad828feb48767e282d8}
+\hypertarget{class_c_object_database_a75bcb8391778808649d5c3a32b33ab95}{}\index{C\+Object\+Database@{C\+Object\+Database}!Edit\+Vertex\+Properties@{Edit\+Vertex\+Properties}}
+\index{Edit\+Vertex\+Properties@{Edit\+Vertex\+Properties}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Edit\+Vertex\+Properties(\+O\+B\+J\+E\+C\+T\+U\+I\+D object\+U\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Object\+Database\+::\+Edit\+Vertex\+Properties (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{object\+U\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a75bcb8391778808649d5c3a32b33ab95}
+\hypertarget{class_c_object_database_a0b63943450c88148db6584257afd55a0}{}\index{C\+Object\+Database@{C\+Object\+Database}!Enable\+Object@{Enable\+Object}}
+\index{Enable\+Object@{Enable\+Object}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Enable\+Object(\+O\+B\+J\+E\+C\+T\+U\+I\+D object\+U\+I\+D, bool notify)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Object\+Database\+::\+Enable\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{object\+U\+I\+D, }
+\item[{bool}]{notify}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a0b63943450c88148db6584257afd55a0}
+Enable\+Object \hypertarget{class_c_object_database_a3b0b9540c90abfd007f657546e9ed7da}{}\index{C\+Object\+Database@{C\+Object\+Database}!End\+Update@{End\+Update}}
+\index{End\+Update@{End\+Update}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{End\+Update()}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int C\+Object\+Database\+::\+End\+Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a3b0b9540c90abfd007f657546e9ed7da}
+End\+Update
+
+Finishes a bulk update, returns the number of bulk updates in progress (excluding this one) \hypertarget{class_c_object_database_abcb416613289bdbb30bf7c84832b78df}{}\index{C\+Object\+Database@{C\+Object\+Database}!Get\+Adjacency\+Matrix@{Get\+Adjacency\+Matrix}}
+\index{Get\+Adjacency\+Matrix@{Get\+Adjacency\+Matrix}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Get\+Adjacency\+Matrix()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf I\+Adjacency\+Matrix} C\+Object\+Database\+::\+Get\+Adjacency\+Matrix (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_abcb416613289bdbb30bf7c84832b78df}
+Get\+Adjacency\+Matrix
+
+Returns a handle to the Adjacency\+Matrix instance \hypertarget{class_c_object_database_a2af534c449f0637162063ee72080fbc3}{}\index{C\+Object\+Database@{C\+Object\+Database}!Get\+Edge\+Count@{Get\+Edge\+Count}}
+\index{Get\+Edge\+Count@{Get\+Edge\+Count}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Get\+Edge\+Count()}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+Object\+Database\+::\+Get\+Edge\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a2af534c449f0637162063ee72080fbc3}
+Get\+Edge\+Count
+
+Returns the size of the Edge Table (\# records) \hypertarget{class_c_object_database_a029a3dc8a83f184ae785d7be1e81fbb3}{}\index{C\+Object\+Database@{C\+Object\+Database}!Get\+Edge\+Sibling@{Get\+Edge\+Sibling}}
+\index{Get\+Edge\+Sibling@{Get\+Edge\+Sibling}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Get\+Edge\+Sibling(\+Edge\+Type e\+Type, Sibling\+Position position)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} C\+Object\+Database\+::\+Get\+Edge\+Sibling (
+\begin{DoxyParamCaption}
+\item[{{\bf Edge\+Type}}]{e\+Type, }
+\item[{{\bf Sibling\+Position}}]{position}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a029a3dc8a83f184ae785d7be1e81fbb3}
+\hypertarget{class_c_object_database_afa1bffc3892eb582b8017b582e445071}{}\index{C\+Object\+Database@{C\+Object\+Database}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{get\+Instance()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Object\+Database} $\ast$ C\+Object\+Database\+::get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_object_database_afa1bffc3892eb582b8017b582e445071}
+\hypertarget{class_c_object_database_afee3ccff8a7bd6b185eec9bf96439f4a}{}\index{C\+Object\+Database@{C\+Object\+Database}!Get\+Object\+Type@{Get\+Object\+Type}}
+\index{Get\+Object\+Type@{Get\+Object\+Type}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Get\+Object\+Type(\+O\+B\+J\+E\+C\+T\+U\+I\+D object\+U\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\+Type} C\+Object\+Database\+::\+Get\+Object\+Type (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{object\+U\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_afee3ccff8a7bd6b185eec9bf96439f4a}
+Get\+Object\+Type
+
+Returns the enum class Object\+Type for a given object U\+I\+D, i.\+e. Vertex, Edge, Group, layer etc \hypertarget{class_c_object_database_ae52aeb4df0246261114830aadbfdab40}{}\index{C\+Object\+Database@{C\+Object\+Database}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Get\+Value(\+O\+B\+J\+E\+C\+T\+U\+I\+D objectuid, size\+\_\+t attribute\+Index) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+P\+V\+A\+L\+U\+E} C\+Object\+Database\+::\+Get\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{objectuid, }
+\item[{size\+\_\+t}]{attribute\+Index}
+\end{DoxyParamCaption}
+) const}\label{class_c_object_database_ae52aeb4df0246261114830aadbfdab40}
+Get\+Value
+
+Overloaded functions call the \hyperlink{class_c_graph_object}{C\+Graph\+Object} Get\+Value Basically map the object U\+I\+D to a pointer then call the pointer-\/$>$Get\+Value(..)
+
+Object\+U\+I\+D, \hyperlink{class_attribute}{Attribute} Index Number \hypertarget{class_c_object_database_a07d2705ee35ba10d6051cd4eea220e1c}{}\index{C\+Object\+Database@{C\+Object\+Database}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Get\+Value(\+O\+B\+J\+E\+C\+T\+U\+I\+D objectuid, const \+::std\+::wstring \&attrname)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+P\+V\+A\+L\+U\+E} C\+Object\+Database\+::\+Get\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{objectuid, }
+\item[{const \+::std\+::wstring \&}]{attrname}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a07d2705ee35ba10d6051cd4eea220e1c}
+Get\+Value
+
+Overloaded functions call the \hyperlink{class_c_graph_object}{C\+Graph\+Object} Get\+Value Basically map the object U\+I\+D to a pointer then call the pointer-\/$>$Get\+Value(..)
+
+Object\+U\+I\+D, \hyperlink{class_attribute}{Attribute} Name \hypertarget{class_c_object_database_ad321df9f3e265412663711c3c4d1c16c}{}\index{C\+Object\+Database@{C\+Object\+Database}!Get\+Vertex\+Count@{Get\+Vertex\+Count}}
+\index{Get\+Vertex\+Count@{Get\+Vertex\+Count}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Get\+Vertex\+Count()}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+Object\+Database\+::\+Get\+Vertex\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_ad321df9f3e265412663711c3c4d1c16c}
+Get\+Vertex\+Count
+
+Returns the size of the Vertex Table (\# records) \hypertarget{class_c_object_database_acb12aeadc82d7d64523a251b35154514}{}\index{C\+Object\+Database@{C\+Object\+Database}!Get\+Vertex\+Degree@{Get\+Vertex\+Degree}}
+\index{Get\+Vertex\+Degree@{Get\+Vertex\+Degree}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Get\+Vertex\+Degree(\+O\+B\+J\+E\+C\+T\+U\+I\+D vertexid)}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+Object\+Database\+::\+Get\+Vertex\+Degree (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{vertexid}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_acb12aeadc82d7d64523a251b35154514}
+Get\+Vertex\+Degree
+
+Returns the number of connected edges to the vertexid \hypertarget{class_c_object_database_a7a813d22a36465e8fb77a3b18bd2a2f9}{}\index{C\+Object\+Database@{C\+Object\+Database}!Get\+Vertex\+Edges@{Get\+Vertex\+Edges}}
+\index{Get\+Vertex\+Edges@{Get\+Vertex\+Edges}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Get\+Vertex\+Edges(\+O\+B\+J\+E\+C\+T\+U\+I\+D Vertex\+Src\+I\+D,\+::std\+::vector$<$ O\+B\+J\+E\+C\+T\+U\+I\+D $>$ \&edgelist)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Object\+Database\+::\+Get\+Vertex\+Edges (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{Vertex\+Src\+I\+D, }
+\item[{\+::std\+::vector$<$ {\bf O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \&}]{edgelist}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a7a813d22a36465e8fb77a3b18bd2a2f9}
+Get\+Vertex\+Edges
+
+Returns a std\+::list of all of the Edges U\+I\+D in the edges table connected to the Vertex\+Src\+I\+D \hypertarget{class_c_object_database_af1fea10ecb69437f5a1c6d777d729eda}{}\index{C\+Object\+Database@{C\+Object\+Database}!Get\+Vertex\+Sibling@{Get\+Vertex\+Sibling}}
+\index{Get\+Vertex\+Sibling@{Get\+Vertex\+Sibling}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Get\+Vertex\+Sibling(\+Vertex\+Type v\+Type, Sibling\+Position position)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} C\+Object\+Database\+::\+Get\+Vertex\+Sibling (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex\+Type}}]{v\+Type, }
+\item[{{\bf Sibling\+Position}}]{position}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_af1fea10ecb69437f5a1c6d777d729eda}
+Get\+Vertex\+Sibling \hypertarget{class_c_object_database_a7c7fbf4adf110d18cc81bc5ec8c55ae2}{}\index{C\+Object\+Database@{C\+Object\+Database}!Load\+X\+M\+L\+Data@{Load\+X\+M\+L\+Data}}
+\index{Load\+X\+M\+L\+Data@{Load\+X\+M\+L\+Data}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Load\+X\+M\+L\+Data(tinyxml2\+::\+X\+M\+L\+Document $\ast$dest\+Doc, tinyxml2\+::\+X\+M\+L\+Node $\ast$current\+Node)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Object\+Database\+::\+Load\+X\+M\+L\+Data (
+\begin{DoxyParamCaption}
+\item[{tinyxml2\+::\+X\+M\+L\+Document $\ast$}]{X\+M\+Ldoc, }
+\item[{tinyxml2\+::\+X\+M\+L\+Node $\ast$}]{current\+Node}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a7c7fbf4adf110d18cc81bc5ec8c55ae2}
+Load\+X\+M\+L\+Data
+
+Called from Serial\+Context when a new document is loaded
+
+Iterate through the children of our root R\+O\+O\+T\+\_\+\+N\+O\+D\+E and call relevent function to process that child i.\+e. V\+E\+R\+T\+E\+X\+\_\+\+N\+O\+D\+E we should be passed the current\+Node of $<$odb$>$ (our root), children of this $<$odb$>$ will be $<$vertex$>$, $<$edge$>$, $<$layer$>$, $<$interface$>$ i.\+e.
+
+$<$odb$>$ $<$vertex$>$ $<$/vertex$>$
+
+$<$edge$>$ $<$/edge$>$
+
+$<$layer$>$ $<$/layer$>$
+
+$<$interface$>$ $<$/interface$>$
+
+$<$/odb$>$\hypertarget{class_c_object_database_a8ff1ff15b2318b2985cb7a819a380c9a}{}\index{C\+Object\+Database@{C\+Object\+Database}!Register\+Observer@{Register\+Observer}}
+\index{Register\+Observer@{Register\+Observer}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Register\+Observer(\+C\+Database\+Observer $\ast$p\+Observer,\+::std\+::wstring \&obsname, Object\+Type,\+::std\+::vector$<$\+::std\+::wstring $>$ \&attribute\+\_\+list)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Object\+Database\+::\+Register\+Observer (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Database\+Observer} $\ast$}]{p\+Observer, }
+\item[{\+::std\+::wstring \&}]{obsname, }
+\item[{{\bf Object\+Type}}]{object, }
+\item[{\+::std\+::vector$<$\+::std\+::wstring $>$ \&}]{attribute\+\_\+list}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a8ff1ff15b2318b2985cb7a819a380c9a}
+Register\+Observer
+
+Client calls this function to register interest in one or more database updates \hypertarget{class_c_object_database_a51194193be949a369d971a6acc63ebc4}{}\index{C\+Object\+Database@{C\+Object\+Database}!Save\+X\+M\+L\+Data@{Save\+X\+M\+L\+Data}}
+\index{Save\+X\+M\+L\+Data@{Save\+X\+M\+L\+Data}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Save\+X\+M\+L\+Data(tinyxml2\+::\+X\+M\+L\+Document $\ast$dest\+Doc, tinyxml2\+::\+X\+M\+L\+Node $\ast$current\+Node)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Object\+Database\+::\+Save\+X\+M\+L\+Data (
+\begin{DoxyParamCaption}
+\item[{tinyxml2\+::\+X\+M\+L\+Document $\ast$}]{dest\+Doc, }
+\item[{tinyxml2\+::\+X\+M\+L\+Node $\ast$}]{current\+Node}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a51194193be949a369d971a6acc63ebc4}
+Save\+X\+M\+L\+Data
+
+Called from Serial\+Context when saving the application state \hypertarget{class_c_object_database_a40c3ebf55f58e39a2dbc23f160041838}{}\index{C\+Object\+Database@{C\+Object\+Database}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Set\+Value(\+O\+B\+J\+E\+C\+T\+U\+I\+D objectuid, size\+\_\+t attribute\+Index, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Object\+Database\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{objectuid, }
+\item[{size\+\_\+t}]{attribute\+Index, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a40c3ebf55f58e39a2dbc23f160041838}
+Set\+Value
+
+Is passed the object U\+I\+D, a lookup is done to get the U\+I\+D object pointer and then the object db owner i.\+e. Vertex\+Table for a Vertex Sets the value via the object owning database Sets the serialisation service dirty flag for the Object\+Database.
+
+Two overloaded functions, 1. passed the attribute index. 2. passed the attribute name (wstring) \hypertarget{class_c_object_database_a085daae73e1da05e641289b2aebd952b}{}\index{C\+Object\+Database@{C\+Object\+Database}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Set\+Value(\+O\+B\+J\+E\+C\+T\+U\+I\+D objectuid, const \+::std\+::wstring \&attrname, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Object\+Database\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{objectuid, }
+\item[{const \+::std\+::wstring \&}]{attrname, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a085daae73e1da05e641289b2aebd952b}
+Set\+Value
+
+Is passed the object U\+I\+D, a lookup is done to get the U\+I\+D object pointer and then the object db owner i.\+e. Vertex\+Table for a Vertex Sets the value via the object owning database Sets the serialisation service dirty flag for the Object\+Database.
+
+Two overloaded functions, 1. passed the attribute index. 2. passed the attribute name (wstring) \hypertarget{class_c_object_database_a5cd2a2ea23f1b2fd4449314527057014}{}\index{C\+Object\+Database@{C\+Object\+Database}!Un\+Register\+Observer@{Un\+Register\+Observer}}
+\index{Un\+Register\+Observer@{Un\+Register\+Observer}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Un\+Register\+Observer(\+C\+Database\+Observer $\ast$p\+Observer)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Object\+Database\+::\+Un\+Register\+Observer (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Database\+Observer} $\ast$}]{p\+Observer}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a5cd2a2ea23f1b2fd4449314527057014}
+Un\+Register\+Observer
+
+Client calls this function to de-\/register interest in one or more updates \hypertarget{class_c_object_database_a4609fe112c35837deafa53394bdbf5f2}{}\index{C\+Object\+Database@{C\+Object\+Database}!Validate\+Object\+U\+I\+D@{Validate\+Object\+U\+I\+D}}
+\index{Validate\+Object\+U\+I\+D@{Validate\+Object\+U\+I\+D}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{Validate\+Object\+U\+I\+D(\+O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S $\ast$attribute\+Map)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Object\+Database\+::\+Validate\+Object\+U\+I\+D (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$}]{attribute\+Map}
+\end{DoxyParamCaption}
+)}\label{class_c_object_database_a4609fe112c35837deafa53394bdbf5f2}
+Validate\+Object\+U\+I\+D
+
+$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$ N\+E\+E\+D R\+E\+D\+O I\+D S\+Y\+N\+C C\+O\+D\+E -\/ class based and code to reuse old U\+I\+Ds $\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$$\ast$ 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_object_database_a0f14765279c94010464f24192f762fd0}{}\index{C\+Object\+Database@{C\+Object\+Database}!E\+D\+G\+E\+\_\+\+E\+L\+E\+M\+E\+N\+T@{E\+D\+G\+E\+\_\+\+E\+L\+E\+M\+E\+N\+T}}
+\index{E\+D\+G\+E\+\_\+\+E\+L\+E\+M\+E\+N\+T@{E\+D\+G\+E\+\_\+\+E\+L\+E\+M\+E\+N\+T}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{E\+D\+G\+E\+\_\+\+E\+L\+E\+M\+E\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ C\+Object\+Database\+::\+E\+D\+G\+E\+\_\+\+E\+L\+E\+M\+E\+N\+T}\label{class_c_object_database_a0f14765279c94010464f24192f762fd0}
+\hypertarget{class_c_object_database_a02d47c62bb58cced09ded02772773f9d}{}\index{C\+Object\+Database@{C\+Object\+Database}!E\+D\+G\+E\+\_\+\+N\+O\+D\+E@{E\+D\+G\+E\+\_\+\+N\+O\+D\+E}}
+\index{E\+D\+G\+E\+\_\+\+N\+O\+D\+E@{E\+D\+G\+E\+\_\+\+N\+O\+D\+E}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{E\+D\+G\+E\+\_\+\+N\+O\+D\+E}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ C\+Object\+Database\+::\+E\+D\+G\+E\+\_\+\+N\+O\+D\+E}\label{class_c_object_database_a02d47c62bb58cced09ded02772773f9d}
+\hypertarget{class_c_object_database_a36329774e26fac45fa4e7d691a1b6b63}{}\index{C\+Object\+Database@{C\+Object\+Database}!G\+R\+O\+U\+P\+\_\+\+N\+O\+D\+E@{G\+R\+O\+U\+P\+\_\+\+N\+O\+D\+E}}
+\index{G\+R\+O\+U\+P\+\_\+\+N\+O\+D\+E@{G\+R\+O\+U\+P\+\_\+\+N\+O\+D\+E}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{G\+R\+O\+U\+P\+\_\+\+N\+O\+D\+E}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ C\+Object\+Database\+::\+G\+R\+O\+U\+P\+\_\+\+N\+O\+D\+E}\label{class_c_object_database_a36329774e26fac45fa4e7d691a1b6b63}
+\hypertarget{class_c_object_database_aa46e1fcbe98cd370a678c0379da2f5e4}{}\index{C\+Object\+Database@{C\+Object\+Database}!L\+A\+Y\+E\+R\+\_\+\+E\+L\+E\+M\+E\+N\+T@{L\+A\+Y\+E\+R\+\_\+\+E\+L\+E\+M\+E\+N\+T}}
+\index{L\+A\+Y\+E\+R\+\_\+\+E\+L\+E\+M\+E\+N\+T@{L\+A\+Y\+E\+R\+\_\+\+E\+L\+E\+M\+E\+N\+T}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{L\+A\+Y\+E\+R\+\_\+\+E\+L\+E\+M\+E\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ C\+Object\+Database\+::\+L\+A\+Y\+E\+R\+\_\+\+E\+L\+E\+M\+E\+N\+T}\label{class_c_object_database_aa46e1fcbe98cd370a678c0379da2f5e4}
+\hypertarget{class_c_object_database_a4cf4f0714a05dccfabfacaf0694b22e4}{}\index{C\+Object\+Database@{C\+Object\+Database}!L\+A\+Y\+E\+R\+\_\+\+N\+O\+D\+E@{L\+A\+Y\+E\+R\+\_\+\+N\+O\+D\+E}}
+\index{L\+A\+Y\+E\+R\+\_\+\+N\+O\+D\+E@{L\+A\+Y\+E\+R\+\_\+\+N\+O\+D\+E}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{L\+A\+Y\+E\+R\+\_\+\+N\+O\+D\+E}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ C\+Object\+Database\+::\+L\+A\+Y\+E\+R\+\_\+\+N\+O\+D\+E}\label{class_c_object_database_a4cf4f0714a05dccfabfacaf0694b22e4}
+\hypertarget{class_c_object_database_af5c011e783985858f571b07750298936}{}\index{C\+Object\+Database@{C\+Object\+Database}!R\+O\+O\+T\+\_\+\+N\+O\+D\+E@{R\+O\+O\+T\+\_\+\+N\+O\+D\+E}}
+\index{R\+O\+O\+T\+\_\+\+N\+O\+D\+E@{R\+O\+O\+T\+\_\+\+N\+O\+D\+E}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{R\+O\+O\+T\+\_\+\+N\+O\+D\+E}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ C\+Object\+Database\+::\+R\+O\+O\+T\+\_\+\+N\+O\+D\+E}\label{class_c_object_database_af5c011e783985858f571b07750298936}
+\hypertarget{class_c_object_database_a965cae785a3f37147b579146f339a7de}{}\index{C\+Object\+Database@{C\+Object\+Database}!V\+E\+R\+T\+E\+X\+\_\+\+E\+L\+E\+M\+E\+N\+T@{V\+E\+R\+T\+E\+X\+\_\+\+E\+L\+E\+M\+E\+N\+T}}
+\index{V\+E\+R\+T\+E\+X\+\_\+\+E\+L\+E\+M\+E\+N\+T@{V\+E\+R\+T\+E\+X\+\_\+\+E\+L\+E\+M\+E\+N\+T}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{V\+E\+R\+T\+E\+X\+\_\+\+E\+L\+E\+M\+E\+N\+T}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ C\+Object\+Database\+::\+V\+E\+R\+T\+E\+X\+\_\+\+E\+L\+E\+M\+E\+N\+T}\label{class_c_object_database_a965cae785a3f37147b579146f339a7de}
+\hypertarget{class_c_object_database_a23d016284e7c7d76a10b2e50d132711a}{}\index{C\+Object\+Database@{C\+Object\+Database}!V\+E\+R\+T\+E\+X\+\_\+\+N\+O\+D\+E@{V\+E\+R\+T\+E\+X\+\_\+\+N\+O\+D\+E}}
+\index{V\+E\+R\+T\+E\+X\+\_\+\+N\+O\+D\+E@{V\+E\+R\+T\+E\+X\+\_\+\+N\+O\+D\+E}!C\+Object\+Database@{C\+Object\+Database}}
+\subsubsection[{V\+E\+R\+T\+E\+X\+\_\+\+N\+O\+D\+E}]{\setlength{\rightskip}{0pt plus 5cm}const char$\ast$ C\+Object\+Database\+::\+V\+E\+R\+T\+E\+X\+\_\+\+N\+O\+D\+E}\label{class_c_object_database_a23d016284e7c7d76a10b2e50d132711a}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\hyperlink{_object_database_8h}{Object\+Database.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\hyperlink{_object_database_8cpp}{Object\+Database.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,93 @@
+===========================================================================================================================
+Interfaces
+===========================================================================================================================
+
+* Create Interface Table 
+
+* Move ADJ Matrix to ServiceWrapper and update code
+	requires internal update to register with updatecache and check vertex, edge MACs
+	requires first registration to updatecache as client as this is a key component
+
+* Clean up ObjectDatabase of references to adjm
+
+* Update NetworkGraph use of ADJM, poss other uses in Node/Link tree ?
+
+* Adjust code in Database cache to send notifications to clients in the order clients registered with cache service
+
+* Create interfaces for test XML file objects.. 
+
+* Restore new code in ADJMATRIX to iterate through interfaces
+
+* remove edge vertex_a_uid, vertex_b_uid... think thats all but check factory anyway.
+
+* Check trees and other db iterations for how edge to node lookups are done - should be via matrix or double lookup
+
+* TriggerManager.cpp line 82 - update required.
+
+* Backspace in RD Edit Box when multiple chars selected not impl.
+
+* Connect IPServices PTree (RadixTree) for updates and triggers
+
+* CIPTreeView.cpp : Connect "Internet Protocol View" GUI for updates from ODB, CIPTreeView::DatabaseUpdate() (iptreeview.cpp) -IPTreeview (GUI) Code update, create, delete mthods
+
+* Need to write in RD for the Interface IP Address,	check all places that may have used default 0 RD.
+
+- IPTreeview: Toolbar buttons (Add, Edit, Delete) require code updates
+
+- In IP Properties GUI, create RD/IP/Mask edit as per properties - rethink IPProperties design?
+
+- DatabaseTreeView.cpp DatabaseUpdate requires recode
+	Database Tree View does not implement refresh on interface Insert,Update,Delete changes. - is interface branch to stay ?
+	CDatabaseTreeView::DatabaseUpdate() needs a code refresh to deal with updates correctly.
+
+===========================================================================================================================
+High Level To Do (before algos)
+===========================================================================================================================
+
+- Flows & Demands
+
+- Paths
+
+
+
+===========================================================================================================================
+Bugs
+===========================================================================================================================
+
+[BUG] - GraphView: When scaling is in effect, tooltips flash - fine at 100%
+
+[BUG] - IPTreeview: Aggregates sometimes dont get deleted when attibutes changed for ipprefix if subnetwork aggregates exist
+
+[BUG] - GraphView, when dragging screen with RBTNDOWN, need to disable use of LBUTTON as it can cause objects to be grabbed after RBTN release
+		with LBTNDOWN. When LBTN down, Ignore LBTN down
+
+[FIXED] - IPTree (radix) needs a cleanup method when removing a prefix, all prefixes have network entries added when hosts are added, 
+			on removal of a host, need to check to see if the network prefix is still required (any children in prefix), if not remove /prefix to make a transit
+			if children exist or delete backup tree to parent branch
+[FIXED] - Related to above: Also when RD is changed on a prefix, the original prefix is not removed from the original RD, although the interface ID is
+
+===========================================================================================================================
+Other
+===========================================================================================================================
+
+- Code NMConsole to re-ip all links correctly so each link interface has ip in same subnet
+
+- Move File Open routine to after all services started, ensure DatabaseCache::Refresh is being used
+
+ - Derive CMFCPropertyGridProperty to create other data types 
+		C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\include\afxpropertygridctrl.h
+		C:\Program Files (x86)\Microsoft Visual Studio 14.0\VC\atlmfc\src\mfc\afxpropertygridctrl.cpp
+		C:\Program Files (x86)\Windows Kits\8.1\Include\shared\wtypes.h
+		C:\Program Files (x86)\Windows Kits\10\Include\10.0.10586.0\um\OAIdl.h
+
+ - Interface operational/admin status ? 
+
+? Create ADJ Matrix for Node-Int-Link ? in previous service wrapper (not required for this to be complete)
+
+? Need to create help lookup functions in IObjectDatabase. ?? hmm cant think of any if adj m's are created as above (not required for this to be complete), i.e. get Nodes connected to Link
+
+#- finally check db update cache is calling clients in correct order.
+
+#- code DatabaseRefresh call everywhere
+
+#- code open delay screen; use DB Update Lock to control sequence of events at open. check file open routine, think this locks anyway, but another lock cant hurt ?

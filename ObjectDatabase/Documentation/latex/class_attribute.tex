@@ -1,0 +1,190 @@
+\hypertarget{class_attribute}{}\section{Attribute Class Reference}
+\label{class_attribute}\index{Attribute@{Attribute}}
+
+
+{\ttfamily \#include $<$attribute.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef bool($\ast$ \hyperlink{class_attribute_a55241f36afbe917f6e57c0c8c01bd287}{Call\+Back\+Validation\+Func}) (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, const \hyperlink{class_value}{Value} \&)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_attribute_a37f1e806f6804ec9c2c48ec61186260a}{Attribute} (\+::std\+::wstring name, \hyperlink{class_c_type_accfff8ca293dba5cbd8a2d677cf6afa8}{C\+Type\+::\+Type\+T} type\+I\+D, bool usermodify, bool required, bool serialize, bool locked,\+::std\+::wstring description, \hyperlink{class_base_value}{Base\+Value} $\ast$default\+Value=nullptr, bool($\ast$Call\+Back\+Validation\+Func\+P)(\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, const \hyperlink{class_value}{Value} \&)=nullptr)
+\item 
+\hyperlink{class_attribute_a28ab087bb886728670e4ae5791bc2ea8}{$\sim$\+Attribute} ()
+\item 
+void \hyperlink{class_attribute_a7817adff7dd4f9ee46ef3d27c017e677}{Set\+Validation\+Function} (bool($\ast$Call\+Back\+Validation\+Func\+P)(\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, const \hyperlink{class_value}{Value} \&)=nullptr)
+\item 
+\+::std\+::wstring \hyperlink{class_attribute_a64451f5f4deb0967de36078d8294fda2}{Get\+Name} () const 
+\item 
+\+::std\+::wstring \hyperlink{class_attribute_a86b052f0e8957043c25d49cd94b0c0a7}{Get\+Description} () const 
+\item 
+\hyperlink{class_c_type}{C\+Type} const \& \hyperlink{class_attribute_acd792c67478766d9808988b676b538a1}{Get\+Type} () const 
+\item 
+bool \hyperlink{class_attribute_ad7274fdc612fafe20f97f388254df6c2}{Get\+User\+Modify} () const 
+\item 
+bool \hyperlink{class_attribute_ab212f1bde0a7fcf77582d9ac2f3c3528}{Is\+Required\+Attribute} ()
+\item 
+bool \hyperlink{class_attribute_a5067d7cd8b7415c873652298f6bb90c1}{Is\+Serializable} ()
+\item 
+\hyperlink{class_base_value}{Base\+Value} $\ast$ \hyperlink{class_attribute_a6dc6af2f97c6a278ba15c9613c8725c3}{Get\+Default\+Value} ()
+\item 
+bool \hyperlink{class_attribute_a33815679807073ff9cc9cd045c55049f}{Attribute\+Locked} ()
+\item 
+bool \hyperlink{class_attribute_a7412cdd12d31aa0fc2058e2a31c7514b}{Attribute\+Locked\+On\+Set} ()
+\item 
+void \hyperlink{class_attribute_af0d06b0502e8e87a9664f0b189c875d4}{Lock} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$)(\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, const \hyperlink{class_value}{Value} \&) \hyperlink{class_attribute_aaf3df82a60913bfb62179764f2f2cc73}{Get\+Callback\+Func} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_attribute_a55241f36afbe917f6e57c0c8c01bd287}{}\index{Attribute@{Attribute}!Call\+Back\+Validation\+Func@{Call\+Back\+Validation\+Func}}
+\index{Call\+Back\+Validation\+Func@{Call\+Back\+Validation\+Func}!Attribute@{Attribute}}
+\subsubsection[{Call\+Back\+Validation\+Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ Attribute\+::\+Call\+Back\+Validation\+Func) ({\bf C\+Graph\+Object} $\ast$, const {\bf Value} \&)}\label{class_attribute_a55241f36afbe917f6e57c0c8c01bd287}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_attribute_a37f1e806f6804ec9c2c48ec61186260a}{}\index{Attribute@{Attribute}!Attribute@{Attribute}}
+\index{Attribute@{Attribute}!Attribute@{Attribute}}
+\subsubsection[{Attribute(\+::std\+::wstring name, C\+Type\+::\+Type\+T type\+I\+D, bool usermodify, bool required, bool serialize, bool locked,\+::std\+::wstring description, Base\+Value $\ast$default\+Value=nullptr, bool($\ast$\+Call\+Back\+Validation\+Func\+P)(\+C\+Graph\+Object $\ast$, const Value \&)=nullptr)}]{\setlength{\rightskip}{0pt plus 5cm}Attribute\+::\+Attribute (
+\begin{DoxyParamCaption}
+\item[{\+::std\+::wstring}]{name, }
+\item[{{\bf C\+Type\+::\+Type\+T}}]{type\+I\+D, }
+\item[{bool}]{usermodify, }
+\item[{bool}]{required, }
+\item[{bool}]{serialize, }
+\item[{bool}]{locked, }
+\item[{\+::std\+::wstring}]{description, }
+\item[{{\bf Base\+Value} $\ast$}]{default\+Value = {\ttfamily nullptr}, }
+\item[{bool($\ast$)({\bf C\+Graph\+Object} $\ast$, const {\bf Value} \&)}]{Call\+Back\+Validation\+Func\+P = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_attribute_a37f1e806f6804ec9c2c48ec61186260a}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of this \hyperlink{class_attribute}{Attribute} \\
+\hline
+{\em type\+I\+D} & Data\+Type of this \hyperlink{class_attribute}{Attribute} (\hyperlink{class_value}{Value}) \\
+\hline
+{\em usermodify} & Can the user change this value directly ? \\
+\hline
+{\em required} & Is a \hyperlink{class_value}{Value} required to be set on this \hyperlink{class_attribute}{Attribute} (True), use default (False) \\
+\hline
+{\em serialize} & Does this Attributes \hyperlink{class_value}{Value} need to be saved to D\+B disk file \\
+\hline
+{\em locked} & Can this Attributes value be modified after creation \\
+\hline
+{\em description} & String description of this \hyperlink{class_attribute}{Attribute} \\
+\hline
+{\em default\+Value} & Is the default value for attribute (optional) \\
+\hline
+{\em Call\+Back\+Validation\+Func\+P} & Callback function to validate new value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_attribute_a28ab087bb886728670e4ae5791bc2ea8}{}\index{Attribute@{Attribute}!````~Attribute@{$\sim$\+Attribute}}
+\index{````~Attribute@{$\sim$\+Attribute}!Attribute@{Attribute}}
+\subsubsection[{$\sim$\+Attribute()}]{\setlength{\rightskip}{0pt plus 5cm}Attribute\+::$\sim$\+Attribute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_attribute_a28ab087bb886728670e4ae5791bc2ea8}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_attribute_a33815679807073ff9cc9cd045c55049f}{}\index{Attribute@{Attribute}!Attribute\+Locked@{Attribute\+Locked}}
+\index{Attribute\+Locked@{Attribute\+Locked}!Attribute@{Attribute}}
+\subsubsection[{Attribute\+Locked()}]{\setlength{\rightskip}{0pt plus 5cm}bool Attribute\+::\+Attribute\+Locked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_attribute_a33815679807073ff9cc9cd045c55049f}
+\hypertarget{class_attribute_a7412cdd12d31aa0fc2058e2a31c7514b}{}\index{Attribute@{Attribute}!Attribute\+Locked\+On\+Set@{Attribute\+Locked\+On\+Set}}
+\index{Attribute\+Locked\+On\+Set@{Attribute\+Locked\+On\+Set}!Attribute@{Attribute}}
+\subsubsection[{Attribute\+Locked\+On\+Set()}]{\setlength{\rightskip}{0pt plus 5cm}bool Attribute\+::\+Attribute\+Locked\+On\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_attribute_a7412cdd12d31aa0fc2058e2a31c7514b}
+\hypertarget{class_attribute_a6dc6af2f97c6a278ba15c9613c8725c3}{}\index{Attribute@{Attribute}!Get\+Default\+Value@{Get\+Default\+Value}}
+\index{Get\+Default\+Value@{Get\+Default\+Value}!Attribute@{Attribute}}
+\subsubsection[{Get\+Default\+Value()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\+Value}$\ast$ Attribute\+::\+Get\+Default\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_attribute_a6dc6af2f97c6a278ba15c9613c8725c3}
+Get\+Default\+Value
+
+Returns the address of the default \textquotesingle{}\hyperlink{class_value}{Value}\textquotesingle{}, if one was given when the attibute was saved, then use that else use the datatype default \hypertarget{class_attribute_a86b052f0e8957043c25d49cd94b0c0a7}{}\index{Attribute@{Attribute}!Get\+Description@{Get\+Description}}
+\index{Get\+Description@{Get\+Description}!Attribute@{Attribute}}
+\subsubsection[{Get\+Description() const }]{\setlength{\rightskip}{0pt plus 5cm}\+::std\+::wstring Attribute\+::\+Get\+Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_attribute_a86b052f0e8957043c25d49cd94b0c0a7}
+Returns the string description of this \hyperlink{class_attribute}{Attribute} \hypertarget{class_attribute_a64451f5f4deb0967de36078d8294fda2}{}\index{Attribute@{Attribute}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!Attribute@{Attribute}}
+\subsubsection[{Get\+Name() const }]{\setlength{\rightskip}{0pt plus 5cm}\+::std\+::wstring Attribute\+::\+Get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_attribute_a64451f5f4deb0967de36078d8294fda2}
+Returns the string name of this \hyperlink{class_attribute}{Attribute} \hypertarget{class_attribute_acd792c67478766d9808988b676b538a1}{}\index{Attribute@{Attribute}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!Attribute@{Attribute}}
+\subsubsection[{Get\+Type() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Type} const\& Attribute\+::\+Get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_attribute_acd792c67478766d9808988b676b538a1}
+Returns the \hyperlink{class_c_type}{C\+Type} datatype of this \hyperlink{class_attribute}{Attribute} i.\+e. String, Int, etc \hyperlink{class_c_type_accfff8ca293dba5cbd8a2d677cf6afa8}{C\+Type\+::\+Type\+T} \hypertarget{class_attribute_ad7274fdc612fafe20f97f388254df6c2}{}\index{Attribute@{Attribute}!Get\+User\+Modify@{Get\+User\+Modify}}
+\index{Get\+User\+Modify@{Get\+User\+Modify}!Attribute@{Attribute}}
+\subsubsection[{Get\+User\+Modify() const }]{\setlength{\rightskip}{0pt plus 5cm}bool Attribute\+::\+Get\+User\+Modify (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_attribute_ad7274fdc612fafe20f97f388254df6c2}
+Returns boolean based on if the attributes metadata can be changed or not \hypertarget{class_attribute_ab212f1bde0a7fcf77582d9ac2f3c3528}{}\index{Attribute@{Attribute}!Is\+Required\+Attribute@{Is\+Required\+Attribute}}
+\index{Is\+Required\+Attribute@{Is\+Required\+Attribute}!Attribute@{Attribute}}
+\subsubsection[{Is\+Required\+Attribute()}]{\setlength{\rightskip}{0pt plus 5cm}bool Attribute\+::\+Is\+Required\+Attribute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_attribute_ab212f1bde0a7fcf77582d9ac2f3c3528}
+If this returns True, then the value M\+U\+S\+T be set when containing object is created and defaults will not be used. \hypertarget{class_attribute_a5067d7cd8b7415c873652298f6bb90c1}{}\index{Attribute@{Attribute}!Is\+Serializable@{Is\+Serializable}}
+\index{Is\+Serializable@{Is\+Serializable}!Attribute@{Attribute}}
+\subsubsection[{Is\+Serializable()}]{\setlength{\rightskip}{0pt plus 5cm}bool Attribute\+::\+Is\+Serializable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_attribute_a5067d7cd8b7415c873652298f6bb90c1}
+If this returns true, then this Attributes \hyperlink{class_value}{Value} must be saved to the disk. \hypertarget{class_attribute_af0d06b0502e8e87a9664f0b189c875d4}{}\index{Attribute@{Attribute}!Lock@{Lock}}
+\index{Lock@{Lock}!Attribute@{Attribute}}
+\subsubsection[{Lock()}]{\setlength{\rightskip}{0pt plus 5cm}void Attribute\+::\+Lock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_attribute_af0d06b0502e8e87a9664f0b189c875d4}
+\hypertarget{class_attribute_a7817adff7dd4f9ee46ef3d27c017e677}{}\index{Attribute@{Attribute}!Set\+Validation\+Function@{Set\+Validation\+Function}}
+\index{Set\+Validation\+Function@{Set\+Validation\+Function}!Attribute@{Attribute}}
+\subsubsection[{Set\+Validation\+Function(bool($\ast$\+Call\+Back\+Validation\+Func\+P)(\+C\+Graph\+Object $\ast$, const Value \&)=nullptr)}]{\setlength{\rightskip}{0pt plus 5cm}void Attribute\+::\+Set\+Validation\+Function (
+\begin{DoxyParamCaption}
+\item[{bool($\ast$)({\bf C\+Graph\+Object} $\ast$, const {\bf Value} \&)}]{Call\+Back\+Validation\+Func\+P = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_attribute_a7817adff7dd4f9ee46ef3d27c017e677}
+allow change of function for validation 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_attribute_aaf3df82a60913bfb62179764f2f2cc73}{}\index{Attribute@{Attribute}!Get\+Callback\+Func@{Get\+Callback\+Func}}
+\index{Get\+Callback\+Func@{Get\+Callback\+Func}!Attribute@{Attribute}}
+\subsubsection[{Get\+Callback\+Func}]{\setlength{\rightskip}{0pt plus 5cm}bool($\ast$)({\bf C\+Graph\+Object}$\ast$, const {\bf Value}\&) Attribute\+::\+Get\+Callback\+Func()\hspace{0.3cm}{\ttfamily [inline]}}\label{class_attribute_aaf3df82a60913bfb62179764f2f2cc73}
+return the specified function pointer to use by caller when an value is changed to validate it, called from \hyperlink{class_c_graph_object_a3d9abce9bd1df44161791c30b1765c0e}{C\+Graph\+Object\+::\+Set\+Value}(...) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Database\+Core\+Elements/\hyperlink{attribute_8h}{attribute.\+h}\end{DoxyCompactItemize}

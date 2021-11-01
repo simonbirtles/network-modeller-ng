@@ -1,0 +1,190 @@
+\hypertarget{class_n_m_1_1_o_d_b_1_1_attribute}{}\section{N\+M\+:\+:O\+D\+B\+:\+:Attribute Class Reference}
+\label{class_n_m_1_1_o_d_b_1_1_attribute}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+
+
+{\ttfamily \#include $<$attribute.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef bool($\ast$ \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_aecc2c30f3a77a56c4dc68b9961eb1fb7}{Call\+Back\+Validation\+Func}) (\hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object}{C\+Graph\+Object} $\ast$, const \hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} \&)
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_a3e7774f1121be2a5794640ada4c9129c}{Attribute} (\+::std\+::wstring name, \hyperlink{class_n_m_1_1_o_d_b_1_1_c_type_ad03443dbcd5bbf2ab1dfe9380d11a467}{C\+Type\+::\+Type\+T} type\+I\+D, bool usermodify, bool required, bool serialize, bool locked,\+::std\+::wstring description, \hyperlink{class_n_m_1_1_o_d_b_1_1_base_value}{Base\+Value} $\ast$default\+Value=nullptr, bool($\ast$Call\+Back\+Validation\+Func\+P)(\hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object}{C\+Graph\+Object} $\ast$, const \hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} \&)=nullptr)
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_ad8d58ac9f280af512afda57f57e08585}{$\sim$\+Attribute} ()
+\item 
+void \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_a9eced0bd5f66be64b21ed13f1b6e9359}{Set\+Validation\+Function} (bool($\ast$Call\+Back\+Validation\+Func\+P)(\hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object}{C\+Graph\+Object} $\ast$, const \hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} \&)=nullptr)
+\item 
+\+::std\+::wstring \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_ae2b0acaa68fb2e78685608b3bf9726cf}{Get\+Name} () const 
+\item 
+\+::std\+::wstring \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_a5644511eac8d0217f718d7632791c5c2}{Get\+Description} () const 
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_c_type}{C\+Type} const \& \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_a9cfff89f826a541389fc7bed1ff795ba}{Get\+Type} () const 
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_a5288bec14a37aec031da85999833ff6b}{Get\+User\+Modify} () const 
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_a99b47d2f3199b0cc4c5d27e2721ede87}{Is\+Required\+Attribute} ()
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_aedc4c6a6b24835a03b85f318b60eb486}{Is\+Serializable} ()
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_base_value}{Base\+Value} $\ast$ \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_aaeaf08ee581e8c56d683a08f124f2ba4}{Get\+Default\+Value} ()
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_af33e5fec0212494165da892d90cb763f}{Attribute\+Locked} ()
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_a977f782441c1b65c61c6c22cd492d186}{Attribute\+Locked\+On\+Set} ()
+\item 
+void \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_a9fe48d1d746cab921acdce2ce4d9b200}{Lock} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+bool($\ast$)(\hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object}{C\+Graph\+Object} $\ast$, const \hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} \&) \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_ac489ca70164c7274279189ebd5bdf881}{Get\+Callback\+Func} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_attribute_aecc2c30f3a77a56c4dc68b9961eb1fb7}{}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}!Call\+Back\+Validation\+Func@{Call\+Back\+Validation\+Func}}
+\index{Call\+Back\+Validation\+Func@{Call\+Back\+Validation\+Func}!N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+\subsubsection[{Call\+Back\+Validation\+Func}]{\setlength{\rightskip}{0pt plus 5cm}typedef bool($\ast$ N\+M\+::\+O\+D\+B\+::\+Attribute\+::\+Call\+Back\+Validation\+Func) ({\bf C\+Graph\+Object} $\ast$, const {\bf Value} \&)}\label{class_n_m_1_1_o_d_b_1_1_attribute_aecc2c30f3a77a56c4dc68b9961eb1fb7}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_attribute_a3e7774f1121be2a5794640ada4c9129c}{}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}!Attribute@{Attribute}}
+\index{Attribute@{Attribute}!N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+\subsubsection[{Attribute(\+::std\+::wstring name, C\+Type\+::\+Type\+T type\+I\+D, bool usermodify, bool required, bool serialize, bool locked,\+::std\+::wstring description, Base\+Value $\ast$default\+Value=nullptr, bool($\ast$\+Call\+Back\+Validation\+Func\+P)(\+C\+Graph\+Object $\ast$, const Value \&)=nullptr)}]{\setlength{\rightskip}{0pt plus 5cm}N\+M\+::\+O\+D\+B\+::\+Attribute\+::\+Attribute (
+\begin{DoxyParamCaption}
+\item[{\+::std\+::wstring}]{name, }
+\item[{{\bf C\+Type\+::\+Type\+T}}]{type\+I\+D, }
+\item[{bool}]{usermodify, }
+\item[{bool}]{required, }
+\item[{bool}]{serialize, }
+\item[{bool}]{locked, }
+\item[{\+::std\+::wstring}]{description, }
+\item[{{\bf Base\+Value} $\ast$}]{default\+Value = {\ttfamily nullptr}, }
+\item[{bool($\ast$)({\bf C\+Graph\+Object} $\ast$, const {\bf Value} \&)}]{Call\+Back\+Validation\+Func\+P = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_attribute_a3e7774f1121be2a5794640ada4c9129c}
+
+\begin{DoxyParams}{Parameters}
+{\em name} & Name of this \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute}{Attribute} \\
+\hline
+{\em type\+I\+D} & Data\+Type of this \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute}{Attribute} (\hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value}) \\
+\hline
+{\em usermodify} & Can the user change this value directly ? \\
+\hline
+{\em required} & Is a \hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} required to be set on this \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute}{Attribute} (True), use default (False) \\
+\hline
+{\em serialize} & Does this Attributes \hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} need to be saved to D\+B disk file \\
+\hline
+{\em locked} & Can this Attributes value be modified after creation \\
+\hline
+{\em description} & String description of this \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute}{Attribute} \\
+\hline
+{\em default\+Value} & Is the default value for attribute (optional) \\
+\hline
+{\em Call\+Back\+Validation\+Func\+P} & Callback function to validate new value \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_attribute_ad8d58ac9f280af512afda57f57e08585}{}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}!````~Attribute@{$\sim$\+Attribute}}
+\index{````~Attribute@{$\sim$\+Attribute}!N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+\subsubsection[{$\sim$\+Attribute()}]{\setlength{\rightskip}{0pt plus 5cm}N\+M\+::\+O\+D\+B\+::\+Attribute\+::$\sim$\+Attribute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_attribute_ad8d58ac9f280af512afda57f57e08585}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_attribute_af33e5fec0212494165da892d90cb763f}{}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}!Attribute\+Locked@{Attribute\+Locked}}
+\index{Attribute\+Locked@{Attribute\+Locked}!N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+\subsubsection[{Attribute\+Locked()}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+Attribute\+::\+Attribute\+Locked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_attribute_af33e5fec0212494165da892d90cb763f}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_attribute_a977f782441c1b65c61c6c22cd492d186}{}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}!Attribute\+Locked\+On\+Set@{Attribute\+Locked\+On\+Set}}
+\index{Attribute\+Locked\+On\+Set@{Attribute\+Locked\+On\+Set}!N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+\subsubsection[{Attribute\+Locked\+On\+Set()}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+Attribute\+::\+Attribute\+Locked\+On\+Set (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_attribute_a977f782441c1b65c61c6c22cd492d186}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_attribute_aaeaf08ee581e8c56d683a08f124f2ba4}{}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}!Get\+Default\+Value@{Get\+Default\+Value}}
+\index{Get\+Default\+Value@{Get\+Default\+Value}!N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+\subsubsection[{Get\+Default\+Value()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Base\+Value}$\ast$ N\+M\+::\+O\+D\+B\+::\+Attribute\+::\+Get\+Default\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_attribute_aaeaf08ee581e8c56d683a08f124f2ba4}
+Get\+Default\+Value
+
+Returns the address of the default \textquotesingle{}\hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value}\textquotesingle{}, if one was given when the attibute was saved, then use that else use the datatype default \hypertarget{class_n_m_1_1_o_d_b_1_1_attribute_a5644511eac8d0217f718d7632791c5c2}{}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}!Get\+Description@{Get\+Description}}
+\index{Get\+Description@{Get\+Description}!N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+\subsubsection[{Get\+Description() const }]{\setlength{\rightskip}{0pt plus 5cm}\+::std\+::wstring N\+M\+::\+O\+D\+B\+::\+Attribute\+::\+Get\+Description (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_attribute_a5644511eac8d0217f718d7632791c5c2}
+Returns the string description of this \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute}{Attribute} \hypertarget{class_n_m_1_1_o_d_b_1_1_attribute_ae2b0acaa68fb2e78685608b3bf9726cf}{}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}!Get\+Name@{Get\+Name}}
+\index{Get\+Name@{Get\+Name}!N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+\subsubsection[{Get\+Name() const }]{\setlength{\rightskip}{0pt plus 5cm}\+::std\+::wstring N\+M\+::\+O\+D\+B\+::\+Attribute\+::\+Get\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_attribute_ae2b0acaa68fb2e78685608b3bf9726cf}
+Returns the string name of this \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute}{Attribute} \hypertarget{class_n_m_1_1_o_d_b_1_1_attribute_a9cfff89f826a541389fc7bed1ff795ba}{}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}!Get\+Type@{Get\+Type}}
+\index{Get\+Type@{Get\+Type}!N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+\subsubsection[{Get\+Type() const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Type} const\& N\+M\+::\+O\+D\+B\+::\+Attribute\+::\+Get\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_attribute_a9cfff89f826a541389fc7bed1ff795ba}
+Returns the \hyperlink{class_n_m_1_1_o_d_b_1_1_c_type}{C\+Type} datatype of this \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute}{Attribute} i.\+e. String, Int, etc \hyperlink{class_n_m_1_1_o_d_b_1_1_c_type_ad03443dbcd5bbf2ab1dfe9380d11a467}{C\+Type\+::\+Type\+T} \hypertarget{class_n_m_1_1_o_d_b_1_1_attribute_a5288bec14a37aec031da85999833ff6b}{}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}!Get\+User\+Modify@{Get\+User\+Modify}}
+\index{Get\+User\+Modify@{Get\+User\+Modify}!N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+\subsubsection[{Get\+User\+Modify() const }]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+Attribute\+::\+Get\+User\+Modify (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_attribute_a5288bec14a37aec031da85999833ff6b}
+Returns boolean based on if the attributes metadata can be changed or not \hypertarget{class_n_m_1_1_o_d_b_1_1_attribute_a99b47d2f3199b0cc4c5d27e2721ede87}{}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}!Is\+Required\+Attribute@{Is\+Required\+Attribute}}
+\index{Is\+Required\+Attribute@{Is\+Required\+Attribute}!N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+\subsubsection[{Is\+Required\+Attribute()}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+Attribute\+::\+Is\+Required\+Attribute (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_attribute_a99b47d2f3199b0cc4c5d27e2721ede87}
+If this returns True, then the value M\+U\+S\+T be set when containing object is created and defaults will not be used. \hypertarget{class_n_m_1_1_o_d_b_1_1_attribute_aedc4c6a6b24835a03b85f318b60eb486}{}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}!Is\+Serializable@{Is\+Serializable}}
+\index{Is\+Serializable@{Is\+Serializable}!N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+\subsubsection[{Is\+Serializable()}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+Attribute\+::\+Is\+Serializable (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_attribute_aedc4c6a6b24835a03b85f318b60eb486}
+If this returns true, then this Attributes \hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} must be saved to the disk. \hypertarget{class_n_m_1_1_o_d_b_1_1_attribute_a9fe48d1d746cab921acdce2ce4d9b200}{}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}!Lock@{Lock}}
+\index{Lock@{Lock}!N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+\subsubsection[{Lock()}]{\setlength{\rightskip}{0pt plus 5cm}void N\+M\+::\+O\+D\+B\+::\+Attribute\+::\+Lock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_attribute_a9fe48d1d746cab921acdce2ce4d9b200}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_attribute_a9eced0bd5f66be64b21ed13f1b6e9359}{}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}!Set\+Validation\+Function@{Set\+Validation\+Function}}
+\index{Set\+Validation\+Function@{Set\+Validation\+Function}!N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+\subsubsection[{Set\+Validation\+Function(bool($\ast$\+Call\+Back\+Validation\+Func\+P)(\+C\+Graph\+Object $\ast$, const Value \&)=nullptr)}]{\setlength{\rightskip}{0pt plus 5cm}void N\+M\+::\+O\+D\+B\+::\+Attribute\+::\+Set\+Validation\+Function (
+\begin{DoxyParamCaption}
+\item[{bool($\ast$)({\bf C\+Graph\+Object} $\ast$, const {\bf Value} \&)}]{Call\+Back\+Validation\+Func\+P = {\ttfamily nullptr}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_attribute_a9eced0bd5f66be64b21ed13f1b6e9359}
+allow change of function for validation 
+
+\subsection{Member Data Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_attribute_ac489ca70164c7274279189ebd5bdf881}{}\index{N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}!Get\+Callback\+Func@{Get\+Callback\+Func}}
+\index{Get\+Callback\+Func@{Get\+Callback\+Func}!N\+M\+::\+O\+D\+B\+::\+Attribute@{N\+M\+::\+O\+D\+B\+::\+Attribute}}
+\subsubsection[{Get\+Callback\+Func}]{\setlength{\rightskip}{0pt plus 5cm}bool($\ast$)({\bf C\+Graph\+Object}$\ast$, const {\bf Value}\&) N\+M\+::\+O\+D\+B\+::\+Attribute\+::\+Get\+Callback\+Func()\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_attribute_ac489ca70164c7274279189ebd5bdf881}
+return the specified function pointer to use by caller when an value is changed to validate it, called from \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_a08b23d43253a196f369b8563eb113f94}{C\+Graph\+Object\+::\+Set\+Value}(...) 
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Database\+Core\+Elements/\hyperlink{attribute_8h}{attribute.\+h}\end{DoxyCompactItemize}

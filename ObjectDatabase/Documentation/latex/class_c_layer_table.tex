@@ -1,0 +1,159 @@
+\hypertarget{class_c_layer_table}{}\section{C\+Layer\+Table Class Reference}
+\label{class_c_layer_table}\index{C\+Layer\+Table@{C\+Layer\+Table}}
+
+
+{\ttfamily \#include $<$Layer\+Table.\+h$>$}
+
+Inheritance diagram for C\+Layer\+Table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_layer_table}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+::std\+::vector$<$ \hyperlink{class_c_layer}{C\+Layer} $\ast$ $>$\+::iterator \hyperlink{class_c_layer_table_ac3f5fb208ea83dd1d39e81301b7bdaaf}{L\+A\+Y\+E\+R\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R}
+\item 
+typedef \+::std\+::vector$<$ \hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$ $>$ \hyperlink{class_c_layer_table_acd81eed52c55ccd6ba9fcbe3bd2451dc}{L\+A\+Y\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_layer_table_a09fc2fd20604d02458fb271eea55c558}{C\+Layer\+Table} (\hyperlink{class_c_graph_object_factory}{C\+Graph\+Object\+Factory} $\ast$object\+Factory)
+\item 
+\hyperlink{class_c_layer_table_a933616ffb5fe569ae9e39fca575046e7}{$\sim$\+C\+Layer\+Table} (void)
+\item 
+\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_c_layer_table_a71262ee99844c6d8fd45d5fc2b99e157}{Create\+Layer} (\hyperlink{_object_database_defines_8h_a52d1b76b66b20eeaf0c5dc8127da21d7}{O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$attribute\+Map I\+N, \hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$$\ast$p\+Object O\+U\+T)
+\item 
+bool \hyperlink{class_c_layer_table_a53bb6bc2b2aa5d5064c21afdf58f5aab}{Destroy\+Layer} (size\+\_\+t uid)
+\item 
+void \hyperlink{class_c_layer_table_aab8f59a0888c40afec0813b5b61e105e}{Clear} (void)
+\item 
+void \hyperlink{class_c_layer_table_ac673d82ff254530528f29931f73c6f5c}{Refresh\+Layer\+Visibility} ()
+\item 
+\hyperlink{class_c_layer}{C\+Layer} $\ast$ \hyperlink{class_c_layer_table_a0c2ba3b02174839df30b7f0bf47b13d9}{Get\+Default\+Layer} ()
+\item 
+bool \hyperlink{class_c_layer_table_a029505beda2f32bddd84354235e90e50}{Set\+Value} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, size\+\_\+t idx, \hyperlink{class_value}{Value} const \&v)
+\item 
+bool \hyperlink{class_c_layer_table_a4f309df5a3c4cbce50aa085ce2d29944}{Set\+Value} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, const \+::std\+::wstring \&attrname, \hyperlink{class_value}{Value} const \&v)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_layer_table_acd81eed52c55ccd6ba9fcbe3bd2451dc}{L\+A\+Y\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R} \hyperlink{class_c_layer_table_aa8c5aada3ac311d579ba49b71a6f90f0}{layers}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_layer_table_a8451ee9e81bc51a04afb10dc6ee7e07e}{C\+Object\+Database}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_c_layer_table_ac3f5fb208ea83dd1d39e81301b7bdaaf}{}\index{C\+Layer\+Table@{C\+Layer\+Table}!L\+A\+Y\+E\+R\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R@{L\+A\+Y\+E\+R\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R}}
+\index{L\+A\+Y\+E\+R\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R@{L\+A\+Y\+E\+R\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R}!C\+Layer\+Table@{C\+Layer\+Table}}
+\subsubsection[{L\+A\+Y\+E\+R\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}typedef \+::std\+::vector$<${\bf C\+Layer}$\ast$$>$\+::iterator {\bf C\+Layer\+Table\+::\+L\+A\+Y\+E\+R\+\_\+\+I\+T\+E\+R\+A\+T\+O\+R}}\label{class_c_layer_table_ac3f5fb208ea83dd1d39e81301b7bdaaf}
+\hypertarget{class_c_layer_table_acd81eed52c55ccd6ba9fcbe3bd2451dc}{}\index{C\+Layer\+Table@{C\+Layer\+Table}!L\+A\+Y\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R@{L\+A\+Y\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R}}
+\index{L\+A\+Y\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R@{L\+A\+Y\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R}!C\+Layer\+Table@{C\+Layer\+Table}}
+\subsubsection[{L\+A\+Y\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}typedef \+::std\+::vector$<${\bf C\+Graph\+Object}$\ast$$>$ {\bf C\+Layer\+Table\+::\+L\+A\+Y\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R}}\label{class_c_layer_table_acd81eed52c55ccd6ba9fcbe3bd2451dc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_layer_table_a09fc2fd20604d02458fb271eea55c558}{}\index{C\+Layer\+Table@{C\+Layer\+Table}!C\+Layer\+Table@{C\+Layer\+Table}}
+\index{C\+Layer\+Table@{C\+Layer\+Table}!C\+Layer\+Table@{C\+Layer\+Table}}
+\subsubsection[{C\+Layer\+Table(\+C\+Graph\+Object\+Factory $\ast$object\+Factory)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Layer\+Table\+::\+C\+Layer\+Table (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object\+Factory} $\ast$}]{object\+Factory}
+\end{DoxyParamCaption}
+)}\label{class_c_layer_table_a09fc2fd20604d02458fb271eea55c558}
+\hypertarget{class_c_layer_table_a933616ffb5fe569ae9e39fca575046e7}{}\index{C\+Layer\+Table@{C\+Layer\+Table}!````~C\+Layer\+Table@{$\sim$\+C\+Layer\+Table}}
+\index{````~C\+Layer\+Table@{$\sim$\+C\+Layer\+Table}!C\+Layer\+Table@{C\+Layer\+Table}}
+\subsubsection[{$\sim$\+C\+Layer\+Table(void)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Layer\+Table\+::$\sim$\+C\+Layer\+Table (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_layer_table_a933616ffb5fe569ae9e39fca575046e7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_layer_table_aab8f59a0888c40afec0813b5b61e105e}{}\index{C\+Layer\+Table@{C\+Layer\+Table}!Clear@{Clear}}
+\index{Clear@{Clear}!C\+Layer\+Table@{C\+Layer\+Table}}
+\subsubsection[{Clear(void)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Layer\+Table\+::\+Clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_layer_table_aab8f59a0888c40afec0813b5b61e105e}
+\hypertarget{class_c_layer_table_a71262ee99844c6d8fd45d5fc2b99e157}{}\index{C\+Layer\+Table@{C\+Layer\+Table}!Create\+Layer@{Create\+Layer}}
+\index{Create\+Layer@{Create\+Layer}!C\+Layer\+Table@{C\+Layer\+Table}}
+\subsubsection[{Create\+Layer(\+O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S $\ast$attribute\+Map I\+N, C\+Graph\+Object $\ast$$\ast$p\+Object O\+U\+T)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} C\+Layer\+Table\+::\+Create\+Layer (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$attribute\+Map}]{I\+N, }
+\item[{{\bf C\+Graph\+Object} $\ast$$\ast$p\+Object}]{O\+U\+T}
+\end{DoxyParamCaption}
+)}\label{class_c_layer_table_a71262ee99844c6d8fd45d5fc2b99e157}
+\hypertarget{class_c_layer_table_a53bb6bc2b2aa5d5064c21afdf58f5aab}{}\index{C\+Layer\+Table@{C\+Layer\+Table}!Destroy\+Layer@{Destroy\+Layer}}
+\index{Destroy\+Layer@{Destroy\+Layer}!C\+Layer\+Table@{C\+Layer\+Table}}
+\subsubsection[{Destroy\+Layer(size\+\_\+t uid)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Layer\+Table\+::\+Destroy\+Layer (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{uid}
+\end{DoxyParamCaption}
+)}\label{class_c_layer_table_a53bb6bc2b2aa5d5064c21afdf58f5aab}
+\hypertarget{class_c_layer_table_a0c2ba3b02174839df30b7f0bf47b13d9}{}\index{C\+Layer\+Table@{C\+Layer\+Table}!Get\+Default\+Layer@{Get\+Default\+Layer}}
+\index{Get\+Default\+Layer@{Get\+Default\+Layer}!C\+Layer\+Table@{C\+Layer\+Table}}
+\subsubsection[{Get\+Default\+Layer()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Layer}$\ast$ C\+Layer\+Table\+::\+Get\+Default\+Layer (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_layer_table_a0c2ba3b02174839df30b7f0bf47b13d9}
+\hypertarget{class_c_layer_table_ac673d82ff254530528f29931f73c6f5c}{}\index{C\+Layer\+Table@{C\+Layer\+Table}!Refresh\+Layer\+Visibility@{Refresh\+Layer\+Visibility}}
+\index{Refresh\+Layer\+Visibility@{Refresh\+Layer\+Visibility}!C\+Layer\+Table@{C\+Layer\+Table}}
+\subsubsection[{Refresh\+Layer\+Visibility()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Layer\+Table\+::\+Refresh\+Layer\+Visibility (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_layer_table_ac673d82ff254530528f29931f73c6f5c}
+\hypertarget{class_c_layer_table_a029505beda2f32bddd84354235e90e50}{}\index{C\+Layer\+Table@{C\+Layer\+Table}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!C\+Layer\+Table@{C\+Layer\+Table}}
+\subsubsection[{Set\+Value(\+C\+Graph\+Object $\ast$, size\+\_\+t idx, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Layer\+Table\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{layer, }
+\item[{size\+\_\+t}]{idx, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_layer_table_a029505beda2f32bddd84354235e90e50}
+
+
+Implements \hyperlink{class_table_base_a27162ca940b9977540202f4ce4a067b5}{Table\+Base}.
+
+\hypertarget{class_c_layer_table_a4f309df5a3c4cbce50aa085ce2d29944}{}\index{C\+Layer\+Table@{C\+Layer\+Table}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!C\+Layer\+Table@{C\+Layer\+Table}}
+\subsubsection[{Set\+Value(\+C\+Graph\+Object $\ast$, const \+::std\+::wstring \&attrname, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Layer\+Table\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{layer, }
+\item[{const \+::std\+::wstring \&}]{attrname, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_layer_table_a4f309df5a3c4cbce50aa085ce2d29944}
+
+
+Implements \hyperlink{class_table_base_a4a4e674632425ee19c24fae2881caefc}{Table\+Base}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_layer_table_a8451ee9e81bc51a04afb10dc6ee7e07e}{}\index{C\+Layer\+Table@{C\+Layer\+Table}!C\+Object\+Database@{C\+Object\+Database}}
+\index{C\+Object\+Database@{C\+Object\+Database}!C\+Layer\+Table@{C\+Layer\+Table}}
+\subsubsection[{C\+Object\+Database}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf C\+Object\+Database}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_c_layer_table_a8451ee9e81bc51a04afb10dc6ee7e07e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_layer_table_aa8c5aada3ac311d579ba49b71a6f90f0}{}\index{C\+Layer\+Table@{C\+Layer\+Table}!layers@{layers}}
+\index{layers@{layers}!C\+Layer\+Table@{C\+Layer\+Table}}
+\subsubsection[{layers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf L\+A\+Y\+E\+R\+\_\+\+V\+E\+C\+T\+O\+R} C\+Layer\+Table\+::layers}\label{class_c_layer_table_aa8c5aada3ac311d579ba49b71a6f90f0}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Tables/\hyperlink{_layer_table_8h}{Layer\+Table.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Tables/\hyperlink{_layer_table_8cpp}{Layer\+Table.\+cpp}\end{DoxyCompactItemize}

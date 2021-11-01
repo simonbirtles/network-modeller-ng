@@ -1,0 +1,71 @@
+\hypertarget{class_sibling}{}\section{Sibling Class Reference}
+\label{class_sibling}\index{Sibling@{Sibling}}
+
+
+{\ttfamily \#include $<$Sibling.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_sibling_aaf45d151a2e06c3b189a7e2071c0cecb}{Sibling} (\hyperlink{_object_database_defines_8h_afa099a55c5746eff5a0e1ffc04f53cc0}{Vertex\+Type} vertex\+Type, \hyperlink{class_c_object_database}{C\+Object\+Database} $\ast$object\+Database\+Ptr)
+\item 
+\hyperlink{class_sibling_a865fd646c8aa4f63a9d5b51ae82cd1a7}{$\sim$\+Sibling} (void)
+\item 
+void \hyperlink{class_sibling_a8ef3a30dd559f97a3ee166d634c62cfc}{Add\+Sibling} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$graph\+Object)
+\item 
+void \hyperlink{class_sibling_a16a88e755e6d42db3d205d0441bedc3f}{Delete\+Sibling} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$graph\+Object)
+\item 
+\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_sibling_a3e9a14120a92deb519ec9e114c350aa2}{Get\+Sibling} (\hyperlink{_object_database_defines_8h_a9507b0b115184061c7002f25c82fc6d7}{Sibling\+Position} position)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_sibling_aaf45d151a2e06c3b189a7e2071c0cecb}{}\index{Sibling@{Sibling}!Sibling@{Sibling}}
+\index{Sibling@{Sibling}!Sibling@{Sibling}}
+\subsubsection[{Sibling(\+Vertex\+Type vertex\+Type, C\+Object\+Database $\ast$object\+Database\+Ptr)}]{\setlength{\rightskip}{0pt plus 5cm}Sibling\+::\+Sibling (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex\+Type}}]{vertex\+Type, }
+\item[{{\bf C\+Object\+Database} $\ast$}]{object\+Database\+Ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_sibling_aaf45d151a2e06c3b189a7e2071c0cecb}
+\hypertarget{class_sibling_a865fd646c8aa4f63a9d5b51ae82cd1a7}{}\index{Sibling@{Sibling}!````~Sibling@{$\sim$\+Sibling}}
+\index{````~Sibling@{$\sim$\+Sibling}!Sibling@{Sibling}}
+\subsubsection[{$\sim$\+Sibling(void)}]{\setlength{\rightskip}{0pt plus 5cm}Sibling\+::$\sim$\+Sibling (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_sibling_a865fd646c8aa4f63a9d5b51ae82cd1a7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_sibling_a8ef3a30dd559f97a3ee166d634c62cfc}{}\index{Sibling@{Sibling}!Add\+Sibling@{Add\+Sibling}}
+\index{Add\+Sibling@{Add\+Sibling}!Sibling@{Sibling}}
+\subsubsection[{Add\+Sibling(\+C\+Graph\+Object $\ast$graph\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void Sibling\+::\+Add\+Sibling (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{graph\+Object}
+\end{DoxyParamCaption}
+)}\label{class_sibling_a8ef3a30dd559f97a3ee166d634c62cfc}
+Add\+Sibling
+
+Adds a sibling to the end of the chain and updates the nextsibling value of the previous node to point to the new node if this is not the first node. \hypertarget{class_sibling_a16a88e755e6d42db3d205d0441bedc3f}{}\index{Sibling@{Sibling}!Delete\+Sibling@{Delete\+Sibling}}
+\index{Delete\+Sibling@{Delete\+Sibling}!Sibling@{Sibling}}
+\subsubsection[{Delete\+Sibling(\+C\+Graph\+Object $\ast$graph\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void Sibling\+::\+Delete\+Sibling (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{graph\+Object}
+\end{DoxyParamCaption}
+)}\label{class_sibling_a16a88e755e6d42db3d205d0441bedc3f}
+Delete\+Sibling
+
+Updates the previoussibling and nextsibling values of the previous and next nodes of the deleted node. Removes the deleted node from the chain and reconnects the chain where the gap is left from deleting the node \hypertarget{class_sibling_a3e9a14120a92deb519ec9e114c350aa2}{}\index{Sibling@{Sibling}!Get\+Sibling@{Get\+Sibling}}
+\index{Get\+Sibling@{Get\+Sibling}!Sibling@{Sibling}}
+\subsubsection[{Get\+Sibling(\+Sibling\+Position position)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} Sibling\+::\+Get\+Sibling (
+\begin{DoxyParamCaption}
+\item[{{\bf Sibling\+Position}}]{position}
+\end{DoxyParamCaption}
+)}\label{class_sibling_a3e9a14120a92deb519ec9e114c350aa2}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Tables/\hyperlink{_sibling_8h}{Sibling.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Tables/\hyperlink{_sibling_8cpp}{Sibling.\+cpp}\end{DoxyCompactItemize}

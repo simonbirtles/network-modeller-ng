@@ -1,0 +1,86 @@
+\hypertarget{class_database_notification_requests}{}\section{Database\+Notification\+Requests Class Reference}
+\label{class_database_notification_requests}\index{Database\+Notification\+Requests@{Database\+Notification\+Requests}}
+
+
+{\ttfamily \#include $<$Database\+Notification\+Requests.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_database_notification_requests_a67da93e660167fe18318305150cf519d}{$\sim$\+Database\+Notification\+Requests} (void)
+\item 
+void \hyperlink{class_database_notification_requests_a4e5d16a469e5666083e9f9c96b6dbe76}{Add\+Notification\+Request} (\hyperlink{class_c_database_observer}{C\+Database\+Observer} $\ast$p\+Observer, \hyperlink{_object_database_defines_8h_a842c5e2e69277690b064bf363c017980}{Object\+Type},\+::std\+::vector$<$\+::std\+::wstring $>$ \&attribute\+\_\+list)
+\item 
+void \hyperlink{class_database_notification_requests_a22af83967baaf88ae49942f87d023362}{Remove\+Notification\+Request} (\hyperlink{class_c_database_observer}{C\+Database\+Observer} $\ast$p\+Observer)
+\item 
+\+::std\+::set$<$ \hyperlink{class_c_database_observer}{C\+Database\+Observer} $\ast$ $>$ \hyperlink{class_database_notification_requests_a6c94c92562312678ec1df780ac8ec73b}{Get\+Attribute\+Notification\+List} (\hyperlink{_object_database_defines_8h_a842c5e2e69277690b064bf363c017980}{Object\+Type} object\+\_\+type,\+::std\+::wstring \&attribute)
+\item 
+bool \hyperlink{class_database_notification_requests_acced78482b6a5184e2af4ca2dd39a220}{Is\+Object\+Attribute\+Update\+Registered} (\hyperlink{_object_database_defines_8h_a842c5e2e69277690b064bf363c017980}{Object\+Type} object\+\_\+type,\+::std\+::wstring \&attribute)
+\begin{DoxyCompactList}\small\item\em Boolean function to state if Object\+Type/\+Attribute combination is registered, not sure if we need this? \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_database_notification_requests}{Database\+Notification\+Requests} $\ast$ \hyperlink{class_database_notification_requests_a6b767a64972e0c662839f8586f5bec02}{get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_database_notification_requests_a67da93e660167fe18318305150cf519d}{}\index{Database\+Notification\+Requests@{Database\+Notification\+Requests}!````~Database\+Notification\+Requests@{$\sim$\+Database\+Notification\+Requests}}
+\index{````~Database\+Notification\+Requests@{$\sim$\+Database\+Notification\+Requests}!Database\+Notification\+Requests@{Database\+Notification\+Requests}}
+\subsubsection[{$\sim$\+Database\+Notification\+Requests(void)}]{\setlength{\rightskip}{0pt plus 5cm}Database\+Notification\+Requests\+::$\sim$\+Database\+Notification\+Requests (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_database_notification_requests_a67da93e660167fe18318305150cf519d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_database_notification_requests_a4e5d16a469e5666083e9f9c96b6dbe76}{}\index{Database\+Notification\+Requests@{Database\+Notification\+Requests}!Add\+Notification\+Request@{Add\+Notification\+Request}}
+\index{Add\+Notification\+Request@{Add\+Notification\+Request}!Database\+Notification\+Requests@{Database\+Notification\+Requests}}
+\subsubsection[{Add\+Notification\+Request(\+C\+Database\+Observer $\ast$p\+Observer, Object\+Type,\+::std\+::vector$<$\+::std\+::wstring $>$ \&attribute\+\_\+list)}]{\setlength{\rightskip}{0pt plus 5cm}void Database\+Notification\+Requests\+::\+Add\+Notification\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Database\+Observer} $\ast$}]{p\+Observer, }
+\item[{{\bf Object\+Type}}]{object\+\_\+type, }
+\item[{\+::std\+::vector$<$\+::std\+::wstring $>$ \&}]{attribute\+\_\+list}
+\end{DoxyParamCaption}
+)}\label{class_database_notification_requests_a4e5d16a469e5666083e9f9c96b6dbe76}
+\hypertarget{class_database_notification_requests_a6c94c92562312678ec1df780ac8ec73b}{}\index{Database\+Notification\+Requests@{Database\+Notification\+Requests}!Get\+Attribute\+Notification\+List@{Get\+Attribute\+Notification\+List}}
+\index{Get\+Attribute\+Notification\+List@{Get\+Attribute\+Notification\+List}!Database\+Notification\+Requests@{Database\+Notification\+Requests}}
+\subsubsection[{Get\+Attribute\+Notification\+List(\+Object\+Type object\+\_\+type,\+::std\+::wstring \&attribute)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::set$<$ {\bf C\+Database\+Observer} $\ast$ $>$ Database\+Notification\+Requests\+::\+Get\+Attribute\+Notification\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf Object\+Type}}]{object\+\_\+type, }
+\item[{\+::std\+::wstring \&}]{attribute}
+\end{DoxyParamCaption}
+)}\label{class_database_notification_requests_a6c94c92562312678ec1df780ac8ec73b}
+\hypertarget{class_database_notification_requests_a6b767a64972e0c662839f8586f5bec02}{}\index{Database\+Notification\+Requests@{Database\+Notification\+Requests}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!Database\+Notification\+Requests@{Database\+Notification\+Requests}}
+\subsubsection[{get\+Instance()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Database\+Notification\+Requests} $\ast$ Database\+Notification\+Requests\+::get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_database_notification_requests_a6b767a64972e0c662839f8586f5bec02}
+\hypertarget{class_database_notification_requests_acced78482b6a5184e2af4ca2dd39a220}{}\index{Database\+Notification\+Requests@{Database\+Notification\+Requests}!Is\+Object\+Attribute\+Update\+Registered@{Is\+Object\+Attribute\+Update\+Registered}}
+\index{Is\+Object\+Attribute\+Update\+Registered@{Is\+Object\+Attribute\+Update\+Registered}!Database\+Notification\+Requests@{Database\+Notification\+Requests}}
+\subsubsection[{Is\+Object\+Attribute\+Update\+Registered(\+Object\+Type object\+\_\+type,\+::std\+::wstring \&attribute)}]{\setlength{\rightskip}{0pt plus 5cm}bool Database\+Notification\+Requests\+::\+Is\+Object\+Attribute\+Update\+Registered (
+\begin{DoxyParamCaption}
+\item[{{\bf Object\+Type}}]{object\+\_\+type, }
+\item[{\+::std\+::wstring \&}]{attribute}
+\end{DoxyParamCaption}
+)}\label{class_database_notification_requests_acced78482b6a5184e2af4ca2dd39a220}
+
+
+Boolean function to state if Object\+Type/\+Attribute combination is registered, not sure if we need this? 
+
+\hypertarget{class_database_notification_requests_a22af83967baaf88ae49942f87d023362}{}\index{Database\+Notification\+Requests@{Database\+Notification\+Requests}!Remove\+Notification\+Request@{Remove\+Notification\+Request}}
+\index{Remove\+Notification\+Request@{Remove\+Notification\+Request}!Database\+Notification\+Requests@{Database\+Notification\+Requests}}
+\subsubsection[{Remove\+Notification\+Request(\+C\+Database\+Observer $\ast$p\+Observer)}]{\setlength{\rightskip}{0pt plus 5cm}void Database\+Notification\+Requests\+::\+Remove\+Notification\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Database\+Observer} $\ast$}]{p\+Observer}
+\end{DoxyParamCaption}
+)}\label{class_database_notification_requests_a22af83967baaf88ae49942f87d023362}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Database\+Update\+Elements/\hyperlink{_database_notification_requests_8h}{Database\+Notification\+Requests.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Database\+Update\+Elements/\hyperlink{_database_notification_requests_8cpp}{Database\+Notification\+Requests.\+cpp}\end{DoxyCompactItemize}

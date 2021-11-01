@@ -1,0 +1,377 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{30D6A94B-6ABD-4136-8FB7-043A624C7BAE}</ProjectGuid>
+    <RootNamespace>GuiTest3</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <Keyword>MFCProj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Dynamic</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>C:\Program Files (x86)\BCGSoft\BCGControlBar Professional Evaluation\BCGCBPro;$(IncludePath)</IncludePath>
+    <OutDir>$(SolutionDir)Exe\</OutDir>
+    <TargetName>NetMod2</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)Exe\</OutDir>
+    <TargetName>NetMod2</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir);$(ProjectDir)\GUI\NetworkView\Layers\SpotlightLayer;$(ProjectDir)\GUI\NetworkView\Layers\Link;$(ProjectDir)\GUI\NetworkView\Layers\Background;$(ProjectDir)\GUI\NetworkView\Layers\BaseLayer;$(ProjectDir)\GUI\NetworkView\Layers\Node;$(ProjectDir)\GUI\NetworkView\Cache\CacheUpdateNotification;$(ProjectDir)\GUI\NetworkView\View;$(ProjectDir)\GUI\NetworkView\View\Cache;$(ProjectDir)\GUI\NetworkView\View\Groups;$(ProjectDir)\GUI\NetworkView\View\Interfaces;$(ProjectDir)\GUI\NetworkView\View\Spatial;$(ProjectDir)\GUI\NetworkView\Layers;$(ProjectDir)\GUI\NetworkView\Cache;$(ProjectDir)\GUI\NetworkView;$(ProjectDir)\GUI\MainWnd;$(ProjectDir)\GUI\DockViews\OutputWnd;$(ProjectDir)\GUI\DockViews\DatabaseTreeView;$(ProjectDir)\GUI\DockViews\TestViews;$(ProjectDir)\GUI\DockViews\PropertiesView;$(ProjectDir)\GUI\DockViews\IPTree;$(ProjectDir)\GUI\DockViews;$(ProjectDir)\GUI;$(ProjectDir)\..\Services;$(ProjectDir)\..\Serialization;$(ProjectDir)\..\ServiceRegistry;$(ProjectDir)\..\TinyXML-2;$(ProjectDir)\..\IPServices\IPRadixTree;$(ProjectDir)\..\DataServices\Interfaces;$(ProjectDir)\..\DataServices\Matrix\Adjacency;$(ProjectDir)\..\ObjectDatabase;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAsManaged>false</CompileAsManaged>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>..\Debug;C:\Program Files (x86)\BCGSoft\BCGControlBar Professional Evaluation\Bin\;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Rpcrt4.lib;ServiceRegistry.lib;Services.lib;TinyXML-2.lib;serialization.lib;ObjectDatabase.lib;ipservices.lib;dataservices.lib</AdditionalDependencies>
+      <OutputFile>$(SolutionDir)Exe\$(TargetName)$(TargetExt)</OutputFile>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI\NetworkView\Layers\SpotlightLayer;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI\NetworkView\Layers\Link;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI\NetworkView\Layers\Node;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI\NetworkView\Cache\CacheUpdateNotification;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI\NetworkView\View;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI\NetworkView\Layers;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI\NetworkView\Cache;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI\NetworkView;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI\MainWnd;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI\DockViews\OutputWnd;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI\DockViews\DatabaseTreeView;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI\DockViews\TestViews;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI\DockViews\PropertiesView;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI\DockViews\IPTree;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI\DockViews;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\App\GUI;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\Services;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\Serialization;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\ServiceRegistry;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\TinyXML-2;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\IPServices\IPRadixTree;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\DataServices\Interfaces;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\DataServices\Matrix\Adjacency;C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\ObjectDatabase</AdditionalIncludeDirectories>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <OutputFile>$(SolutionDir)Exe\$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalDependencies>Rpcrt4.lib;ServiceRegistry.lib;Services.lib;TinyXML-2.lib;serialization.lib;ObjectDatabase.lib;ipservices.lib;dataservices.lib</AdditionalDependencies>
+      <AdditionalLibraryDirectories>C:\Users\Simon\Documents\Personal\Source Code\Projects\NetworkModelv2\Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+    <Midl>
+      <MkTypLibCompatible>false</MkTypLibCompatible>
+      <ValidateAllParameters>true</ValidateAllParameters>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </Midl>
+    <ResourceCompile>
+      <Culture>0x0409</Culture>
+      <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>$(IntDir);%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+    </ResourceCompile>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GUI\NetworkView\View\Groups\Group.h" />
+    <ClInclude Include="GUI\NetworkView\View\Groups\Groups.h" />
+    <ClInclude Include="GUI\NetworkView\View\Groups\BreadCrumb.h" />
+    <ClInclude Include="GUI\DockViews\DatabaseTreeView\CustomTimer.h" />
+    <ClInclude Include="GUI\DockViews\IPTree\IPPropertiesView.h" />
+    <ClInclude Include="GUI\DockViews\IPTree\IPTreeView.h" />
+    <ClInclude Include="GUI\DockViews\IPTree\IPView.h" />
+    <ClInclude Include="GUI\DockViews\IPTree\ViewTreeCtrl.h" />
+    <ClInclude Include="GUI\DockViews\PropertiesView\MFCPropertyGridDateTimeProperty.h" />
+    <ClInclude Include="GUI\DockViews\PropertiesView\MFCPropertyGridRDProperty.h" />
+    <ClInclude Include="GUI\DockViews\PropertiesView\MFCPropertyGridUnsignedLongLongProperty.h" />
+    <ClInclude Include="GUI\NetworkView\View\Groups\GroupViewMetadata.h" />
+    <ClInclude Include="GUI\NetworkView\View\Cache\BitmapCache.h" />
+    <ClInclude Include="GUI\DockViews\DatabaseTreeView\DatabaseTreeView.h" />
+    <ClInclude Include="GuiTest3.h" />
+    <ClInclude Include="GUI\MainWnd\MainFrm.h" />
+    <ClInclude Include="GUI\DockViews\PropertiesView\MFCPropertyGridDateTimeEditProperty.h" />
+    <ClInclude Include="GUI\DockViews\PropertiesView\MFCPropertyGridUIDProperty.h" />
+    <ClInclude Include="GUI\DockViews\OutputWnd\OutputWnd.h" />
+    <ClInclude Include="GUI\DockViews\PropertiesView\PropertiesWnd.h" />
+    <ClInclude Include="GUI\DockViews\PropertiesView\PropertyGridIPAddrProperty.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\Background\BackgroundLayer.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\BaseLayer\BaseLayer.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\Link\LinkLayer.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\Node\NodeIdleState.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\SpotlightLayer\SpotlightLayer.h" />
+    <ClInclude Include="GUI\NetworkView\View\NetworkView.h" />
+    <ClInclude Include="GUI\NetworkView\View\NetworkViewDoc.h" />
+    <ClInclude Include="GUI\NetworkView\View\NetworkViewFrame.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\Node\NodeLayer.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\Text\TextLayer.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\Node\Node.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\Node\NodeLayerState.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\Node\NodeDraggingState.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\Node\NodeSelectState.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\Link\Link.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\Link\LinkGroup.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\Link\LinkLayerState.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\Link\LinkLayerEditControlPointsState.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\Node\NodeContextState.h" />
+    <ClInclude Include="GUI\NetworkView\View\Interfaces\INetworkViewService.h" />
+    <ClInclude Include="GUI\NetworkView\View\Interfaces\INetworkView.h" />
+    <ClInclude Include="GUI\NetworkView\View\Spatial\NetworkViewSpatialHash.h" />
+    <ClInclude Include="GUI\DockViews\PropertiesView\MFCRDEdit.h" />
+    <ClInclude Include="GUI\NetworkView\Layers\Link\LinkDrawResources.h" />
+    <ClInclude Include="GUI\TrafficEdit\TrafficEditDemandView.h" />
+    <ClInclude Include="GUI\TrafficEdit\TrafficEditFlowView.h" />
+    <ClInclude Include="Resource.h" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="GUI\DockViews\DatabaseTreeView\ViewTree.h" />
+    <ClInclude Include="GUI\TrafficEdit\TrafficEditDoc.h" />
+    <ClInclude Include="GUI\TrafficEdit\TrafficEditFrame.h" />
+    <ClInclude Include="GUI\TrafficEdit\TrafficEditPathView.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GUI\NetworkView\View\Groups\Group.cpp" />
+    <ClCompile Include="GUI\NetworkView\View\Groups\Groups.cpp" />
+    <ClCompile Include="GUI\NetworkView\View\Groups\BreadCrumb.cpp" />
+    <ClCompile Include="GUI\DockViews\DatabaseTreeView\CustomTimer.cpp" />
+    <ClCompile Include="GUI\DockViews\IPTree\IPPropertiesView.cpp" />
+    <ClCompile Include="GUI\DockViews\IPTree\IPTreeView.cpp" />
+    <ClCompile Include="GUI\DockViews\IPTree\IPView.cpp" />
+    <ClCompile Include="GUI\DockViews\IPTree\ViewTreeCtrl.cpp" />
+    <ClCompile Include="GUI\DockViews\PropertiesView\MFCPropertyGridDateTimeProperty.cpp" />
+    <ClCompile Include="GUI\DockViews\PropertiesView\MFCPropertyGridRDProperty.cpp" />
+    <ClCompile Include="GUI\DockViews\PropertiesView\MFCPropertyGridUnsignedLongLongProperty.cpp" />
+    <ClCompile Include="GUI\NetworkView\View\Groups\GroupViewMetadata.cpp" />
+    <ClCompile Include="GUI\NetworkView\View\Cache\BitmapCache.cpp" />
+    <ClCompile Include="GUI\DockViews\DatabaseTreeView\DatabaseTreeView.cpp" />
+    <ClCompile Include="GuiTest3.cpp" />
+    <ClCompile Include="GUI\MainWnd\MainFrm.cpp" />
+    <ClCompile Include="GUI\DockViews\PropertiesView\MFCPropertyGridDateTimeEditProperty.cpp" />
+    <ClCompile Include="GUI\DockViews\PropertiesView\MFCPropertyGridUIDProperty.cpp" />
+    <ClCompile Include="GUI\DockViews\OutputWnd\OutputWnd.cpp" />
+    <ClCompile Include="GUI\DockViews\PropertiesView\PropertiesWnd.cpp" />
+    <ClCompile Include="GUI\DockViews\PropertiesView\PropertyGridIPAddrProperty.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\Background\BackgroundLayer.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\BaseLayer\BaseLayer.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\Link\LinkLayer.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\Node\NodeIdleState.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\SpotlightLayer\SpotlightLayer.cpp" />
+    <ClCompile Include="GUI\NetworkView\View\NetworkView.cpp" />
+    <ClCompile Include="GUI\NetworkView\View\NetworkViewDirectX.cpp" />
+    <ClCompile Include="GUI\NetworkView\View\NetworkViewDoc.cpp" />
+    <ClCompile Include="GUI\NetworkView\View\NetworkViewFrame.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\Node\NodeLayer.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\Text\TextLayer.cpp" />
+    <ClCompile Include="GUI\NetworkView\View\NetworkViewProc.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\Node\Node.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\Node\NodeLayerState.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\Node\NodeDraggingState.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\Node\NodeSelectState.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\Link\Link.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\Link\LinkGroup.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\Link\LinkLayerEditControlPointsState.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\Link\LinkLayerState.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\Node\NodeContextState.cpp" />
+    <ClCompile Include="GUI\NetworkView\View\Interfaces\INetworkViewService.cpp" />
+    <ClCompile Include="GUI\NetworkView\View\Interfaces\INetworkView.cpp" />
+    <ClCompile Include="GUI\NetworkView\View\Spatial\NetworkViewSpatialHash.cpp" />
+    <ClCompile Include="GUI\DockViews\PropertiesView\MFCRDEdit.cpp" />
+    <ClCompile Include="GUI\NetworkView\Layers\Link\LinkDrawResources.cpp" />
+    <ClCompile Include="GUI\TrafficEdit\TrafficEditDemandView.cpp" />
+    <ClCompile Include="GUI\TrafficEdit\TrafficEditFlowView.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="GUI\DockViews\DatabaseTreeView\ViewTree.cpp" />
+    <ClCompile Include="GUI\TrafficEdit\TrafficEditDoc.cpp" />
+    <ClCompile Include="GUI\TrafficEdit\TrafficEditFrame.cpp" />
+    <ClCompile Include="GUI\TrafficEdit\TrafficEditPathView.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GuiTest3.reg" />
+    <None Include="res\GuiTest3.rc2" />
+    <None Include="res\ribbon.mfcribbon-ms" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="GuiTest3.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="res\bitmap1.bmp" />
+    <Image Include="res\buttons.bmp" />
+    <Image Include="res\classview.bmp" />
+    <Image Include="res\classview_hc.bmp" />
+    <Image Include="res\class_view.ico" />
+    <Image Include="res\class_view_hc.ico" />
+    <Image Include="res\explorer.bmp" />
+    <Image Include="res\explorer_hc.bmp" />
+    <Image Include="res\filelarge.bmp" />
+    <Image Include="res\filesmall.bmp" />
+    <Image Include="res\fileview.bmp" />
+    <Image Include="res\fileview_hc.bmp" />
+    <Image Include="res\file_view.ico" />
+    <Image Include="res\file_view_hc.ico" />
+    <Image Include="res\GuiTest3.ico" />
+    <Image Include="res\GuiTest3Doc.ico" />
+    <Image Include="res\info.bmp" />
+    <Image Include="res\iptreenode.bmp" />
+    <Image Include="res\iptreeview.bmp" />
+    <Image Include="res\iptreeview_hc.bmp" />
+    <Image Include="res\main.bmp" />
+    <Image Include="res\menuimages.bmp" />
+    <Image Include="res\menuimages_hc.bmp" />
+    <Image Include="res\output_wnd.ico" />
+    <Image Include="res\output_wnd_hc.ico" />
+    <Image Include="res\properties.bmp" />
+    <Image Include="res\properties_hc.bmp" />
+    <Image Include="res\properties_wnd.ico" />
+    <Image Include="res\properties_wnd_hc.ico" />
+    <Image Include="res\sort.bmp" />
+    <Image Include="res\sort_hc.bmp" />
+    <Image Include="res\Toolbar.bmp" />
+    <Image Include="res\toolbar1.bmp" />
+    <Image Include="res\Toolbar256.bmp" />
+    <Image Include="res\writelarge.bmp" />
+    <Image Include="res\writesmall.bmp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+  <ProjectExtensions>
+    <VisualStudio>
+      <UserProperties RESOURCE_FILE="GuiTest3.rc" />
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

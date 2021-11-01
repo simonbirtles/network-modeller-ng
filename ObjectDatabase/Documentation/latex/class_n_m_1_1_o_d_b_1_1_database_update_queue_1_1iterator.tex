@@ -1,0 +1,106 @@
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator}{}\section{N\+M\+:\+:O\+D\+B\+:\+:Database\+Update\+Queue\+:\+:iterator Class Reference}
+\label{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}}
+
+
+{\ttfamily \#include $<$Database\+Update\+Queue.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+::std\+::forward\+\_\+iterator\+\_\+tag \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_add6003c575e89d3573a3de306ef4b0f0}{iterator\+\_\+category}
+\item 
+typedef \+::std\+::map$<$ int, \hyperlink{class_n_m_1_1_o_d_b_1_1_object_update}{Object\+Update} $\ast$ $>$ \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a4951d6dfa3ad7586cce163d30c3331d6}{objectmap}
+\item 
+typedef \+::std\+::map$<$\+::std\+::wstring, \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute_update}{Attribute\+Update} $\ast$ $>$ \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a6faa13ae9c82d09c665a93e670bdf834}{attr\+\_\+map}
+\item 
+typedef \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a4951d6dfa3ad7586cce163d30c3331d6}{objectmap} $\ast$ \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a7e0e43f97e56b1be581d21297b8b3f44}{pointer}
+\item 
+typedef \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a4951d6dfa3ad7586cce163d30c3331d6}{objectmap} \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a66a74e1a4ccceab5c6c90021140dcc41}{value\+\_\+type}
+\item 
+typedef \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a4951d6dfa3ad7586cce163d30c3331d6}{objectmap} \& \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a56732f54ef4ebd0af68d39345843140e}{reference}
+\item 
+typedef int \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_ae438f0fd65eabcca2f4f006a459a2665}{difference\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a7fab4fb3cd11d41030b2bb98b9bc7c79}{iterator} (\hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a7e0e43f97e56b1be581d21297b8b3f44}{pointer} ptr)
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator}{iterator} \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a47ff3210b4bc1151096cdb95b2c8c8fb}{operator++} ()
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator}{iterator} \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_acf4d83570f62ac3287ec3001ebcd93c9}{operator++} (int ignore)
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a56732f54ef4ebd0af68d39345843140e}{reference} \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a7387b29520d17585dda2768c071efe9b}{operator$\ast$} ()
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a7e0e43f97e56b1be581d21297b8b3f44}{pointer} \hyperlink{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a65cbba8851b60c97bcdec86141144623}{operator-\/$>$} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a6faa13ae9c82d09c665a93e670bdf834}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}!attr\+\_\+map@{attr\+\_\+map}}
+\index{attr\+\_\+map@{attr\+\_\+map}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}}
+\subsubsection[{attr\+\_\+map}]{\setlength{\rightskip}{0pt plus 5cm}typedef \+::std\+::map$<$\+::std\+::wstring, {\bf Attribute\+Update}$\ast$$>$ {\bf N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator\+::attr\+\_\+map}}\label{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a6faa13ae9c82d09c665a93e670bdf834}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_ae438f0fd65eabcca2f4f006a459a2665}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}!difference\+\_\+type@{difference\+\_\+type}}
+\index{difference\+\_\+type@{difference\+\_\+type}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}}
+\subsubsection[{difference\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator\+::difference\+\_\+type}}\label{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_ae438f0fd65eabcca2f4f006a459a2665}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_add6003c575e89d3573a3de306ef4b0f0}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}!iterator\+\_\+category@{iterator\+\_\+category}}
+\index{iterator\+\_\+category@{iterator\+\_\+category}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}}
+\subsubsection[{iterator\+\_\+category}]{\setlength{\rightskip}{0pt plus 5cm}typedef \+::std\+::forward\+\_\+iterator\+\_\+tag {\bf N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator\+::iterator\+\_\+category}}\label{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_add6003c575e89d3573a3de306ef4b0f0}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a4951d6dfa3ad7586cce163d30c3331d6}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}!objectmap@{objectmap}}
+\index{objectmap@{objectmap}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}}
+\subsubsection[{objectmap}]{\setlength{\rightskip}{0pt plus 5cm}typedef \+::std\+::map$<$int, {\bf Object\+Update}$\ast$$>$ {\bf N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator\+::objectmap}}\label{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a4951d6dfa3ad7586cce163d30c3331d6}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a7e0e43f97e56b1be581d21297b8b3f44}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}!pointer@{pointer}}
+\index{pointer@{pointer}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}}
+\subsubsection[{pointer}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf objectmap}$\ast$ {\bf N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator\+::pointer}}\label{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a7e0e43f97e56b1be581d21297b8b3f44}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a56732f54ef4ebd0af68d39345843140e}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}!reference@{reference}}
+\index{reference@{reference}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}}
+\subsubsection[{reference}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf objectmap}\& {\bf N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator\+::reference}}\label{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a56732f54ef4ebd0af68d39345843140e}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a66a74e1a4ccceab5c6c90021140dcc41}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}!value\+\_\+type@{value\+\_\+type}}
+\index{value\+\_\+type@{value\+\_\+type}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}}
+\subsubsection[{value\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}typedef {\bf objectmap} {\bf N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator\+::value\+\_\+type}}\label{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a66a74e1a4ccceab5c6c90021140dcc41}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a7fab4fb3cd11d41030b2bb98b9bc7c79}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}!iterator@{iterator}}
+\index{iterator@{iterator}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}}
+\subsubsection[{iterator(pointer ptr)}]{\setlength{\rightskip}{0pt plus 5cm}N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator\+::iterator (
+\begin{DoxyParamCaption}
+\item[{{\bf pointer}}]{ptr}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a7fab4fb3cd11d41030b2bb98b9bc7c79}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a7387b29520d17585dda2768c071efe9b}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}!operator$\ast$@{operator$\ast$}}
+\index{operator$\ast$@{operator$\ast$}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}}
+\subsubsection[{operator$\ast$()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf reference} N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator\+::operator$\ast$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a7387b29520d17585dda2768c071efe9b}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a47ff3210b4bc1151096cdb95b2c8c8fb}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}}
+\subsubsection[{operator++()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator\+::operator++ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a47ff3210b4bc1151096cdb95b2c8c8fb}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_acf4d83570f62ac3287ec3001ebcd93c9}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}!operator++@{operator++}}
+\index{operator++@{operator++}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}}
+\subsubsection[{operator++(int ignore)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator\+::operator++ (
+\begin{DoxyParamCaption}
+\item[{int}]{ignore}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_acf4d83570f62ac3287ec3001ebcd93c9}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a65cbba8851b60c97bcdec86141144623}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}!operator-\/$>$@{operator-\/$>$}}
+\index{operator-\/$>$@{operator-\/$>$}!N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator@{N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator}}
+\subsubsection[{operator-\/$>$()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf pointer} N\+M\+::\+O\+D\+B\+::\+Database\+Update\+Queue\+::iterator\+::operator-\/$>$ (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_database_update_queue_1_1iterator_a65cbba8851b60c97bcdec86141144623}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Database\+Update\+Elements/\hyperlink{_database_update_queue_8h}{Database\+Update\+Queue.\+h}\end{DoxyCompactItemize}

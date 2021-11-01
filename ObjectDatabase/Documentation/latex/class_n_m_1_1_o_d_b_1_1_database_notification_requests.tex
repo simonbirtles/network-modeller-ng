@@ -1,0 +1,86 @@
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_notification_requests}{}\section{N\+M\+:\+:O\+D\+B\+:\+:Database\+Notification\+Requests Class Reference}
+\label{class_n_m_1_1_o_d_b_1_1_database_notification_requests}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests@{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests}}
+
+
+{\ttfamily \#include $<$Database\+Notification\+Requests.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_database_notification_requests_aee52b22613d80f73e05e97635c8ad070}{$\sim$\+Database\+Notification\+Requests} (void)
+\item 
+void \hyperlink{class_n_m_1_1_o_d_b_1_1_database_notification_requests_aaec7b60add9cf7f77c607e8a56d19413}{Add\+Notification\+Request} (\hyperlink{class_n_m_1_1_o_d_b_1_1_c_database_observer}{C\+Database\+Observer} $\ast$p\+Observer, \hyperlink{namespace_n_m_1_1_o_d_b_ac9f60beb4a1c8a6240dd0c8baa281345}{Object\+Type},\+::std\+::vector$<$\+::std\+::wstring $>$ \&attribute\+\_\+list)
+\item 
+void \hyperlink{class_n_m_1_1_o_d_b_1_1_database_notification_requests_a25f0da2399287990dc4d597885d3c588}{Remove\+Notification\+Request} (\hyperlink{class_n_m_1_1_o_d_b_1_1_c_database_observer}{C\+Database\+Observer} $\ast$p\+Observer)
+\item 
+\+::std\+::set$<$ \hyperlink{class_n_m_1_1_o_d_b_1_1_c_database_observer}{C\+Database\+Observer} $\ast$ $>$ \hyperlink{class_n_m_1_1_o_d_b_1_1_database_notification_requests_aec57a4b7e864bbf9ed0a29402a55d10c}{Get\+Attribute\+Notification\+List} (\hyperlink{namespace_n_m_1_1_o_d_b_ac9f60beb4a1c8a6240dd0c8baa281345}{Object\+Type} object\+\_\+type,\+::std\+::wstring \&attribute)
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_database_notification_requests_a9d5caa1bb9d4c07af7e1bb1d8be6d86f}{Is\+Object\+Attribute\+Update\+Registered} (\hyperlink{namespace_n_m_1_1_o_d_b_ac9f60beb4a1c8a6240dd0c8baa281345}{Object\+Type} object\+\_\+type,\+::std\+::wstring \&attribute)
+\begin{DoxyCompactList}\small\item\em Boolean function to state if Object\+Type/\+Attribute combination is registered, not sure if we need this? \end{DoxyCompactList}\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_n_m_1_1_o_d_b_1_1_database_notification_requests}{Database\+Notification\+Requests} $\ast$ \hyperlink{class_n_m_1_1_o_d_b_1_1_database_notification_requests_a5e9870a9abb510e510715dbcf3cb1fd9}{get\+Instance} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_notification_requests_aee52b22613d80f73e05e97635c8ad070}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests@{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests}!````~Database\+Notification\+Requests@{$\sim$\+Database\+Notification\+Requests}}
+\index{````~Database\+Notification\+Requests@{$\sim$\+Database\+Notification\+Requests}!N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests@{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests}}
+\subsubsection[{$\sim$\+Database\+Notification\+Requests(void)}]{\setlength{\rightskip}{0pt plus 5cm}N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests\+::$\sim$\+Database\+Notification\+Requests (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_database_notification_requests_aee52b22613d80f73e05e97635c8ad070}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_notification_requests_aaec7b60add9cf7f77c607e8a56d19413}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests@{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests}!Add\+Notification\+Request@{Add\+Notification\+Request}}
+\index{Add\+Notification\+Request@{Add\+Notification\+Request}!N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests@{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests}}
+\subsubsection[{Add\+Notification\+Request(\+C\+Database\+Observer $\ast$p\+Observer, Object\+Type,\+::std\+::vector$<$\+::std\+::wstring $>$ \&attribute\+\_\+list)}]{\setlength{\rightskip}{0pt plus 5cm}void N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests\+::\+Add\+Notification\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Database\+Observer} $\ast$}]{p\+Observer, }
+\item[{{\bf Object\+Type}}]{object\+\_\+type, }
+\item[{\+::std\+::vector$<$\+::std\+::wstring $>$ \&}]{attribute\+\_\+list}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_database_notification_requests_aaec7b60add9cf7f77c607e8a56d19413}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_notification_requests_aec57a4b7e864bbf9ed0a29402a55d10c}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests@{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests}!Get\+Attribute\+Notification\+List@{Get\+Attribute\+Notification\+List}}
+\index{Get\+Attribute\+Notification\+List@{Get\+Attribute\+Notification\+List}!N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests@{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests}}
+\subsubsection[{Get\+Attribute\+Notification\+List(\+Object\+Type object\+\_\+type,\+::std\+::wstring \&attribute)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::set$<$ {\bf C\+Database\+Observer} $\ast$ $>$ N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests\+::\+Get\+Attribute\+Notification\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf Object\+Type}}]{object\+\_\+type, }
+\item[{\+::std\+::wstring \&}]{attribute}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_database_notification_requests_aec57a4b7e864bbf9ed0a29402a55d10c}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_notification_requests_a5e9870a9abb510e510715dbcf3cb1fd9}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests@{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests@{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests}}
+\subsubsection[{get\+Instance()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Database\+Notification\+Requests} $\ast$ N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests\+::get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_n_m_1_1_o_d_b_1_1_database_notification_requests_a5e9870a9abb510e510715dbcf3cb1fd9}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_notification_requests_a9d5caa1bb9d4c07af7e1bb1d8be6d86f}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests@{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests}!Is\+Object\+Attribute\+Update\+Registered@{Is\+Object\+Attribute\+Update\+Registered}}
+\index{Is\+Object\+Attribute\+Update\+Registered@{Is\+Object\+Attribute\+Update\+Registered}!N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests@{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests}}
+\subsubsection[{Is\+Object\+Attribute\+Update\+Registered(\+Object\+Type object\+\_\+type,\+::std\+::wstring \&attribute)}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests\+::\+Is\+Object\+Attribute\+Update\+Registered (
+\begin{DoxyParamCaption}
+\item[{{\bf Object\+Type}}]{object\+\_\+type, }
+\item[{\+::std\+::wstring \&}]{attribute}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_database_notification_requests_a9d5caa1bb9d4c07af7e1bb1d8be6d86f}
+
+
+Boolean function to state if Object\+Type/\+Attribute combination is registered, not sure if we need this? 
+
+\hypertarget{class_n_m_1_1_o_d_b_1_1_database_notification_requests_a25f0da2399287990dc4d597885d3c588}{}\index{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests@{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests}!Remove\+Notification\+Request@{Remove\+Notification\+Request}}
+\index{Remove\+Notification\+Request@{Remove\+Notification\+Request}!N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests@{N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests}}
+\subsubsection[{Remove\+Notification\+Request(\+C\+Database\+Observer $\ast$p\+Observer)}]{\setlength{\rightskip}{0pt plus 5cm}void N\+M\+::\+O\+D\+B\+::\+Database\+Notification\+Requests\+::\+Remove\+Notification\+Request (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Database\+Observer} $\ast$}]{p\+Observer}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_database_notification_requests_a25f0da2399287990dc4d597885d3c588}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Database\+Update\+Elements/\hyperlink{_database_notification_requests_8h}{Database\+Notification\+Requests.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Database\+Update\+Elements/\hyperlink{_database_notification_requests_8cpp}{Database\+Notification\+Requests.\+cpp}\end{DoxyCompactItemize}

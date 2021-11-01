@@ -1,0 +1,99 @@
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix}{}\section{N\+M\+:\+:O\+D\+B\+:\+:I\+Adjacency\+Matrix Class Reference}
+\label{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix}\index{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}}
+
+
+{\ttfamily \#include $<$I\+Adjacency\+Matrix.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_a20dd44c7c026495fdaff982d1f5354dc}{I\+Adjacency\+Matrix} (\hyperlink{class_n_m_1_1_o_d_b_1_1_c_adjacency_matrix}{C\+Adjacency\+Matrix} \&)
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_aeff83ec45b1c5248c098652ff22409c3}{$\sim$\+I\+Adjacency\+Matrix} (void)
+\item 
+size\+\_\+t \hyperlink{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_ae4b44c634f94a2a830f16dbda00abad4}{Get\+Vertex\+Connected\+Verticies} (\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} Vertex\+I\+D,\+::std\+::vector$<$ \hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \&vertexlist)
+\item 
+size\+\_\+t \hyperlink{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_a416993e801c8e8d35fbbcb53f3e0f59e}{Get\+Vertex\+Connected\+Edge\+Count} (\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} src\+Vertex\+I\+D, \hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} dst\+Vertex\+I\+D)
+\item 
+void \hyperlink{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_ac382e1ad751ff028f9e4f9ad878c2710}{Get\+Vertex\+Connected\+Edges} (\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} src\+Vertex\+I\+D, \hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} dst\+Vertex\+I\+D,\+::std\+::vector$<$ \hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \&edgelist)
+\item 
+void \hyperlink{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_a963c4839208305123ee977de108e7289}{Get\+Vertex\+Edges} (\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} Vertex\+I\+D,\+::std\+::vector$<$ \hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \&edgelist)
+\item 
+size\+\_\+t \hyperlink{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_adb7fdfbee84cd39ab0547ec02a9d194e}{Get\+Vertex\+Degree} (\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} Vertex\+I\+D)
+\item 
+void \hyperlink{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_a5da99c1988fa1e7285cce736d7a00985}{Get\+Matrix\+Size} (size\+\_\+t \&rows, size\+\_\+t \&cols)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_a20dd44c7c026495fdaff982d1f5354dc}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}!I\+Adjacency\+Matrix@{I\+Adjacency\+Matrix}}
+\index{I\+Adjacency\+Matrix@{I\+Adjacency\+Matrix}!N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}}
+\subsubsection[{I\+Adjacency\+Matrix(\+C\+Adjacency\+Matrix \&)}]{\setlength{\rightskip}{0pt plus 5cm}N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix\+::\+I\+Adjacency\+Matrix (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Adjacency\+Matrix} \&}]{adj\+Matrix}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_a20dd44c7c026495fdaff982d1f5354dc}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_aeff83ec45b1c5248c098652ff22409c3}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}!````~I\+Adjacency\+Matrix@{$\sim$\+I\+Adjacency\+Matrix}}
+\index{````~I\+Adjacency\+Matrix@{$\sim$\+I\+Adjacency\+Matrix}!N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}}
+\subsubsection[{$\sim$\+I\+Adjacency\+Matrix(void)}]{\setlength{\rightskip}{0pt plus 5cm}N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix\+::$\sim$\+I\+Adjacency\+Matrix (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_aeff83ec45b1c5248c098652ff22409c3}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_a5da99c1988fa1e7285cce736d7a00985}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}!Get\+Matrix\+Size@{Get\+Matrix\+Size}}
+\index{Get\+Matrix\+Size@{Get\+Matrix\+Size}!N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}}
+\subsubsection[{Get\+Matrix\+Size(size\+\_\+t \&rows, size\+\_\+t \&cols)}]{\setlength{\rightskip}{0pt plus 5cm}void N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix\+::\+Get\+Matrix\+Size (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t \&}]{rows, }
+\item[{size\+\_\+t \&}]{cols}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_a5da99c1988fa1e7285cce736d7a00985}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_a416993e801c8e8d35fbbcb53f3e0f59e}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}!Get\+Vertex\+Connected\+Edge\+Count@{Get\+Vertex\+Connected\+Edge\+Count}}
+\index{Get\+Vertex\+Connected\+Edge\+Count@{Get\+Vertex\+Connected\+Edge\+Count}!N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}}
+\subsubsection[{Get\+Vertex\+Connected\+Edge\+Count(\+O\+B\+J\+E\+C\+T\+U\+I\+D src\+Vertex\+I\+D, O\+B\+J\+E\+C\+T\+U\+I\+D dst\+Vertex\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix\+::\+Get\+Vertex\+Connected\+Edge\+Count (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{src\+Vertex\+I\+D, }
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{dst\+Vertex\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_a416993e801c8e8d35fbbcb53f3e0f59e}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_ac382e1ad751ff028f9e4f9ad878c2710}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}!Get\+Vertex\+Connected\+Edges@{Get\+Vertex\+Connected\+Edges}}
+\index{Get\+Vertex\+Connected\+Edges@{Get\+Vertex\+Connected\+Edges}!N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}}
+\subsubsection[{Get\+Vertex\+Connected\+Edges(\+O\+B\+J\+E\+C\+T\+U\+I\+D src\+Vertex\+I\+D, O\+B\+J\+E\+C\+T\+U\+I\+D dst\+Vertex\+I\+D,\+::std\+::vector$<$ O\+B\+J\+E\+C\+T\+U\+I\+D $>$ \&edgelist)}]{\setlength{\rightskip}{0pt plus 5cm}void N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix\+::\+Get\+Vertex\+Connected\+Edges (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{src\+Vertex\+I\+D, }
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{dst\+Vertex\+I\+D, }
+\item[{\+::std\+::vector$<$ {\bf O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \&}]{edgelist}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_ac382e1ad751ff028f9e4f9ad878c2710}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_ae4b44c634f94a2a830f16dbda00abad4}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}!Get\+Vertex\+Connected\+Verticies@{Get\+Vertex\+Connected\+Verticies}}
+\index{Get\+Vertex\+Connected\+Verticies@{Get\+Vertex\+Connected\+Verticies}!N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}}
+\subsubsection[{Get\+Vertex\+Connected\+Verticies(\+O\+B\+J\+E\+C\+T\+U\+I\+D Vertex\+I\+D,\+::std\+::vector$<$ O\+B\+J\+E\+C\+T\+U\+I\+D $>$ \&vertexlist)}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix\+::\+Get\+Vertex\+Connected\+Verticies (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{Vertex\+I\+D, }
+\item[{\+::std\+::vector$<$ {\bf O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \&}]{vertexlist}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_ae4b44c634f94a2a830f16dbda00abad4}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_adb7fdfbee84cd39ab0547ec02a9d194e}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}!Get\+Vertex\+Degree@{Get\+Vertex\+Degree}}
+\index{Get\+Vertex\+Degree@{Get\+Vertex\+Degree}!N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}}
+\subsubsection[{Get\+Vertex\+Degree(\+O\+B\+J\+E\+C\+T\+U\+I\+D Vertex\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix\+::\+Get\+Vertex\+Degree (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{Vertex\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_adb7fdfbee84cd39ab0547ec02a9d194e}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_a963c4839208305123ee977de108e7289}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}!Get\+Vertex\+Edges@{Get\+Vertex\+Edges}}
+\index{Get\+Vertex\+Edges@{Get\+Vertex\+Edges}!N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix@{N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix}}
+\subsubsection[{Get\+Vertex\+Edges(\+O\+B\+J\+E\+C\+T\+U\+I\+D Vertex\+I\+D,\+::std\+::vector$<$ O\+B\+J\+E\+C\+T\+U\+I\+D $>$ \&edgelist)}]{\setlength{\rightskip}{0pt plus 5cm}void N\+M\+::\+O\+D\+B\+::\+I\+Adjacency\+Matrix\+::\+Get\+Vertex\+Edges (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{Vertex\+I\+D, }
+\item[{\+::std\+::vector$<$ {\bf O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \&}]{edgelist}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_adjacency_matrix_a963c4839208305123ee977de108e7289}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Interfaces/\hyperlink{_i_adjacency_matrix_8h}{I\+Adjacency\+Matrix.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Interfaces/\hyperlink{_i_adjacency_matrix_8cpp}{I\+Adjacency\+Matrix.\+cpp}\end{DoxyCompactItemize}

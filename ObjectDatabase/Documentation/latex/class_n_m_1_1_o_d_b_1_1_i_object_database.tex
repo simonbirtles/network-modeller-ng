@@ -1,0 +1,180 @@
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database}{}\section{N\+M\+:\+:O\+D\+B\+:\+:I\+Object\+Database Class Reference}
+\label{class_n_m_1_1_o_d_b_1_1_i_object_database}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+
+
+{\ttfamily \#include $<$I\+Object\+Database.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_a8fcf7cc3fa9265d5c82851e574b0ccc1}{I\+Object\+Database} (void)
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_a80e994be7dd82a47561eb35227b3dbc7}{$\sim$\+I\+Object\+Database} (void)
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_a922a235f0ece8aadb7f4927e192b82a1}{Register\+Observer} (\hyperlink{class_n_m_1_1_o_d_b_1_1_c_database_observer}{C\+Database\+Observer} $\ast$p\+Observer,\+::std\+::wstring \&obsname, \hyperlink{namespace_n_m_1_1_o_d_b_ac9f60beb4a1c8a6240dd0c8baa281345}{Object\+Type},\+::std\+::vector$<$\+::std\+::wstring $>$ \&attribute\+\_\+list)
+\item 
+void \hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_a7354bdd24c0e4edce69b1dad0fc3d36a}{Un\+Register\+Observer} (\hyperlink{class_n_m_1_1_o_d_b_1_1_c_database_observer}{C\+Database\+Observer} $\ast$p\+Observer)
+\item 
+\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_a85b6724d2cb2f47bcdcbacbec8a61dc7}{Create\+Vertex} (\hyperlink{namespace_n_m_1_1_o_d_b_a74e0c94daaeea6f7e783c03a8c921022}{Vertex\+Type} vertex\+Type, \hyperlink{namespace_n_m_1_1_o_d_b_a8770283da9792324e1afe8104d40123b}{O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$vertex\+\_\+attribute\+\_\+map)
+\item 
+\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_acc11ae10eb71160e4a388f7f3fe9416f}{Create\+Edge} (\hyperlink{namespace_n_m_1_1_o_d_b_a8770283da9792324e1afe8104d40123b}{O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$edge\+\_\+attribute\+\_\+map)
+\item 
+\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_a032bac6f5232ae0e5f542a0236d3911e}{Create\+Layer} (\hyperlink{namespace_n_m_1_1_o_d_b_a8770283da9792324e1afe8104d40123b}{O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$layer\+\_\+attribute\+\_\+map)
+\item 
+\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_a5a1efa4f6554bb600d65693cd7e5bb62}{Copy\+Vertex} (\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} source\+Object\+U\+I\+D)
+\item 
+void \hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_a108c2b6c75443ac125f016ce3215f240}{Delete\+Object} (\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} object\+U\+I\+D, bool notify)
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_ac233e4fc979b3ca7565cbaf796d9e379}{Set\+Value} (\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} objectuid, size\+\_\+t attribute\+\_\+idx, \hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} const \&v)
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_ae7c8dcaa99b3879a005c0e6324333bff}{Set\+Value} (\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} objectuid, const \+::std\+::wstring \&attrname, \hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} const \&v)
+\item 
+\hyperlink{namespace_n_m_1_1_o_d_b_a76ab348a70a5cf877035b8281bdd3f7b}{S\+P\+V\+A\+L\+U\+E} \hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_a4c33ad8984c795563075eea1fe20fa38}{Get\+Value} (\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} objectuid, size\+\_\+t idx) const 
+\item 
+\hyperlink{namespace_n_m_1_1_o_d_b_a76ab348a70a5cf877035b8281bdd3f7b}{S\+P\+V\+A\+L\+U\+E} \hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_ad47323cfb9223ea97dc47845a43de8a3}{Get\+Value} (\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} objectuid, const \+::std\+::wstring \&attrname)
+\item 
+\hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_abf8b87f9d736141340887d10afbf9d9a}{Get\+Vertex\+Sibling} (\hyperlink{namespace_n_m_1_1_o_d_b_a74e0c94daaeea6f7e783c03a8c921022}{Vertex\+Type} v\+Type, \hyperlink{namespace_n_m_1_1_o_d_b_a1b474aa7e937112cda42381969dcb55e}{Sibling\+Position} position)
+\item 
+unsigned int \hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_a1a697681c20dc080b807785c7be8d15c}{Begin\+Update} ()
+\item 
+unsigned int \hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database_af18cccbeb8f2e6db8e35ea719e4e62b6}{End\+Update} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+class \hyperlink{class_n_m_1_1_o_d_b_1_1_i_object_database}{I\+Object\+Database} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_a8fcf7cc3fa9265d5c82851e574b0ccc1}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!I\+Object\+Database@{I\+Object\+Database}}
+\index{I\+Object\+Database@{I\+Object\+Database}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{I\+Object\+Database(void)}]{\setlength{\rightskip}{0pt plus 5cm}N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::\+I\+Object\+Database (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_a8fcf7cc3fa9265d5c82851e574b0ccc1}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_a80e994be7dd82a47561eb35227b3dbc7}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!````~I\+Object\+Database@{$\sim$\+I\+Object\+Database}}
+\index{````~I\+Object\+Database@{$\sim$\+I\+Object\+Database}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{$\sim$\+I\+Object\+Database(void)}]{\setlength{\rightskip}{0pt plus 5cm}N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::$\sim$\+I\+Object\+Database (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_a80e994be7dd82a47561eb35227b3dbc7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_a1a697681c20dc080b807785c7be8d15c}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!Begin\+Update@{Begin\+Update}}
+\index{Begin\+Update@{Begin\+Update}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{Begin\+Update()}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::\+Begin\+Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_a1a697681c20dc080b807785c7be8d15c}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_a5a1efa4f6554bb600d65693cd7e5bb62}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!Copy\+Vertex@{Copy\+Vertex}}
+\index{Copy\+Vertex@{Copy\+Vertex}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{Copy\+Vertex(\+O\+B\+J\+E\+C\+T\+U\+I\+D source\+Object\+U\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::\+Copy\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{source\+Object\+U\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_a5a1efa4f6554bb600d65693cd7e5bb62}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_acc11ae10eb71160e4a388f7f3fe9416f}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!Create\+Edge@{Create\+Edge}}
+\index{Create\+Edge@{Create\+Edge}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{Create\+Edge(\+O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S $\ast$edge\+\_\+attribute\+\_\+map)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::\+Create\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$}]{edge\+\_\+attribute\+\_\+map}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_acc11ae10eb71160e4a388f7f3fe9416f}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_a032bac6f5232ae0e5f542a0236d3911e}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!Create\+Layer@{Create\+Layer}}
+\index{Create\+Layer@{Create\+Layer}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{Create\+Layer(\+O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S $\ast$layer\+\_\+attribute\+\_\+map)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::\+Create\+Layer (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$}]{layer\+\_\+attribute\+\_\+map}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_a032bac6f5232ae0e5f542a0236d3911e}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_a85b6724d2cb2f47bcdcbacbec8a61dc7}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!Create\+Vertex@{Create\+Vertex}}
+\index{Create\+Vertex@{Create\+Vertex}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{Create\+Vertex(\+Vertex\+Type vertex\+Type, O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S $\ast$vertex\+\_\+attribute\+\_\+map)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::\+Create\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex\+Type}}]{vertex\+Type, }
+\item[{{\bf O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$}]{vertex\+\_\+attribute\+\_\+map}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_a85b6724d2cb2f47bcdcbacbec8a61dc7}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_a108c2b6c75443ac125f016ce3215f240}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!Delete\+Object@{Delete\+Object}}
+\index{Delete\+Object@{Delete\+Object}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{Delete\+Object(\+O\+B\+J\+E\+C\+T\+U\+I\+D object\+U\+I\+D, bool notify)}]{\setlength{\rightskip}{0pt plus 5cm}void N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::\+Delete\+Object (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{object\+U\+I\+D, }
+\item[{bool}]{notify}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_a108c2b6c75443ac125f016ce3215f240}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_af18cccbeb8f2e6db8e35ea719e4e62b6}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!End\+Update@{End\+Update}}
+\index{End\+Update@{End\+Update}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{End\+Update()}]{\setlength{\rightskip}{0pt plus 5cm}unsigned int N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::\+End\+Update (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_af18cccbeb8f2e6db8e35ea719e4e62b6}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_a4c33ad8984c795563075eea1fe20fa38}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{Get\+Value(\+O\+B\+J\+E\+C\+T\+U\+I\+D objectuid, size\+\_\+t idx) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+P\+V\+A\+L\+U\+E} N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::\+Get\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{objectuid, }
+\item[{size\+\_\+t}]{idx}
+\end{DoxyParamCaption}
+) const}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_a4c33ad8984c795563075eea1fe20fa38}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_ad47323cfb9223ea97dc47845a43de8a3}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{Get\+Value(\+O\+B\+J\+E\+C\+T\+U\+I\+D objectuid, const \+::std\+::wstring \&attrname)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf S\+P\+V\+A\+L\+U\+E} N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::\+Get\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{objectuid, }
+\item[{const \+::std\+::wstring \&}]{attrname}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_ad47323cfb9223ea97dc47845a43de8a3}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_abf8b87f9d736141340887d10afbf9d9a}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!Get\+Vertex\+Sibling@{Get\+Vertex\+Sibling}}
+\index{Get\+Vertex\+Sibling@{Get\+Vertex\+Sibling}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{Get\+Vertex\+Sibling(\+Vertex\+Type v\+Type, Sibling\+Position position)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::\+Get\+Vertex\+Sibling (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex\+Type}}]{v\+Type, }
+\item[{{\bf Sibling\+Position}}]{position}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_abf8b87f9d736141340887d10afbf9d9a}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_a922a235f0ece8aadb7f4927e192b82a1}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!Register\+Observer@{Register\+Observer}}
+\index{Register\+Observer@{Register\+Observer}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{Register\+Observer(\+C\+Database\+Observer $\ast$p\+Observer,\+::std\+::wstring \&obsname, Object\+Type,\+::std\+::vector$<$\+::std\+::wstring $>$ \&attribute\+\_\+list)}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::\+Register\+Observer (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Database\+Observer} $\ast$}]{p\+Observer, }
+\item[{\+::std\+::wstring \&}]{obsname, }
+\item[{{\bf Object\+Type}}]{object\+Type, }
+\item[{\+::std\+::vector$<$\+::std\+::wstring $>$ \&}]{attribute\+\_\+list}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_a922a235f0ece8aadb7f4927e192b82a1}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_ac233e4fc979b3ca7565cbaf796d9e379}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{Set\+Value(\+O\+B\+J\+E\+C\+T\+U\+I\+D objectuid, size\+\_\+t attribute\+\_\+idx, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{objectuid, }
+\item[{size\+\_\+t}]{attribute\+\_\+idx, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_ac233e4fc979b3ca7565cbaf796d9e379}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_ae7c8dcaa99b3879a005c0e6324333bff}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{Set\+Value(\+O\+B\+J\+E\+C\+T\+U\+I\+D objectuid, const \+::std\+::wstring \&attrname, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{objectuid, }
+\item[{const \+::std\+::wstring \&}]{attrname, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_ae7c8dcaa99b3879a005c0e6324333bff}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_i_object_database_a7354bdd24c0e4edce69b1dad0fc3d36a}{}\index{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}!Un\+Register\+Observer@{Un\+Register\+Observer}}
+\index{Un\+Register\+Observer@{Un\+Register\+Observer}!N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database@{N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database}}
+\subsubsection[{Un\+Register\+Observer(\+C\+Database\+Observer $\ast$p\+Observer)}]{\setlength{\rightskip}{0pt plus 5cm}void N\+M\+::\+O\+D\+B\+::\+I\+Object\+Database\+::\+Un\+Register\+Observer (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Database\+Observer} $\ast$}]{p\+Observer}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_i_object_database_a7354bdd24c0e4edce69b1dad0fc3d36a}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Interfaces/\hyperlink{_i_object_database_8h}{I\+Object\+Database.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Interfaces/\hyperlink{_i_object_database_8cpp}{I\+Object\+Database.\+cpp}\end{DoxyCompactItemize}

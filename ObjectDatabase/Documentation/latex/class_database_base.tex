@@ -1,0 +1,94 @@
+\hypertarget{class_database_base}{}\section{Database\+Base Class Reference}
+\label{class_database_base}\index{Database\+Base@{Database\+Base}}
+
+
+{\ttfamily \#include $<$Database\+Base.\+h$>$}
+
+Inheritance diagram for Database\+Base\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_database_base}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_database_base_ad7da37dd4df3c3aaa5850a47d2698a58}{Database\+Base} (void)
+\item 
+\hyperlink{class_database_base_ad0e1b63d57220c5981935e54062c9bd4}{$\sim$\+Database\+Base} (void)
+\item 
+virtual bool \hyperlink{class_database_base_a2cc8b3df7c16b9ee45dd432dd5020057}{Set\+Value} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, size\+\_\+t idx, \hyperlink{class_value}{Value} const \&v)=0
+\item 
+virtual bool \hyperlink{class_database_base_aa59101d74cd7d347a62d238495bc9b0c}{Set\+Value} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, const \+::std\+::wstring attrname, \hyperlink{class_value}{Value} const \&v)=0
+\item 
+virtual bool \hyperlink{class_database_base_a584f16beb463603e255f236fc7e1fff6}{Get\+Value} ()
+\item 
+virtual bool \hyperlink{class_database_base_a15bc50a6cbc8fcdd023c6c865a999a3b}{Save\+X\+M\+L\+Data} (X\+M\+L\+Document $\ast$doc, X\+M\+L\+Node $\ast$parent\+Node)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_database_base_ad7da37dd4df3c3aaa5850a47d2698a58}{}\index{Database\+Base@{Database\+Base}!Database\+Base@{Database\+Base}}
+\index{Database\+Base@{Database\+Base}!Database\+Base@{Database\+Base}}
+\subsubsection[{Database\+Base(void)}]{\setlength{\rightskip}{0pt plus 5cm}Database\+Base\+::\+Database\+Base (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_database_base_ad7da37dd4df3c3aaa5850a47d2698a58}
+\hypertarget{class_database_base_ad0e1b63d57220c5981935e54062c9bd4}{}\index{Database\+Base@{Database\+Base}!````~Database\+Base@{$\sim$\+Database\+Base}}
+\index{````~Database\+Base@{$\sim$\+Database\+Base}!Database\+Base@{Database\+Base}}
+\subsubsection[{$\sim$\+Database\+Base(void)}]{\setlength{\rightskip}{0pt plus 5cm}Database\+Base\+::$\sim$\+Database\+Base (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_database_base_ad0e1b63d57220c5981935e54062c9bd4}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_database_base_a584f16beb463603e255f236fc7e1fff6}{}\index{Database\+Base@{Database\+Base}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!Database\+Base@{Database\+Base}}
+\subsubsection[{Get\+Value()}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Database\+Base\+::\+Get\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_database_base_a584f16beb463603e255f236fc7e1fff6}
+\hypertarget{class_database_base_a15bc50a6cbc8fcdd023c6c865a999a3b}{}\index{Database\+Base@{Database\+Base}!Save\+X\+M\+L\+Data@{Save\+X\+M\+L\+Data}}
+\index{Save\+X\+M\+L\+Data@{Save\+X\+M\+L\+Data}!Database\+Base@{Database\+Base}}
+\subsubsection[{Save\+X\+M\+L\+Data(\+X\+M\+L\+Document $\ast$doc, X\+M\+L\+Node $\ast$parent\+Node)}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Database\+Base\+::\+Save\+X\+M\+L\+Data (
+\begin{DoxyParamCaption}
+\item[{X\+M\+L\+Document $\ast$}]{doc, }
+\item[{X\+M\+L\+Node $\ast$}]{parent\+Node}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_database_base_a15bc50a6cbc8fcdd023c6c865a999a3b}
+\hypertarget{class_database_base_a2cc8b3df7c16b9ee45dd432dd5020057}{}\index{Database\+Base@{Database\+Base}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!Database\+Base@{Database\+Base}}
+\subsubsection[{Set\+Value(\+C\+Graph\+Object $\ast$, size\+\_\+t idx, Value const \&v)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Database\+Base\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{, }
+\item[{size\+\_\+t}]{idx, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_database_base_a2cc8b3df7c16b9ee45dd432dd5020057}
+
+
+Implemented in \hyperlink{class_c_vertex_database_a04b9bbb3f0e429b28058fc72bd394f42}{C\+Vertex\+Database}, \hyperlink{class_c_edge_database_a5e43cf15f3ddbf9ca3327855aaab8d38}{C\+Edge\+Database}, and \hyperlink{class_c_layer_database_a381a0175a4da8845fc36c292b1d9e368}{C\+Layer\+Database}.
+
+\hypertarget{class_database_base_aa59101d74cd7d347a62d238495bc9b0c}{}\index{Database\+Base@{Database\+Base}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!Database\+Base@{Database\+Base}}
+\subsubsection[{Set\+Value(\+C\+Graph\+Object $\ast$, const \+::std\+::wstring attrname, Value const \&v)=0}]{\setlength{\rightskip}{0pt plus 5cm}virtual bool Database\+Base\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{, }
+\item[{const \+::std\+::wstring}]{attrname, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_database_base_aa59101d74cd7d347a62d238495bc9b0c}
+
+
+Implemented in \hyperlink{class_c_vertex_database_ad78aba2fdfdf3de79ba0be14a4847bfa}{C\+Vertex\+Database}, \hyperlink{class_c_edge_database_a0ddac66f89b497c36df8472cecdd4e39}{C\+Edge\+Database}, and \hyperlink{class_c_layer_database_ae14a3945de89a103480cb36001ada125}{C\+Layer\+Database}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_database_base_8h}{Database\+Base.\+h}\item 
+\hyperlink{_database_base_8cpp}{Database\+Base.\+cpp}\end{DoxyCompactItemize}

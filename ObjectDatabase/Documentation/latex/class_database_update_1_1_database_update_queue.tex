@@ -1,0 +1,136 @@
+\hypertarget{class_database_update_1_1_database_update_queue}{}\section{Database\+Update\+:\+:Database\+Update\+Queue Class Reference}
+\label{class_database_update_1_1_database_update_queue}\index{Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}}
+
+
+{\ttfamily \#include $<$Database\+Update\+Queue.\+h$>$}
+
+\subsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_database_update_1_1_database_update_queue_1_1iterator}{iterator}
+\end{DoxyCompactItemize}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef int \hyperlink{class_database_update_1_1_database_update_queue_a76ce338ce8121f40a293ed5b7024240b}{size\+\_\+type}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_database_update_1_1_database_update_queue_a1d13022c67435c5ebd3e5456b155f047}{Database\+Update\+Queue} (void)
+\item 
+\hyperlink{class_database_update_1_1_database_update_queue_a910525adae9f0f72934df911083cb4ae}{Database\+Update\+Queue} (const \hyperlink{class_database_update_1_1_database_update_queue}{Database\+Update\+Queue} \&rhs)
+\item 
+\hyperlink{class_database_update_1_1_database_update_queue_a1a843be8db76fe69e7d1f4643c52165d}{$\sim$\+Database\+Update\+Queue} (void)
+\item 
+void \hyperlink{class_database_update_1_1_database_update_queue_a3a0c1d7cf8b899d793e06fc7d35a3aa1}{Insert\+Update} (\hyperlink{class_database_update_1_1_database_update_record}{Database\+Update\+Record} \&update\+\_\+record)
+\item 
+void \hyperlink{class_database_update_1_1_database_update_queue_a3596a3a04dfc7f092f9dc020324ee266}{Lock} ()
+\item 
+bool \hyperlink{class_database_update_1_1_database_update_queue_a4b9bd59d11981ec43cac8e2120a88035}{Is\+Locked} ()
+\item 
+void \hyperlink{class_database_update_1_1_database_update_queue_a496063d1d30b62db777a6930557fbd87}{Clear} ()
+\item 
+int \hyperlink{class_database_update_1_1_database_update_queue_a5b3040fbd984d246624cc9947255dc2e}{Get\+Queue\+Size} ()
+\item 
+\hyperlink{class_database_update_1_1_database_update_queue_1_1iterator}{iterator} \hyperlink{class_database_update_1_1_database_update_queue_ac23fef473b3ae348c8679435e4bb8f18}{Begin} ()
+\item 
+\hyperlink{class_database_update_1_1_database_update_queue_1_1iterator}{iterator} \hyperlink{class_database_update_1_1_database_update_queue_ae2eadb9750449bc9fcbba2231093eccd}{End} ()
+\item 
+\hyperlink{class_database_update_1_1_database_update_queue_a76ce338ce8121f40a293ed5b7024240b}{size\+\_\+type} \hyperlink{class_database_update_1_1_database_update_queue_a0d86a544e1fb6d527bf0f4d31ccf22b4}{Size} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_database_update_1_1_database_update_queue_a76ce338ce8121f40a293ed5b7024240b}{}\index{Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}!size\+\_\+type@{size\+\_\+type}}
+\index{size\+\_\+type@{size\+\_\+type}!Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}}
+\subsubsection[{size\+\_\+type}]{\setlength{\rightskip}{0pt plus 5cm}typedef int {\bf Database\+Update\+::\+Database\+Update\+Queue\+::size\+\_\+type}}\label{class_database_update_1_1_database_update_queue_a76ce338ce8121f40a293ed5b7024240b}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_database_update_1_1_database_update_queue_a1d13022c67435c5ebd3e5456b155f047}{}\index{Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}!Database\+Update\+Queue@{Database\+Update\+Queue}}
+\index{Database\+Update\+Queue@{Database\+Update\+Queue}!Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}}
+\subsubsection[{Database\+Update\+Queue(void)}]{\setlength{\rightskip}{0pt plus 5cm}Database\+Update\+::\+Database\+Update\+Queue\+::\+Database\+Update\+Queue (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_database_update_1_1_database_update_queue_a1d13022c67435c5ebd3e5456b155f047}
+\hypertarget{class_database_update_1_1_database_update_queue_a910525adae9f0f72934df911083cb4ae}{}\index{Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}!Database\+Update\+Queue@{Database\+Update\+Queue}}
+\index{Database\+Update\+Queue@{Database\+Update\+Queue}!Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}}
+\subsubsection[{Database\+Update\+Queue(const Database\+Update\+Queue \&rhs)}]{\setlength{\rightskip}{0pt plus 5cm}Database\+Update\+::\+Database\+Update\+Queue\+::\+Database\+Update\+Queue (
+\begin{DoxyParamCaption}
+\item[{const {\bf Database\+Update\+Queue} \&}]{rhs}
+\end{DoxyParamCaption}
+)}\label{class_database_update_1_1_database_update_queue_a910525adae9f0f72934df911083cb4ae}
+\hypertarget{class_database_update_1_1_database_update_queue_a1a843be8db76fe69e7d1f4643c52165d}{}\index{Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}!````~Database\+Update\+Queue@{$\sim$\+Database\+Update\+Queue}}
+\index{````~Database\+Update\+Queue@{$\sim$\+Database\+Update\+Queue}!Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}}
+\subsubsection[{$\sim$\+Database\+Update\+Queue(void)}]{\setlength{\rightskip}{0pt plus 5cm}Database\+Update\+::\+Database\+Update\+Queue\+::$\sim$\+Database\+Update\+Queue (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_database_update_1_1_database_update_queue_a1a843be8db76fe69e7d1f4643c52165d}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_database_update_1_1_database_update_queue_ac23fef473b3ae348c8679435e4bb8f18}{}\index{Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}!Begin@{Begin}}
+\index{Begin@{Begin}!Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}}
+\subsubsection[{Begin()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} Database\+Update\+::\+Database\+Update\+Queue\+::\+Begin (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_database_update_1_1_database_update_queue_ac23fef473b3ae348c8679435e4bb8f18}
+\hypertarget{class_database_update_1_1_database_update_queue_a496063d1d30b62db777a6930557fbd87}{}\index{Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}!Clear@{Clear}}
+\index{Clear@{Clear}!Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}}
+\subsubsection[{Clear()}]{\setlength{\rightskip}{0pt plus 5cm}void Database\+Update\+::\+Database\+Update\+Queue\+::\+Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_database_update_1_1_database_update_queue_a496063d1d30b62db777a6930557fbd87}
+\hypertarget{class_database_update_1_1_database_update_queue_ae2eadb9750449bc9fcbba2231093eccd}{}\index{Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}!End@{End}}
+\index{End@{End}!Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}}
+\subsubsection[{End()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf iterator} Database\+Update\+::\+Database\+Update\+Queue\+::\+End (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_database_update_1_1_database_update_queue_ae2eadb9750449bc9fcbba2231093eccd}
+\hypertarget{class_database_update_1_1_database_update_queue_a5b3040fbd984d246624cc9947255dc2e}{}\index{Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}!Get\+Queue\+Size@{Get\+Queue\+Size}}
+\index{Get\+Queue\+Size@{Get\+Queue\+Size}!Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}}
+\subsubsection[{Get\+Queue\+Size()}]{\setlength{\rightskip}{0pt plus 5cm}int Database\+Update\+::\+Database\+Update\+Queue\+::\+Get\+Queue\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_database_update_1_1_database_update_queue_a5b3040fbd984d246624cc9947255dc2e}
+\hypertarget{class_database_update_1_1_database_update_queue_a3a0c1d7cf8b899d793e06fc7d35a3aa1}{}\index{Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}!Insert\+Update@{Insert\+Update}}
+\index{Insert\+Update@{Insert\+Update}!Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}}
+\subsubsection[{Insert\+Update(\+Database\+Update\+Record \&update\+\_\+record)}]{\setlength{\rightskip}{0pt plus 5cm}void Database\+Update\+::\+Database\+Update\+Queue\+::\+Insert\+Update (
+\begin{DoxyParamCaption}
+\item[{{\bf Database\+Update\+Record} \&}]{update\+\_\+record}
+\end{DoxyParamCaption}
+)}\label{class_database_update_1_1_database_update_queue_a3a0c1d7cf8b899d793e06fc7d35a3aa1}
+\hypertarget{class_database_update_1_1_database_update_queue_a4b9bd59d11981ec43cac8e2120a88035}{}\index{Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}!Is\+Locked@{Is\+Locked}}
+\index{Is\+Locked@{Is\+Locked}!Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}}
+\subsubsection[{Is\+Locked()}]{\setlength{\rightskip}{0pt plus 5cm}bool Database\+Update\+::\+Database\+Update\+Queue\+::\+Is\+Locked (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_database_update_1_1_database_update_queue_a4b9bd59d11981ec43cac8e2120a88035}
+\hypertarget{class_database_update_1_1_database_update_queue_a3596a3a04dfc7f092f9dc020324ee266}{}\index{Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}!Lock@{Lock}}
+\index{Lock@{Lock}!Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}}
+\subsubsection[{Lock()}]{\setlength{\rightskip}{0pt plus 5cm}void Database\+Update\+::\+Database\+Update\+Queue\+::\+Lock (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_database_update_1_1_database_update_queue_a3596a3a04dfc7f092f9dc020324ee266}
+\hypertarget{class_database_update_1_1_database_update_queue_a0d86a544e1fb6d527bf0f4d31ccf22b4}{}\index{Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}!Size@{Size}}
+\index{Size@{Size}!Database\+Update\+::\+Database\+Update\+Queue@{Database\+Update\+::\+Database\+Update\+Queue}}
+\subsubsection[{Size()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf size\+\_\+type} Database\+Update\+::\+Database\+Update\+Queue\+::\+Size (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_database_update_1_1_database_update_queue_a0d86a544e1fb6d527bf0f4d31ccf22b4}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Database\+Update\+Elements/\hyperlink{_database_update_queue_8h}{Database\+Update\+Queue.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Database\+Update\+Elements/\hyperlink{_database_update_queue_8cpp}{Database\+Update\+Queue.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,195 @@
+\hypertarget{class_c_vertex_database}{}\section{C\+Vertex\+Database Class Reference}
+\label{class_c_vertex_database}\index{C\+Vertex\+Database@{C\+Vertex\+Database}}
+
+
+{\ttfamily \#include $<$Vertex\+Database.\+h$>$}
+
+Inheritance diagram for C\+Vertex\+Database\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_vertex_database}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{class_c_vertex_database_aed0cf911bf59c8769d4edc7e8daae096a25464a1568c7db3e0f75b5b49e539431}{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+S\+O\+L\+I\+D}, 
+\hyperlink{class_c_vertex_database_aed0cf911bf59c8769d4edc7e8daae096a8d41cc06ef185f7c679bdfc3bd96c7a8}{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H}, 
+\hyperlink{class_c_vertex_database_aed0cf911bf59c8769d4edc7e8daae096ade9507cf359ecb43c58f2be9a3ee1472}{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+O\+T}, 
+\hyperlink{class_c_vertex_database_aed0cf911bf59c8769d4edc7e8daae096a7d3f4e969e53c45502f22dc6f1d5f300}{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H\+D\+O\+T}
+ \}
+\item 
+typedef \+::std\+::vector$<$ \hyperlink{class_c_vertex}{C\+Vertex} $\ast$ $>$ \hyperlink{class_c_vertex_database_acb0633bfbb4ada0121b0bc4e523e0f8c}{V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_vertex_database_a80aed877dcbb3f2b2eb54d3ccbf9970e}{$\sim$\+C\+Vertex\+Database} (void)
+\item 
+int \hyperlink{class_c_vertex_database_a6661e33ae231541d6643cf46f73fe7f5}{Create\+Vertex} (\hyperlink{_object_database_defines_8h_a04cdff03435daf95f7394f44122bb5fa}{V\+E\+R\+T\+E\+X\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$vertex\+\_\+attribute\+\_\+map I\+N, \hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$p\+Object O\+U\+T)
+\item 
+bool \hyperlink{class_c_vertex_database_a8710e656bddbd5708e640abedd5e2603}{Destroy\+Vertex} (size\+\_\+t uid)
+\item 
+void \hyperlink{class_c_vertex_database_a4f2563f4eff59267d3381d332a205fe5}{Clear} (void)
+\item 
+\hyperlink{class_c_vertex}{C\+Vertex} $\ast$ \hyperlink{class_c_vertex_database_af617e589aeb8672c4f3d88854b95638d}{Is\+In\+Vertex} (int x, int y)
+\item 
+\hyperlink{class_c_vertex}{C\+Vertex} $\ast$ \hyperlink{class_c_vertex_database_aec146ef412a252f67db09677d988549b}{Get\+Vertex\+Ptr\+From\+I\+D} (int graphid)
+\item 
+int \hyperlink{class_c_vertex_database_a16874bebb91c4f12a1ba25609d0a69bc}{Verticies\+Selected} (bool bonlyenabled=false)
+\item 
+bool \hyperlink{class_c_vertex_database_a04b9bbb3f0e429b28058fc72bd394f42}{Set\+Value} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, size\+\_\+t idx, \hyperlink{class_value}{Value} const \&v)
+\item 
+bool \hyperlink{class_c_vertex_database_ad78aba2fdfdf3de79ba0be14a4847bfa}{Set\+Value} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, const \+::std\+::wstring attrname, \hyperlink{class_value}{Value} const \&v)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_vertex_database}{C\+Vertex\+Database} $\ast$ \hyperlink{class_c_vertex_database_ad6b9833e64dd90e4315d87502d5cf544}{get\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_vertex_database_acb0633bfbb4ada0121b0bc4e523e0f8c}{V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R} \hyperlink{class_c_vertex_database_a52990ac767f736fd0e91171ad7a9198e}{verticies}
+\item 
+enum C\+Vertex\+Database\+:: \{ ... \}  \hyperlink{class_c_vertex_database_a1d4566bb0607253a780f530d9e25a1fa}{V\+E\+R\+T\+E\+X\+M\+A\+N\+A\+G\+E\+R\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_vertex_database_a8451ee9e81bc51a04afb10dc6ee7e07e}{C\+Object\+Database}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_c_vertex_database_acb0633bfbb4ada0121b0bc4e523e0f8c}{}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R@{V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R}}
+\index{V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R@{V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R}!C\+Vertex\+Database@{C\+Vertex\+Database}}
+\subsubsection[{V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}typedef \+::std\+::vector$<${\bf C\+Vertex}$\ast$$>$ {\bf C\+Vertex\+Database\+::\+V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R}}\label{class_c_vertex_database_acb0633bfbb4ada0121b0bc4e523e0f8c}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_c_vertex_database_aed0cf911bf59c8769d4edc7e8daae096}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\label{class_c_vertex_database_aed0cf911bf59c8769d4edc7e8daae096}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+S\+O\+L\+I\+D@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+S\+O\+L\+I\+D}!C\+Vertex\+Database@{C\+Vertex\+Database}}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+S\+O\+L\+I\+D@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+S\+O\+L\+I\+D}}\item[{\em 
+\hypertarget{class_c_vertex_database_aed0cf911bf59c8769d4edc7e8daae096a25464a1568c7db3e0f75b5b49e539431}{}V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+S\+O\+L\+I\+D\label{class_c_vertex_database_aed0cf911bf59c8769d4edc7e8daae096a25464a1568c7db3e0f75b5b49e539431}
+}]\index{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H}!C\+Vertex\+Database@{C\+Vertex\+Database}}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H}}\item[{\em 
+\hypertarget{class_c_vertex_database_aed0cf911bf59c8769d4edc7e8daae096a8d41cc06ef185f7c679bdfc3bd96c7a8}{}V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H\label{class_c_vertex_database_aed0cf911bf59c8769d4edc7e8daae096a8d41cc06ef185f7c679bdfc3bd96c7a8}
+}]\index{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+O\+T@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+O\+T}!C\+Vertex\+Database@{C\+Vertex\+Database}}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+O\+T@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+O\+T}}\item[{\em 
+\hypertarget{class_c_vertex_database_aed0cf911bf59c8769d4edc7e8daae096ade9507cf359ecb43c58f2be9a3ee1472}{}V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+O\+T\label{class_c_vertex_database_aed0cf911bf59c8769d4edc7e8daae096ade9507cf359ecb43c58f2be9a3ee1472}
+}]\index{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H\+D\+O\+T@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H\+D\+O\+T}!C\+Vertex\+Database@{C\+Vertex\+Database}}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H\+D\+O\+T@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H\+D\+O\+T}}\item[{\em 
+\hypertarget{class_c_vertex_database_aed0cf911bf59c8769d4edc7e8daae096a7d3f4e969e53c45502f22dc6f1d5f300}{}V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H\+D\+O\+T\label{class_c_vertex_database_aed0cf911bf59c8769d4edc7e8daae096a7d3f4e969e53c45502f22dc6f1d5f300}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_vertex_database_a80aed877dcbb3f2b2eb54d3ccbf9970e}{}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!````~C\+Vertex\+Database@{$\sim$\+C\+Vertex\+Database}}
+\index{````~C\+Vertex\+Database@{$\sim$\+C\+Vertex\+Database}!C\+Vertex\+Database@{C\+Vertex\+Database}}
+\subsubsection[{$\sim$\+C\+Vertex\+Database(void)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Vertex\+Database\+::$\sim$\+C\+Vertex\+Database (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_database_a80aed877dcbb3f2b2eb54d3ccbf9970e}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_vertex_database_a4f2563f4eff59267d3381d332a205fe5}{}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!Clear@{Clear}}
+\index{Clear@{Clear}!C\+Vertex\+Database@{C\+Vertex\+Database}}
+\subsubsection[{Clear(void)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Vertex\+Database\+::\+Clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_database_a4f2563f4eff59267d3381d332a205fe5}
+\hypertarget{class_c_vertex_database_a6661e33ae231541d6643cf46f73fe7f5}{}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!Create\+Vertex@{Create\+Vertex}}
+\index{Create\+Vertex@{Create\+Vertex}!C\+Vertex\+Database@{C\+Vertex\+Database}}
+\subsubsection[{Create\+Vertex(\+V\+E\+R\+T\+E\+X\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S $\ast$vertex\+\_\+attribute\+\_\+map I\+N, C\+Graph\+Object $\ast$p\+Object O\+U\+T)}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Vertex\+Database\+::\+Create\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf V\+E\+R\+T\+E\+X\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$vertex\+\_\+attribute\+\_\+map}]{I\+N, }
+\item[{{\bf C\+Graph\+Object} $\ast$p\+Object}]{O\+U\+T}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_database_a6661e33ae231541d6643cf46f73fe7f5}
+\hypertarget{class_c_vertex_database_a8710e656bddbd5708e640abedd5e2603}{}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!Destroy\+Vertex@{Destroy\+Vertex}}
+\index{Destroy\+Vertex@{Destroy\+Vertex}!C\+Vertex\+Database@{C\+Vertex\+Database}}
+\subsubsection[{Destroy\+Vertex(size\+\_\+t uid)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Vertex\+Database\+::\+Destroy\+Vertex (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{uid}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_database_a8710e656bddbd5708e640abedd5e2603}
+\hypertarget{class_c_vertex_database_ad6b9833e64dd90e4315d87502d5cf544}{}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!C\+Vertex\+Database@{C\+Vertex\+Database}}
+\subsubsection[{get\+Instance()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Vertex\+Database} $\ast$ C\+Vertex\+Database\+::get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_vertex_database_ad6b9833e64dd90e4315d87502d5cf544}
+\hypertarget{class_c_vertex_database_aec146ef412a252f67db09677d988549b}{}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!Get\+Vertex\+Ptr\+From\+I\+D@{Get\+Vertex\+Ptr\+From\+I\+D}}
+\index{Get\+Vertex\+Ptr\+From\+I\+D@{Get\+Vertex\+Ptr\+From\+I\+D}!C\+Vertex\+Database@{C\+Vertex\+Database}}
+\subsubsection[{Get\+Vertex\+Ptr\+From\+I\+D(int graphid)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Vertex} $\ast$ C\+Vertex\+Database\+::\+Get\+Vertex\+Ptr\+From\+I\+D (
+\begin{DoxyParamCaption}
+\item[{int}]{graphid}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_database_aec146ef412a252f67db09677d988549b}
+\hypertarget{class_c_vertex_database_af617e589aeb8672c4f3d88854b95638d}{}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!Is\+In\+Vertex@{Is\+In\+Vertex}}
+\index{Is\+In\+Vertex@{Is\+In\+Vertex}!C\+Vertex\+Database@{C\+Vertex\+Database}}
+\subsubsection[{Is\+In\+Vertex(int x, int y)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Vertex} $\ast$ C\+Vertex\+Database\+::\+Is\+In\+Vertex (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_database_af617e589aeb8672c4f3d88854b95638d}
+\hypertarget{class_c_vertex_database_a04b9bbb3f0e429b28058fc72bd394f42}{}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!C\+Vertex\+Database@{C\+Vertex\+Database}}
+\subsubsection[{Set\+Value(\+C\+Graph\+Object $\ast$, size\+\_\+t idx, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Vertex\+Database\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{vertex, }
+\item[{size\+\_\+t}]{idx, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_vertex_database_a04b9bbb3f0e429b28058fc72bd394f42}
+
+
+Implements \hyperlink{class_database_base_a2cc8b3df7c16b9ee45dd432dd5020057}{Database\+Base}.
+
+\hypertarget{class_c_vertex_database_ad78aba2fdfdf3de79ba0be14a4847bfa}{}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!C\+Vertex\+Database@{C\+Vertex\+Database}}
+\subsubsection[{Set\+Value(\+C\+Graph\+Object $\ast$, const \+::std\+::wstring attrname, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Vertex\+Database\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{vertex, }
+\item[{const \+::std\+::wstring}]{attrname, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_vertex_database_ad78aba2fdfdf3de79ba0be14a4847bfa}
+
+
+Implements \hyperlink{class_database_base_aa59101d74cd7d347a62d238495bc9b0c}{Database\+Base}.
+
+\hypertarget{class_c_vertex_database_a16874bebb91c4f12a1ba25609d0a69bc}{}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!Verticies\+Selected@{Verticies\+Selected}}
+\index{Verticies\+Selected@{Verticies\+Selected}!C\+Vertex\+Database@{C\+Vertex\+Database}}
+\subsubsection[{Verticies\+Selected(bool bonlyenabled=false)}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Vertex\+Database\+::\+Verticies\+Selected (
+\begin{DoxyParamCaption}
+\item[{bool}]{bonlyenabled = {\ttfamily false}}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_database_a16874bebb91c4f12a1ba25609d0a69bc}
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_vertex_database_a8451ee9e81bc51a04afb10dc6ee7e07e}{}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!C\+Object\+Database@{C\+Object\+Database}}
+\index{C\+Object\+Database@{C\+Object\+Database}!C\+Vertex\+Database@{C\+Vertex\+Database}}
+\subsubsection[{C\+Object\+Database}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf C\+Object\+Database}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_c_vertex_database_a8451ee9e81bc51a04afb10dc6ee7e07e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_vertex_database_a1d4566bb0607253a780f530d9e25a1fa}{}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!V\+E\+R\+T\+E\+X\+M\+A\+N\+A\+G\+E\+R\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E@{V\+E\+R\+T\+E\+X\+M\+A\+N\+A\+G\+E\+R\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E}}
+\index{V\+E\+R\+T\+E\+X\+M\+A\+N\+A\+G\+E\+R\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E@{V\+E\+R\+T\+E\+X\+M\+A\+N\+A\+G\+E\+R\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E}!C\+Vertex\+Database@{C\+Vertex\+Database}}
+\subsubsection[{V\+E\+R\+T\+E\+X\+M\+A\+N\+A\+G\+E\+R\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E}]{\setlength{\rightskip}{0pt plus 5cm}enum \{ ... \}   C\+Vertex\+Database\+::\+V\+E\+R\+T\+E\+X\+M\+A\+N\+A\+G\+E\+R\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E}\label{class_c_vertex_database_a1d4566bb0607253a780f530d9e25a1fa}
+\hypertarget{class_c_vertex_database_a52990ac767f736fd0e91171ad7a9198e}{}\index{C\+Vertex\+Database@{C\+Vertex\+Database}!verticies@{verticies}}
+\index{verticies@{verticies}!C\+Vertex\+Database@{C\+Vertex\+Database}}
+\subsubsection[{verticies}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R} C\+Vertex\+Database\+::verticies}\label{class_c_vertex_database_a52990ac767f736fd0e91171ad7a9198e}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_vertex_database_8h}{Vertex\+Database.\+h}\item 
+\hyperlink{_vertex_database_8cpp}{Vertex\+Database.\+cpp}\end{DoxyCompactItemize}

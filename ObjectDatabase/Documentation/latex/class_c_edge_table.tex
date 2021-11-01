@@ -1,0 +1,146 @@
+\hypertarget{class_c_edge_table}{}\section{C\+Edge\+Table Class Reference}
+\label{class_c_edge_table}\index{C\+Edge\+Table@{C\+Edge\+Table}}
+
+
+{\ttfamily \#include $<$Edge\+Table.\+h$>$}
+
+Inheritance diagram for C\+Edge\+Table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_edge_table}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+::std\+::vector$<$ \hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$ $>$ \hyperlink{class_c_edge_table_afca2c9fb1e836c43a088a62c6fc369eb}{E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_edge_table_aa5cf1e4c63c5a83f22b0988ec623eaaa}{C\+Edge\+Table} (\hyperlink{class_c_graph_object_factory}{C\+Graph\+Object\+Factory} $\ast$object\+Factory)
+\item 
+\hyperlink{class_c_edge_table_a20bb4dc0adfe1c01c333e88fe108cff9}{$\sim$\+C\+Edge\+Table} (void)
+\item 
+\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_c_edge_table_a5f81d14e9af77ec89898f94b404c810e}{Create\+Edge} (\hyperlink{_object_database_defines_8h_a52d1b76b66b20eeaf0c5dc8127da21d7}{O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$attribute\+Map I\+N, \hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$$\ast$p\+Object O\+U\+T)
+\item 
+bool \hyperlink{class_c_edge_table_a3a94b1b3a08f1ca8af56c51d9bed23d9}{Destroy\+Edge} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$p\+Object)
+\item 
+void \hyperlink{class_c_edge_table_ac40ca4b83c5c3c51aad9f070dbe66ac4}{Clear} (void)
+\item 
+\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_c_edge_table_a4def3b0e6164f83c6550ac07b3a7989f}{Is\+In\+Edge} (int x, int y)
+\item 
+bool \hyperlink{class_c_edge_table_adc82decff9149b87997cd39552adee74}{Set\+Value} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, size\+\_\+t idx, \hyperlink{class_value}{Value} const \&v)
+\item 
+bool \hyperlink{class_c_edge_table_a9fbb37293645bad4728f1e234b7ce09f}{Set\+Value} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, const \+::std\+::wstring \&attrname, \hyperlink{class_value}{Value} const \&v)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_edge_table_afca2c9fb1e836c43a088a62c6fc369eb}{E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R} \hyperlink{class_c_edge_table_a77fb8579345ec3d392a72797366d66b9}{edges}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_edge_table_a8451ee9e81bc51a04afb10dc6ee7e07e}{C\+Object\+Database}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_c_edge_table_afca2c9fb1e836c43a088a62c6fc369eb}{}\index{C\+Edge\+Table@{C\+Edge\+Table}!E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R@{E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R}}
+\index{E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R@{E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R}!C\+Edge\+Table@{C\+Edge\+Table}}
+\subsubsection[{E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}typedef \+::std\+::vector$<${\bf C\+Graph\+Object}$\ast$$>$ {\bf C\+Edge\+Table\+::\+E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R}}\label{class_c_edge_table_afca2c9fb1e836c43a088a62c6fc369eb}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_edge_table_aa5cf1e4c63c5a83f22b0988ec623eaaa}{}\index{C\+Edge\+Table@{C\+Edge\+Table}!C\+Edge\+Table@{C\+Edge\+Table}}
+\index{C\+Edge\+Table@{C\+Edge\+Table}!C\+Edge\+Table@{C\+Edge\+Table}}
+\subsubsection[{C\+Edge\+Table(\+C\+Graph\+Object\+Factory $\ast$object\+Factory)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Edge\+Table\+::\+C\+Edge\+Table (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object\+Factory} $\ast$}]{object\+Factory}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_c_edge_table_aa5cf1e4c63c5a83f22b0988ec623eaaa}
+\hypertarget{class_c_edge_table_a20bb4dc0adfe1c01c333e88fe108cff9}{}\index{C\+Edge\+Table@{C\+Edge\+Table}!````~C\+Edge\+Table@{$\sim$\+C\+Edge\+Table}}
+\index{````~C\+Edge\+Table@{$\sim$\+C\+Edge\+Table}!C\+Edge\+Table@{C\+Edge\+Table}}
+\subsubsection[{$\sim$\+C\+Edge\+Table(void)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Edge\+Table\+::$\sim$\+C\+Edge\+Table (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_edge_table_a20bb4dc0adfe1c01c333e88fe108cff9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_edge_table_ac40ca4b83c5c3c51aad9f070dbe66ac4}{}\index{C\+Edge\+Table@{C\+Edge\+Table}!Clear@{Clear}}
+\index{Clear@{Clear}!C\+Edge\+Table@{C\+Edge\+Table}}
+\subsubsection[{Clear(void)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Edge\+Table\+::\+Clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_edge_table_ac40ca4b83c5c3c51aad9f070dbe66ac4}
+\hypertarget{class_c_edge_table_a5f81d14e9af77ec89898f94b404c810e}{}\index{C\+Edge\+Table@{C\+Edge\+Table}!Create\+Edge@{Create\+Edge}}
+\index{Create\+Edge@{Create\+Edge}!C\+Edge\+Table@{C\+Edge\+Table}}
+\subsubsection[{Create\+Edge(\+O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S $\ast$attribute\+Map I\+N, C\+Graph\+Object $\ast$$\ast$p\+Object O\+U\+T)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} C\+Edge\+Table\+::\+Create\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$attribute\+Map}]{I\+N, }
+\item[{{\bf C\+Graph\+Object} $\ast$$\ast$p\+Object}]{O\+U\+T}
+\end{DoxyParamCaption}
+)}\label{class_c_edge_table_a5f81d14e9af77ec89898f94b404c810e}
+\hypertarget{class_c_edge_table_a3a94b1b3a08f1ca8af56c51d9bed23d9}{}\index{C\+Edge\+Table@{C\+Edge\+Table}!Destroy\+Edge@{Destroy\+Edge}}
+\index{Destroy\+Edge@{Destroy\+Edge}!C\+Edge\+Table@{C\+Edge\+Table}}
+\subsubsection[{Destroy\+Edge(\+C\+Graph\+Object $\ast$p\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Edge\+Table\+::\+Destroy\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{p\+Object}
+\end{DoxyParamCaption}
+)}\label{class_c_edge_table_a3a94b1b3a08f1ca8af56c51d9bed23d9}
+\hypertarget{class_c_edge_table_a4def3b0e6164f83c6550ac07b3a7989f}{}\index{C\+Edge\+Table@{C\+Edge\+Table}!Is\+In\+Edge@{Is\+In\+Edge}}
+\index{Is\+In\+Edge@{Is\+In\+Edge}!C\+Edge\+Table@{C\+Edge\+Table}}
+\subsubsection[{Is\+In\+Edge(int x, int y)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} C\+Edge\+Table\+::\+Is\+In\+Edge (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{class_c_edge_table_a4def3b0e6164f83c6550ac07b3a7989f}
+Is\+In\+Edge -\/ needs to be moved outside of Edge\+Table (Edge\+Table) so its not having to access Object\+Database -\/ should be autonomous \hypertarget{class_c_edge_table_adc82decff9149b87997cd39552adee74}{}\index{C\+Edge\+Table@{C\+Edge\+Table}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!C\+Edge\+Table@{C\+Edge\+Table}}
+\subsubsection[{Set\+Value(\+C\+Graph\+Object $\ast$, size\+\_\+t idx, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Edge\+Table\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{edge, }
+\item[{size\+\_\+t}]{idx, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_edge_table_adc82decff9149b87997cd39552adee74}
+
+
+Implements \hyperlink{class_table_base_a27162ca940b9977540202f4ce4a067b5}{Table\+Base}.
+
+\hypertarget{class_c_edge_table_a9fbb37293645bad4728f1e234b7ce09f}{}\index{C\+Edge\+Table@{C\+Edge\+Table}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!C\+Edge\+Table@{C\+Edge\+Table}}
+\subsubsection[{Set\+Value(\+C\+Graph\+Object $\ast$, const \+::std\+::wstring \&attrname, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Edge\+Table\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{edge, }
+\item[{const \+::std\+::wstring \&}]{attrname, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_edge_table_a9fbb37293645bad4728f1e234b7ce09f}
+
+
+Implements \hyperlink{class_table_base_a4a4e674632425ee19c24fae2881caefc}{Table\+Base}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_edge_table_a8451ee9e81bc51a04afb10dc6ee7e07e}{}\index{C\+Edge\+Table@{C\+Edge\+Table}!C\+Object\+Database@{C\+Object\+Database}}
+\index{C\+Object\+Database@{C\+Object\+Database}!C\+Edge\+Table@{C\+Edge\+Table}}
+\subsubsection[{C\+Object\+Database}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf C\+Object\+Database}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_c_edge_table_a8451ee9e81bc51a04afb10dc6ee7e07e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_edge_table_a77fb8579345ec3d392a72797366d66b9}{}\index{C\+Edge\+Table@{C\+Edge\+Table}!edges@{edges}}
+\index{edges@{edges}!C\+Edge\+Table@{C\+Edge\+Table}}
+\subsubsection[{edges}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R} C\+Edge\+Table\+::edges}\label{class_c_edge_table_a77fb8579345ec3d392a72797366d66b9}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Tables/\hyperlink{_edge_table_8h}{Edge\+Table.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Tables/\hyperlink{_edge_table_8cpp}{Edge\+Table.\+cpp}\end{DoxyCompactItemize}

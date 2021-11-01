@@ -1,0 +1,97 @@
+\hypertarget{class_value}{}\section{Value Class Reference}
+\label{class_value}\index{Value@{Value}}
+
+
+{\ttfamily \#include $<$Value.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_value_a66e4f07b86007b44d062dd0019027df3}{Value} (\hyperlink{class_base_value}{Base\+Value} const \&bv)
+\item 
+\hyperlink{class_value_ac2551016bb2e9f646c05a4f9f15e7f4c}{Value} (const \hyperlink{class_value}{Value} \&rhs)
+\item 
+\hyperlink{class_value}{Value} \& \hyperlink{class_value_a4b8c2f9be53a84165161c56831138ade}{operator=} (const \hyperlink{class_value}{Value} \&rhs)
+\item 
+\hyperlink{class_value_a3a578f458da8a4ab67052dba0f7bffdd}{$\sim$\+Value} ()
+\item 
+{\footnotesize template$<$typename T $>$ }\\T \hyperlink{class_value_a0b7339516761dc9883ebc6b8be490f8f}{Get} () const 
+\item 
+bool \hyperlink{class_value_abe75a58953ec8003dc74fc2bd82ab7d5}{operator==} (const \hyperlink{class_value}{Value} \&rhs)
+\item 
+bool \hyperlink{class_value_a1147108572c575154956547592add580}{operator$<$} (const \hyperlink{class_value}{Value} \&rhs)
+\item 
+bool \hyperlink{class_value_a012f6a45e873700aa3fcb3b0bef67214}{operator$>$} (const \hyperlink{class_value}{Value} \&rhs)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_value_a66e4f07b86007b44d062dd0019027df3}{}\index{Value@{Value}!Value@{Value}}
+\index{Value@{Value}!Value@{Value}}
+\subsubsection[{Value(\+Base\+Value const \&bv)}]{\setlength{\rightskip}{0pt plus 5cm}Value\+::\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+Value} const \&}]{bv}
+\end{DoxyParamCaption}
+)}\label{class_value_a66e4f07b86007b44d062dd0019027df3}
+\hypertarget{class_value_ac2551016bb2e9f646c05a4f9f15e7f4c}{}\index{Value@{Value}!Value@{Value}}
+\index{Value@{Value}!Value@{Value}}
+\subsubsection[{Value(const Value \&rhs)}]{\setlength{\rightskip}{0pt plus 5cm}Value\+::\+Value (
+\begin{DoxyParamCaption}
+\item[{const {\bf Value} \&}]{rhs}
+\end{DoxyParamCaption}
+)}\label{class_value_ac2551016bb2e9f646c05a4f9f15e7f4c}
+\hypertarget{class_value_a3a578f458da8a4ab67052dba0f7bffdd}{}\index{Value@{Value}!````~Value@{$\sim$\+Value}}
+\index{````~Value@{$\sim$\+Value}!Value@{Value}}
+\subsubsection[{$\sim$\+Value()}]{\setlength{\rightskip}{0pt plus 5cm}Value\+::$\sim$\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_value_a3a578f458da8a4ab67052dba0f7bffdd}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_value_a0b7339516761dc9883ebc6b8be490f8f}{}\index{Value@{Value}!Get@{Get}}
+\index{Get@{Get}!Value@{Value}}
+\subsubsection[{Get() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T $>$ T Value\+::\+Get (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_value_a0b7339516761dc9883ebc6b8be490f8f}
+Get \hyperlink{class_value}{Value} by type
+
+Returns the value as its native type i.\+e. int, double, float etc
+
+moved out of \hyperlink{_value_8cpp}{Value.\+cpp} due to linker errors \hypertarget{class_value_a1147108572c575154956547592add580}{}\index{Value@{Value}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Value@{Value}}
+\subsubsection[{operator$<$(const Value \&rhs)}]{\setlength{\rightskip}{0pt plus 5cm}bool Value\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Value} \&}]{rhs}
+\end{DoxyParamCaption}
+)}\label{class_value_a1147108572c575154956547592add580}
+\hypertarget{class_value_a4b8c2f9be53a84165161c56831138ade}{}\index{Value@{Value}!operator=@{operator=}}
+\index{operator=@{operator=}!Value@{Value}}
+\subsubsection[{operator=(const Value \&rhs)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Value} \& Value\+::operator= (
+\begin{DoxyParamCaption}
+\item[{const {\bf Value} \&}]{rhs}
+\end{DoxyParamCaption}
+)}\label{class_value_a4b8c2f9be53a84165161c56831138ade}
+\hypertarget{class_value_abe75a58953ec8003dc74fc2bd82ab7d5}{}\index{Value@{Value}!operator==@{operator==}}
+\index{operator==@{operator==}!Value@{Value}}
+\subsubsection[{operator==(const Value \&rhs)}]{\setlength{\rightskip}{0pt plus 5cm}bool Value\+::operator== (
+\begin{DoxyParamCaption}
+\item[{const {\bf Value} \&}]{rhs}
+\end{DoxyParamCaption}
+)}\label{class_value_abe75a58953ec8003dc74fc2bd82ab7d5}
+\hypertarget{class_value_a012f6a45e873700aa3fcb3b0bef67214}{}\index{Value@{Value}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Value@{Value}}
+\subsubsection[{operator$>$(const Value \&rhs)}]{\setlength{\rightskip}{0pt plus 5cm}bool Value\+::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{const {\bf Value} \&}]{rhs}
+\end{DoxyParamCaption}
+)}\label{class_value_a012f6a45e873700aa3fcb3b0bef67214}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Database\+Core\+Elements/\hyperlink{_value_8h}{Value.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Database\+Core\+Elements/\hyperlink{_value_8cpp}{Value.\+cpp}\end{DoxyCompactItemize}

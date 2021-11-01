@@ -1,0 +1,114 @@
+\hypertarget{class_c_object_matrix}{}\section{C\+Object\+Matrix$<$ T $>$ Class Template Reference}
+\label{class_c_object_matrix}\index{C\+Object\+Matrix$<$ T $>$@{C\+Object\+Matrix$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Adjacency\+Matrix.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_object_matrix_a5d9e860f4c2a6864bafb123ab396e455}{C\+Object\+Matrix} ()
+\item 
+\hyperlink{class_c_object_matrix_aa10bf2a18b3f99e74256a50633ea4d03}{C\+Object\+Matrix} (int rows, int cols, T defaultvalue)
+\item 
+virtual \hyperlink{class_c_object_matrix_a0e6b56d59a82f1c2aeb1a178de28e6d7}{$\sim$\+C\+Object\+Matrix} ()
+\item 
+T \& \hyperlink{class_c_object_matrix_a44f16fa867d3bf403a6d687a314a886f}{operator()} (unsigned int row, unsigned int col)
+\item 
+void \hyperlink{class_c_object_matrix_afc881071fd311469ea27960b5090daee}{erase} ()
+\item 
+void \hyperlink{class_c_object_matrix_a1475e93a3e3de3809ad757979b2cc468}{clear} (T defaultvalue=\+\_\+defaultvalue)
+\item 
+unsigned int \hyperlink{class_c_object_matrix_a5c1563c9c7b468e8b620387fc3764ccb}{Get\+Row\+Count} ()
+\item 
+unsigned int \hyperlink{class_c_object_matrix_ac1aec9948ebdf326113b35a34cf39d1b}{Get\+Col\+Count} ()
+\item 
+int \hyperlink{class_c_object_matrix_a1bcce59fc45a6988f2760ec406b88144}{Insert\+Row} (unsigned int insertbeforeindex=0)
+\item 
+int \hyperlink{class_c_object_matrix_a75051b1d4e44d6eb3ecc1370a7112157}{Insert\+Column} (unsigned int insertbeforeindex=0)
+\end{DoxyCompactItemize}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_object_matrix_a5d9e860f4c2a6864bafb123ab396e455}{}\index{C\+Object\+Matrix@{C\+Object\+Matrix}!C\+Object\+Matrix@{C\+Object\+Matrix}}
+\index{C\+Object\+Matrix@{C\+Object\+Matrix}!C\+Object\+Matrix@{C\+Object\+Matrix}}
+\subsubsection[{C\+Object\+Matrix()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Object\+Matrix}$<$ T $>$\+::{\bf C\+Object\+Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_object_matrix_a5d9e860f4c2a6864bafb123ab396e455}
+\hypertarget{class_c_object_matrix_aa10bf2a18b3f99e74256a50633ea4d03}{}\index{C\+Object\+Matrix@{C\+Object\+Matrix}!C\+Object\+Matrix@{C\+Object\+Matrix}}
+\index{C\+Object\+Matrix@{C\+Object\+Matrix}!C\+Object\+Matrix@{C\+Object\+Matrix}}
+\subsubsection[{C\+Object\+Matrix(int rows, int cols, T defaultvalue)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ {\bf C\+Object\+Matrix}$<$ T $>$\+::{\bf C\+Object\+Matrix} (
+\begin{DoxyParamCaption}
+\item[{int}]{rows, }
+\item[{int}]{cols, }
+\item[{T}]{defaultvalue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_object_matrix_aa10bf2a18b3f99e74256a50633ea4d03}
+Constructor Build a matrix of rows x cols. T defaultvalue is used when creating the matrix and when new rows or columns are added. \hypertarget{class_c_object_matrix_a0e6b56d59a82f1c2aeb1a178de28e6d7}{}\index{C\+Object\+Matrix@{C\+Object\+Matrix}!````~C\+Object\+Matrix@{$\sim$\+C\+Object\+Matrix}}
+\index{````~C\+Object\+Matrix@{$\sim$\+C\+Object\+Matrix}!C\+Object\+Matrix@{C\+Object\+Matrix}}
+\subsubsection[{$\sim$\+C\+Object\+Matrix()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ virtual {\bf C\+Object\+Matrix}$<$ T $>$\+::$\sim${\bf C\+Object\+Matrix} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_c_object_matrix_a0e6b56d59a82f1c2aeb1a178de28e6d7}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_object_matrix_a1475e93a3e3de3809ad757979b2cc468}{}\index{C\+Object\+Matrix@{C\+Object\+Matrix}!clear@{clear}}
+\index{clear@{clear}!C\+Object\+Matrix@{C\+Object\+Matrix}}
+\subsubsection[{clear(\+T defaultvalue=\+\_\+defaultvalue)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf C\+Object\+Matrix}$<$ T $>$\+::clear (
+\begin{DoxyParamCaption}
+\item[{T}]{defaultvalue = {\ttfamily \+\_\+defaultvalue}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_object_matrix_a1475e93a3e3de3809ad757979b2cc468}
+clears/resets all values in every cell \hypertarget{class_c_object_matrix_afc881071fd311469ea27960b5090daee}{}\index{C\+Object\+Matrix@{C\+Object\+Matrix}!erase@{erase}}
+\index{erase@{erase}!C\+Object\+Matrix@{C\+Object\+Matrix}}
+\subsubsection[{erase()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ void {\bf C\+Object\+Matrix}$<$ T $>$\+::erase (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_object_matrix_afc881071fd311469ea27960b5090daee}
+removes all elements from the matrix \hypertarget{class_c_object_matrix_ac1aec9948ebdf326113b35a34cf39d1b}{}\index{C\+Object\+Matrix@{C\+Object\+Matrix}!Get\+Col\+Count@{Get\+Col\+Count}}
+\index{Get\+Col\+Count@{Get\+Col\+Count}!C\+Object\+Matrix@{C\+Object\+Matrix}}
+\subsubsection[{Get\+Col\+Count()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ unsigned int {\bf C\+Object\+Matrix}$<$ T $>$\+::Get\+Col\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_object_matrix_ac1aec9948ebdf326113b35a34cf39d1b}
+return the number of columns in the matrix \hypertarget{class_c_object_matrix_a5c1563c9c7b468e8b620387fc3764ccb}{}\index{C\+Object\+Matrix@{C\+Object\+Matrix}!Get\+Row\+Count@{Get\+Row\+Count}}
+\index{Get\+Row\+Count@{Get\+Row\+Count}!C\+Object\+Matrix@{C\+Object\+Matrix}}
+\subsubsection[{Get\+Row\+Count()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ unsigned int {\bf C\+Object\+Matrix}$<$ T $>$\+::Get\+Row\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_object_matrix_a5c1563c9c7b468e8b620387fc3764ccb}
+return the number of rows in the matrix. \hypertarget{class_c_object_matrix_a75051b1d4e44d6eb3ecc1370a7112157}{}\index{C\+Object\+Matrix@{C\+Object\+Matrix}!Insert\+Column@{Insert\+Column}}
+\index{Insert\+Column@{Insert\+Column}!C\+Object\+Matrix@{C\+Object\+Matrix}}
+\subsubsection[{Insert\+Column(unsigned int insertbeforeindex=0)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf C\+Object\+Matrix}$<$ T $>$\+::Insert\+Column (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{insertbeforeindex = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_object_matrix_a75051b1d4e44d6eb3ecc1370a7112157}
+Insert a new column into the matrix. unsigned int insertbeforeindex; the one based index of where to insert the new column before All existing rows will have the new column added and the default value applied. \hypertarget{class_c_object_matrix_a1bcce59fc45a6988f2760ec406b88144}{}\index{C\+Object\+Matrix@{C\+Object\+Matrix}!Insert\+Row@{Insert\+Row}}
+\index{Insert\+Row@{Insert\+Row}!C\+Object\+Matrix@{C\+Object\+Matrix}}
+\subsubsection[{Insert\+Row(unsigned int insertbeforeindex=0)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ int {\bf C\+Object\+Matrix}$<$ T $>$\+::Insert\+Row (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{insertbeforeindex = {\ttfamily 0}}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_object_matrix_a1bcce59fc45a6988f2760ec406b88144}
+Insert a new row into the matrix. unsigned int insertbeforeindex; the one based index of where to insert the new row before \hypertarget{class_c_object_matrix_a44f16fa867d3bf403a6d687a314a886f}{}\index{C\+Object\+Matrix@{C\+Object\+Matrix}!operator()@{operator()}}
+\index{operator()@{operator()}!C\+Object\+Matrix@{C\+Object\+Matrix}}
+\subsubsection[{operator()(unsigned int row, unsigned int col)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$class T$>$ T\& {\bf C\+Object\+Matrix}$<$ T $>$\+::operator() (
+\begin{DoxyParamCaption}
+\item[{unsigned int}]{row, }
+\item[{unsigned int}]{col}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_c_object_matrix_a44f16fa867d3bf403a6d687a314a886f}
+Get/\+Set value at row,col 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Matrix/\hyperlink{_adjacency_matrix_8h}{Adjacency\+Matrix.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Matrix/\hyperlink{_matrix_8h}{Matrix.\+h}\end{DoxyCompactItemize}

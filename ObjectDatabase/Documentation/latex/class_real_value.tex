@@ -1,0 +1,139 @@
+\hypertarget{class_real_value}{}\section{Real\+Value$<$ T $>$ Class Template Reference}
+\label{class_real_value}\index{Real\+Value$<$ T $>$@{Real\+Value$<$ T $>$}}
+
+
+{\ttfamily \#include $<$Real\+Value.\+h$>$}
+
+Inheritance diagram for Real\+Value$<$ T $>$\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_real_value}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_real_value_a9d4eb739987c82fa410a08a2fb5d3859}{Real\+Value} (T v)
+\item 
+\hyperlink{class_real_value_ad572273548dfb4f19fab98e9aa799506}{$\sim$\+Real\+Value} ()
+\item 
+\hyperlink{class_real_value}{Real\+Value} $\ast$ \hyperlink{class_real_value_a317bb56ff1e3a5bbd7529bd989427cdd}{Clone} () const 
+\item 
+\hyperlink{class_real_value_a208400566495560d4d170c0aedabcc02}{operator T} () const 
+\item 
+void \hyperlink{class_real_value_a466b4ab4a6c0efd3f50c110d01ec3bb9}{Set} (\hyperlink{class_value}{Value} const \&v)
+\item 
+\+::std\+::wstring \hyperlink{class_real_value_accec9306189b55fec0c6e968027620f9}{Get\+String\+Value} ()
+\item 
+bool \hyperlink{class_real_value_ac4484e45f8b09f6dde6adabefb839691}{operator==} (\hyperlink{class_base_value}{Base\+Value} const \&rhs)
+\item 
+bool \hyperlink{class_real_value_a2c63ece61830351b9d1f953f61cf9a75}{operator$<$} (\hyperlink{class_base_value}{Base\+Value} const \&rhs)
+\item 
+bool \hyperlink{class_real_value_a9d360c889a310f11c7e302c6c4b32011}{operator$>$} (\hyperlink{class_base_value}{Base\+Value} const \&rhs)
+\end{DoxyCompactItemize}
+\subsection*{Additional Inherited Members}
+
+
+\subsection{Detailed Description}
+\subsubsection*{template$<$typename T$>$class Real\+Value$<$ T $>$}
+
+Class \hyperlink{class_real_value}{Real\+Value}
+
+The \hyperlink{class_real_value}{Real\+Value} class actually holds the assigned value; Has no direct relationship to \hyperlink{class_attribute}{Attribute} (or visa versa) other than mapped (linked) in each \hyperlink{class_c_graph_object}{C\+Graph\+Object(\+Vertex, Edge, etc)} class \hyperlink{class_attribute}{Attribute}$<$-\/$>$\hyperlink{class_value}{Value} \hyperlink{class_value}{Value} holds a pointer to \hyperlink{class_base_value}{Base\+Value} abstract class of which \hyperlink{class_real_value}{Real\+Value} is the concrete class holding the T datatype and actual assigned value 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_real_value_a9d4eb739987c82fa410a08a2fb5d3859}{}\index{Real\+Value@{Real\+Value}!Real\+Value@{Real\+Value}}
+\index{Real\+Value@{Real\+Value}!Real\+Value@{Real\+Value}}
+\subsubsection[{Real\+Value(\+T v)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Real\+Value}$<$ T $>$\+::{\bf Real\+Value} (
+\begin{DoxyParamCaption}
+\item[{T}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_real_value_a9d4eb739987c82fa410a08a2fb5d3859}
+\hypertarget{class_real_value_ad572273548dfb4f19fab98e9aa799506}{}\index{Real\+Value@{Real\+Value}!````~Real\+Value@{$\sim$\+Real\+Value}}
+\index{````~Real\+Value@{$\sim$\+Real\+Value}!Real\+Value@{Real\+Value}}
+\subsubsection[{$\sim$\+Real\+Value()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Real\+Value}$<$ T $>$\+::$\sim${\bf Real\+Value} (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}\label{class_real_value_ad572273548dfb4f19fab98e9aa799506}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_real_value_a317bb56ff1e3a5bbd7529bd989427cdd}{}\index{Real\+Value@{Real\+Value}!Clone@{Clone}}
+\index{Clone@{Clone}!Real\+Value@{Real\+Value}}
+\subsubsection[{Clone() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Real\+Value}$\ast$ {\bf Real\+Value}$<$ T $>$\+::Clone (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_real_value_a317bb56ff1e3a5bbd7529bd989427cdd}
+
+
+Implements \hyperlink{class_base_value_ae6debe7ccc4f9221383f16185f3f206b}{Base\+Value}.
+
+\hypertarget{class_real_value_accec9306189b55fec0c6e968027620f9}{}\index{Real\+Value@{Real\+Value}!Get\+String\+Value@{Get\+String\+Value}}
+\index{Get\+String\+Value@{Get\+String\+Value}!Real\+Value@{Real\+Value}}
+\subsubsection[{Get\+String\+Value()}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ \+::std\+::wstring {\bf Real\+Value}$<$ T $>$\+::Get\+String\+Value (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_real_value_accec9306189b55fec0c6e968027620f9}
+
+
+Implements \hyperlink{class_base_value_a951677977777ab23c288aed5cf9d7d38}{Base\+Value}.
+
+\hypertarget{class_real_value_a208400566495560d4d170c0aedabcc02}{}\index{Real\+Value@{Real\+Value}!operator T@{operator T}}
+\index{operator T@{operator T}!Real\+Value@{Real\+Value}}
+\subsubsection[{operator T() const }]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ {\bf Real\+Value}$<$ T $>$\+::operator T (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [inline]}}\label{class_real_value_a208400566495560d4d170c0aedabcc02}
+\hypertarget{class_real_value_a2c63ece61830351b9d1f953f61cf9a75}{}\index{Real\+Value@{Real\+Value}!operator$<$@{operator$<$}}
+\index{operator$<$@{operator$<$}!Real\+Value@{Real\+Value}}
+\subsubsection[{operator$<$(\+Base\+Value const \&rhs)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf Real\+Value}$<$ T $>$\+::operator$<$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+Value} const \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_real_value_a2c63ece61830351b9d1f953f61cf9a75}
+
+
+Implements \hyperlink{class_base_value_af7e0e4bcc6ec2a72e10a2716224976c0}{Base\+Value}.
+
+\hypertarget{class_real_value_ac4484e45f8b09f6dde6adabefb839691}{}\index{Real\+Value@{Real\+Value}!operator==@{operator==}}
+\index{operator==@{operator==}!Real\+Value@{Real\+Value}}
+\subsubsection[{operator==(\+Base\+Value const \&rhs)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf Real\+Value}$<$ T $>$\+::operator== (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+Value} const \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_real_value_ac4484e45f8b09f6dde6adabefb839691}
+
+
+Implements \hyperlink{class_base_value_a421e9d3f55c744c64376a5d828625932}{Base\+Value}.
+
+\hypertarget{class_real_value_a9d360c889a310f11c7e302c6c4b32011}{}\index{Real\+Value@{Real\+Value}!operator$>$@{operator$>$}}
+\index{operator$>$@{operator$>$}!Real\+Value@{Real\+Value}}
+\subsubsection[{operator$>$(\+Base\+Value const \&rhs)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ bool {\bf Real\+Value}$<$ T $>$\+::operator$>$ (
+\begin{DoxyParamCaption}
+\item[{{\bf Base\+Value} const \&}]{rhs}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_real_value_a9d360c889a310f11c7e302c6c4b32011}
+
+
+Implements \hyperlink{class_base_value_a181585ec22744fcdd975624586cce3a4}{Base\+Value}.
+
+\hypertarget{class_real_value_a466b4ab4a6c0efd3f50c110d01ec3bb9}{}\index{Real\+Value@{Real\+Value}!Set@{Set}}
+\index{Set@{Set}!Real\+Value@{Real\+Value}}
+\subsubsection[{Set(\+Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}template$<$typename T$>$ void {\bf Real\+Value}$<$ T $>$\+::Set (
+\begin{DoxyParamCaption}
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [virtual]}}\label{class_real_value_a466b4ab4a6c0efd3f50c110d01ec3bb9}
+
+
+Implements \hyperlink{class_base_value_ae50673bc7f832fafd9f7b8c1430e5641}{Base\+Value}.
+
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Database\+Core\+Elements/\hyperlink{_real_value_8h}{Real\+Value.\+h}\end{DoxyCompactItemize}

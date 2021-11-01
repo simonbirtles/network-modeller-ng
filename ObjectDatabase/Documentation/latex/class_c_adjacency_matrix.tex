@@ -1,0 +1,205 @@
+\hypertarget{class_c_adjacency_matrix}{}\section{C\+Adjacency\+Matrix Class Reference}
+\label{class_c_adjacency_matrix}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+
+
+{\ttfamily \#include $<$Adjacency\+Matrix.\+h$>$}
+
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{class_c_adjacency_matrix_a0a423c30d8ec51bbdb1dbc7c192372e5}{E\+D\+G\+E\+T\+Y\+P\+E} \{ \hyperlink{class_c_adjacency_matrix_a0a423c30d8ec51bbdb1dbc7c192372e5ac4c25b16a7e4f8539d7e9ed057c45fa8}{E\+D\+G\+E\+\_\+\+D\+I\+R\+E\+C\+T\+E\+D}, 
+\hyperlink{class_c_adjacency_matrix_a0a423c30d8ec51bbdb1dbc7c192372e5a5e6346c6b06c9404fa2b5d73c852b6c6}{E\+D\+G\+E\+\_\+\+U\+N\+D\+I\+R\+E\+C\+T\+E\+D}
+ \}
+\item 
+typedef \+::std\+::vector$<$ \hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \hyperlink{class_c_adjacency_matrix_a22be75654b2f4c6c0e36471c5d6521fd}{edgelist}
+\item 
+typedef \+::std\+::vector$<$ \hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \hyperlink{class_c_adjacency_matrix_a8693a9f946f9f2142a9a7cb2b84f4b4c}{vertexlist}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_adjacency_matrix_aeaf2a5a409a40d78e34845f87cd3957b}{C\+Adjacency\+Matrix} (void)
+\item 
+\hyperlink{class_c_adjacency_matrix_a45c2bfa15ee6d8c5c8109f641a4788e9}{$\sim$\+C\+Adjacency\+Matrix} (void)
+\item 
+void \hyperlink{class_c_adjacency_matrix_a6bad20604ba6b64ce815dc9de17b4ef7}{Create\+Vertex} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} vertex\+I\+D)
+\item 
+void \hyperlink{class_c_adjacency_matrix_a2ed4709f0d4ed27a06fdc5f9694a1170}{Create\+Edge} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} Vertex\+Src\+I\+D, \hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} Vertex\+Dst\+I\+D, \hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} eid, enum \hyperlink{class_c_adjacency_matrix_a0a423c30d8ec51bbdb1dbc7c192372e5}{E\+D\+G\+E\+T\+Y\+P\+E} edgetype)
+\item 
+void \hyperlink{class_c_adjacency_matrix_ac3b37bce7330d5b5f627d06afbbca417}{Delete\+Vertex} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} Vertex\+I\+D)
+\item 
+void \hyperlink{class_c_adjacency_matrix_a2e74cacc0b1efd5102be51c8fe36bd62}{Delete\+Edge} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} Vertex\+Src\+I\+D, \hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} Vertex\+Dst\+I\+D, \hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} eid, enum \hyperlink{class_c_adjacency_matrix_a0a423c30d8ec51bbdb1dbc7c192372e5}{E\+D\+G\+E\+T\+Y\+P\+E} edgetype)
+\item 
+void \hyperlink{class_c_adjacency_matrix_af19b09f7a407a3d0c0d1082b56fac3b9}{Delete\+All\+Edges} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} Vertex\+Src\+I\+D, \hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} Vertex\+Dst\+I\+D, enum \hyperlink{class_c_adjacency_matrix_a0a423c30d8ec51bbdb1dbc7c192372e5}{E\+D\+G\+E\+T\+Y\+P\+E} edgetype)
+\item 
+void \hyperlink{class_c_adjacency_matrix_a5fee4d87d4e38245295322e061d8a6e1}{Clear} ()
+\item 
+size\+\_\+t \hyperlink{class_c_adjacency_matrix_a7a20f89a2297c9d0bfb4eda5d9995c16}{Get\+Vertex\+Connected\+Verticies} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} Vertex\+I\+D,\+::std\+::vector$<$ \hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \&\hyperlink{class_c_adjacency_matrix_a8693a9f946f9f2142a9a7cb2b84f4b4c}{vertexlist})
+\item 
+size\+\_\+t \hyperlink{class_c_adjacency_matrix_a227945c9518613867ed8ca4f54beb6fd}{Get\+Vertex\+Connected\+Edge\+Count} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} src\+Vertex\+I\+D, \hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} dst\+Vertex\+I\+D)
+\item 
+void \hyperlink{class_c_adjacency_matrix_a809bba3b1d88bfe5dd0c9457ccfcc3b3}{Get\+Vertex\+Connected\+Edges} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} src\+Vertex\+I\+D, \hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} dst\+Vertex\+I\+D,\+::std\+::vector$<$ \hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \&\hyperlink{class_c_adjacency_matrix_a22be75654b2f4c6c0e36471c5d6521fd}{edgelist})
+\item 
+void \hyperlink{class_c_adjacency_matrix_a2b3468fb1ba9519a9ad92f11d486dc60}{Get\+Vertex\+Edges} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} Vertex\+I\+D,\+::std\+::vector$<$ \hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \&\hyperlink{class_c_adjacency_matrix_a22be75654b2f4c6c0e36471c5d6521fd}{edgelist})
+\item 
+size\+\_\+t \hyperlink{class_c_adjacency_matrix_ae022c92b6982e10248537d833c85955f}{Get\+Vertex\+Degree} (\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} Vertex\+I\+D)
+\item 
+void \hyperlink{class_c_adjacency_matrix_a904c3cdcf9fc919a0658d3027a8bc576}{Get\+Matrix\+Size} (size\+\_\+t \&rows, size\+\_\+t \&cols)
+\item 
+void \hyperlink{class_c_adjacency_matrix_ad05c497b6db20cee36f719e0564dfa24}{Output\+Matrix\+To\+Console} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_c_adjacency_matrix_a22be75654b2f4c6c0e36471c5d6521fd}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!edgelist@{edgelist}}
+\index{edgelist@{edgelist}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{edgelist}]{\setlength{\rightskip}{0pt plus 5cm}typedef \+::std\+::vector$<${\bf O\+B\+J\+E\+C\+T\+U\+I\+D}$>$ {\bf C\+Adjacency\+Matrix\+::edgelist}}\label{class_c_adjacency_matrix_a22be75654b2f4c6c0e36471c5d6521fd}
+\hypertarget{class_c_adjacency_matrix_a8693a9f946f9f2142a9a7cb2b84f4b4c}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!vertexlist@{vertexlist}}
+\index{vertexlist@{vertexlist}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{vertexlist}]{\setlength{\rightskip}{0pt plus 5cm}typedef \+::std\+::vector$<${\bf O\+B\+J\+E\+C\+T\+U\+I\+D}$>$ {\bf C\+Adjacency\+Matrix\+::vertexlist}}\label{class_c_adjacency_matrix_a8693a9f946f9f2142a9a7cb2b84f4b4c}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_c_adjacency_matrix_a0a423c30d8ec51bbdb1dbc7c192372e5}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!E\+D\+G\+E\+T\+Y\+P\+E@{E\+D\+G\+E\+T\+Y\+P\+E}}
+\index{E\+D\+G\+E\+T\+Y\+P\+E@{E\+D\+G\+E\+T\+Y\+P\+E}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{E\+D\+G\+E\+T\+Y\+P\+E}]{\setlength{\rightskip}{0pt plus 5cm}enum {\bf C\+Adjacency\+Matrix\+::\+E\+D\+G\+E\+T\+Y\+P\+E}}\label{class_c_adjacency_matrix_a0a423c30d8ec51bbdb1dbc7c192372e5}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{E\+D\+G\+E\+\_\+\+D\+I\+R\+E\+C\+T\+E\+D@{E\+D\+G\+E\+\_\+\+D\+I\+R\+E\+C\+T\+E\+D}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!E\+D\+G\+E\+\_\+\+D\+I\+R\+E\+C\+T\+E\+D@{E\+D\+G\+E\+\_\+\+D\+I\+R\+E\+C\+T\+E\+D}}\item[{\em 
+\hypertarget{class_c_adjacency_matrix_a0a423c30d8ec51bbdb1dbc7c192372e5ac4c25b16a7e4f8539d7e9ed057c45fa8}{}E\+D\+G\+E\+\_\+\+D\+I\+R\+E\+C\+T\+E\+D\label{class_c_adjacency_matrix_a0a423c30d8ec51bbdb1dbc7c192372e5ac4c25b16a7e4f8539d7e9ed057c45fa8}
+}]\index{E\+D\+G\+E\+\_\+\+U\+N\+D\+I\+R\+E\+C\+T\+E\+D@{E\+D\+G\+E\+\_\+\+U\+N\+D\+I\+R\+E\+C\+T\+E\+D}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!E\+D\+G\+E\+\_\+\+U\+N\+D\+I\+R\+E\+C\+T\+E\+D@{E\+D\+G\+E\+\_\+\+U\+N\+D\+I\+R\+E\+C\+T\+E\+D}}\item[{\em 
+\hypertarget{class_c_adjacency_matrix_a0a423c30d8ec51bbdb1dbc7c192372e5a5e6346c6b06c9404fa2b5d73c852b6c6}{}E\+D\+G\+E\+\_\+\+U\+N\+D\+I\+R\+E\+C\+T\+E\+D\label{class_c_adjacency_matrix_a0a423c30d8ec51bbdb1dbc7c192372e5a5e6346c6b06c9404fa2b5d73c852b6c6}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_adjacency_matrix_aeaf2a5a409a40d78e34845f87cd3957b}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{C\+Adjacency\+Matrix(void)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Adjacency\+Matrix\+::\+C\+Adjacency\+Matrix (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_adjacency_matrix_aeaf2a5a409a40d78e34845f87cd3957b}
+\hypertarget{class_c_adjacency_matrix_a45c2bfa15ee6d8c5c8109f641a4788e9}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!````~C\+Adjacency\+Matrix@{$\sim$\+C\+Adjacency\+Matrix}}
+\index{````~C\+Adjacency\+Matrix@{$\sim$\+C\+Adjacency\+Matrix}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{$\sim$\+C\+Adjacency\+Matrix(void)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Adjacency\+Matrix\+::$\sim$\+C\+Adjacency\+Matrix (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_adjacency_matrix_a45c2bfa15ee6d8c5c8109f641a4788e9}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_adjacency_matrix_a5fee4d87d4e38245295322e061d8a6e1}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!Clear@{Clear}}
+\index{Clear@{Clear}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{Clear()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Adjacency\+Matrix\+::\+Clear (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_adjacency_matrix_a5fee4d87d4e38245295322e061d8a6e1}
+\hypertarget{class_c_adjacency_matrix_a2ed4709f0d4ed27a06fdc5f9694a1170}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!Create\+Edge@{Create\+Edge}}
+\index{Create\+Edge@{Create\+Edge}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{Create\+Edge(\+O\+B\+J\+E\+C\+T\+U\+I\+D Vertex\+Src\+I\+D, O\+B\+J\+E\+C\+T\+U\+I\+D Vertex\+Dst\+I\+D, O\+B\+J\+E\+C\+T\+U\+I\+D eid, enum E\+D\+G\+E\+T\+Y\+P\+E edgetype)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Adjacency\+Matrix\+::\+Create\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{Vertex\+Src\+I\+D, }
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{Vertex\+Dst\+I\+D, }
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{eid, }
+\item[{enum {\bf E\+D\+G\+E\+T\+Y\+P\+E}}]{edgetype}
+\end{DoxyParamCaption}
+)}\label{class_c_adjacency_matrix_a2ed4709f0d4ed27a06fdc5f9694a1170}
+\hypertarget{class_c_adjacency_matrix_a6bad20604ba6b64ce815dc9de17b4ef7}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!Create\+Vertex@{Create\+Vertex}}
+\index{Create\+Vertex@{Create\+Vertex}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{Create\+Vertex(\+O\+B\+J\+E\+C\+T\+U\+I\+D vertex\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Adjacency\+Matrix\+::\+Create\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{vertex\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_c_adjacency_matrix_a6bad20604ba6b64ce815dc9de17b4ef7}
+\hypertarget{class_c_adjacency_matrix_af19b09f7a407a3d0c0d1082b56fac3b9}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!Delete\+All\+Edges@{Delete\+All\+Edges}}
+\index{Delete\+All\+Edges@{Delete\+All\+Edges}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{Delete\+All\+Edges(\+O\+B\+J\+E\+C\+T\+U\+I\+D Vertex\+Src\+I\+D, O\+B\+J\+E\+C\+T\+U\+I\+D Vertex\+Dst\+I\+D, enum E\+D\+G\+E\+T\+Y\+P\+E edgetype)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Adjacency\+Matrix\+::\+Delete\+All\+Edges (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{Vertex\+Src\+I\+D, }
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{Vertex\+Dst\+I\+D, }
+\item[{enum {\bf E\+D\+G\+E\+T\+Y\+P\+E}}]{edgetype}
+\end{DoxyParamCaption}
+)}\label{class_c_adjacency_matrix_af19b09f7a407a3d0c0d1082b56fac3b9}
+\hypertarget{class_c_adjacency_matrix_a2e74cacc0b1efd5102be51c8fe36bd62}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!Delete\+Edge@{Delete\+Edge}}
+\index{Delete\+Edge@{Delete\+Edge}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{Delete\+Edge(\+O\+B\+J\+E\+C\+T\+U\+I\+D Vertex\+Src\+I\+D, O\+B\+J\+E\+C\+T\+U\+I\+D Vertex\+Dst\+I\+D, O\+B\+J\+E\+C\+T\+U\+I\+D eid, enum E\+D\+G\+E\+T\+Y\+P\+E edgetype)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Adjacency\+Matrix\+::\+Delete\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{Vertex\+Src\+I\+D, }
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{Vertex\+Dst\+I\+D, }
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{eid, }
+\item[{enum {\bf E\+D\+G\+E\+T\+Y\+P\+E}}]{edgetype}
+\end{DoxyParamCaption}
+)}\label{class_c_adjacency_matrix_a2e74cacc0b1efd5102be51c8fe36bd62}
+\hypertarget{class_c_adjacency_matrix_ac3b37bce7330d5b5f627d06afbbca417}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!Delete\+Vertex@{Delete\+Vertex}}
+\index{Delete\+Vertex@{Delete\+Vertex}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{Delete\+Vertex(\+O\+B\+J\+E\+C\+T\+U\+I\+D Vertex\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Adjacency\+Matrix\+::\+Delete\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{Vertex\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_c_adjacency_matrix_ac3b37bce7330d5b5f627d06afbbca417}
+\hypertarget{class_c_adjacency_matrix_a904c3cdcf9fc919a0658d3027a8bc576}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!Get\+Matrix\+Size@{Get\+Matrix\+Size}}
+\index{Get\+Matrix\+Size@{Get\+Matrix\+Size}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{Get\+Matrix\+Size(size\+\_\+t \&rows, size\+\_\+t \&cols)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Adjacency\+Matrix\+::\+Get\+Matrix\+Size (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t \&}]{rows, }
+\item[{size\+\_\+t \&}]{cols}
+\end{DoxyParamCaption}
+)}\label{class_c_adjacency_matrix_a904c3cdcf9fc919a0658d3027a8bc576}
+\hypertarget{class_c_adjacency_matrix_a227945c9518613867ed8ca4f54beb6fd}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!Get\+Vertex\+Connected\+Edge\+Count@{Get\+Vertex\+Connected\+Edge\+Count}}
+\index{Get\+Vertex\+Connected\+Edge\+Count@{Get\+Vertex\+Connected\+Edge\+Count}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{Get\+Vertex\+Connected\+Edge\+Count(\+O\+B\+J\+E\+C\+T\+U\+I\+D src\+Vertex\+I\+D, O\+B\+J\+E\+C\+T\+U\+I\+D dst\+Vertex\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+Adjacency\+Matrix\+::\+Get\+Vertex\+Connected\+Edge\+Count (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{src\+Vertex\+I\+D, }
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{dst\+Vertex\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_c_adjacency_matrix_a227945c9518613867ed8ca4f54beb6fd}
+\hypertarget{class_c_adjacency_matrix_a809bba3b1d88bfe5dd0c9457ccfcc3b3}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!Get\+Vertex\+Connected\+Edges@{Get\+Vertex\+Connected\+Edges}}
+\index{Get\+Vertex\+Connected\+Edges@{Get\+Vertex\+Connected\+Edges}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{Get\+Vertex\+Connected\+Edges(\+O\+B\+J\+E\+C\+T\+U\+I\+D src\+Vertex\+I\+D, O\+B\+J\+E\+C\+T\+U\+I\+D dst\+Vertex\+I\+D,\+::std\+::vector$<$ O\+B\+J\+E\+C\+T\+U\+I\+D $>$ \&edgelist)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Adjacency\+Matrix\+::\+Get\+Vertex\+Connected\+Edges (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{src\+Vertex\+I\+D, }
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{dst\+Vertex\+I\+D, }
+\item[{\+::std\+::vector$<$ {\bf O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \&}]{edgelist}
+\end{DoxyParamCaption}
+)}\label{class_c_adjacency_matrix_a809bba3b1d88bfe5dd0c9457ccfcc3b3}
+\hypertarget{class_c_adjacency_matrix_a7a20f89a2297c9d0bfb4eda5d9995c16}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!Get\+Vertex\+Connected\+Verticies@{Get\+Vertex\+Connected\+Verticies}}
+\index{Get\+Vertex\+Connected\+Verticies@{Get\+Vertex\+Connected\+Verticies}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{Get\+Vertex\+Connected\+Verticies(\+O\+B\+J\+E\+C\+T\+U\+I\+D Vertex\+I\+D,\+::std\+::vector$<$ O\+B\+J\+E\+C\+T\+U\+I\+D $>$ \&vertexlist)}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+Adjacency\+Matrix\+::\+Get\+Vertex\+Connected\+Verticies (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{Vertex\+I\+D, }
+\item[{\+::std\+::vector$<$ {\bf O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \&}]{vertexlist}
+\end{DoxyParamCaption}
+)}\label{class_c_adjacency_matrix_a7a20f89a2297c9d0bfb4eda5d9995c16}
+\hypertarget{class_c_adjacency_matrix_ae022c92b6982e10248537d833c85955f}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!Get\+Vertex\+Degree@{Get\+Vertex\+Degree}}
+\index{Get\+Vertex\+Degree@{Get\+Vertex\+Degree}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{Get\+Vertex\+Degree(\+O\+B\+J\+E\+C\+T\+U\+I\+D Vertex\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+Adjacency\+Matrix\+::\+Get\+Vertex\+Degree (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{Vertex\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_c_adjacency_matrix_ae022c92b6982e10248537d833c85955f}
+\hypertarget{class_c_adjacency_matrix_a2b3468fb1ba9519a9ad92f11d486dc60}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!Get\+Vertex\+Edges@{Get\+Vertex\+Edges}}
+\index{Get\+Vertex\+Edges@{Get\+Vertex\+Edges}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{Get\+Vertex\+Edges(\+O\+B\+J\+E\+C\+T\+U\+I\+D Vertex\+I\+D,\+::std\+::vector$<$ O\+B\+J\+E\+C\+T\+U\+I\+D $>$ \&edgelist)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Adjacency\+Matrix\+::\+Get\+Vertex\+Edges (
+\begin{DoxyParamCaption}
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{Vertex\+I\+D, }
+\item[{\+::std\+::vector$<$ {\bf O\+B\+J\+E\+C\+T\+U\+I\+D} $>$ \&}]{edgelist}
+\end{DoxyParamCaption}
+)}\label{class_c_adjacency_matrix_a2b3468fb1ba9519a9ad92f11d486dc60}
+\hypertarget{class_c_adjacency_matrix_ad05c497b6db20cee36f719e0564dfa24}{}\index{C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}!Output\+Matrix\+To\+Console@{Output\+Matrix\+To\+Console}}
+\index{Output\+Matrix\+To\+Console@{Output\+Matrix\+To\+Console}!C\+Adjacency\+Matrix@{C\+Adjacency\+Matrix}}
+\subsubsection[{Output\+Matrix\+To\+Console()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Adjacency\+Matrix\+::\+Output\+Matrix\+To\+Console (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_adjacency_matrix_ad05c497b6db20cee36f719e0564dfa24}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Matrix/\hyperlink{_adjacency_matrix_8h}{Adjacency\+Matrix.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Matrix/\hyperlink{_adjacency_matrix_8cpp}{Adjacency\+Matrix.\+cpp}\end{DoxyCompactItemize}

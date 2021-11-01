@@ -1,0 +1,177 @@
+\hypertarget{class_c_edge_database}{}\section{C\+Edge\+Database Class Reference}
+\label{class_c_edge_database}\index{C\+Edge\+Database@{C\+Edge\+Database}}
+
+
+{\ttfamily \#include $<$Edge\+Database.\+h$>$}
+
+Inheritance diagram for C\+Edge\+Database\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_edge_database}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+enum \{ \hyperlink{class_c_edge_database_a0e2a4f3c8ec9f1bd854a942eaf5eb39aa8140b7cc8f2a1eb98d4be088df6ca73c}{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+S\+O\+L\+I\+D}, 
+\hyperlink{class_c_edge_database_a0e2a4f3c8ec9f1bd854a942eaf5eb39aabaacd270f9556f86810f1ff1d79f2513}{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H}, 
+\hyperlink{class_c_edge_database_a0e2a4f3c8ec9f1bd854a942eaf5eb39aa2c1491dfca16cdf8f1f5152e4ea9b4a6}{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+O\+T}, 
+\hyperlink{class_c_edge_database_a0e2a4f3c8ec9f1bd854a942eaf5eb39aa8c1174306f94a5133b7cbc5f1cb3094d}{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H\+D\+O\+T}
+ \}
+\item 
+typedef \+::std\+::vector$<$ \hyperlink{class_c_edge}{C\+Edge} $\ast$ $>$ \hyperlink{class_c_edge_database_a08466635640bd52b2f5a31418c7fc9e6}{E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_edge_database_a4fcc966caac568398ebd877c71a9d90b}{$\sim$\+C\+Edge\+Database} (void)
+\item 
+int \hyperlink{class_c_edge_database_a4c4fb5636a1075273fef3e6b1b2029fd}{Create\+Edge} (\hyperlink{_object_database_defines_8h_a2ad4882d24b3180a208f8edf95699724}{E\+D\+G\+E\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$edge\+\_\+attribute\+\_\+map I\+N, \hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$p\+Object O\+U\+T)
+\item 
+bool \hyperlink{class_c_edge_database_aeced2ed86e44e317b24b6c71d535c6fc}{Destroy\+Edge} (size\+\_\+t uid)
+\item 
+void \hyperlink{class_c_edge_database_abc72aaeb130d8f22ed6eadb8e6ee6b4b}{Clear} (void)
+\item 
+\hyperlink{_object_database_defines_8h_a94737d47c4026f6b51b28dbf4800b2be}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_c_edge_database_abc2c33e5fac6cd4712e1beb7a59f1ba0}{Is\+In\+Edge} (int x, int y)
+\item 
+bool \hyperlink{class_c_edge_database_a5e43cf15f3ddbf9ca3327855aaab8d38}{Set\+Value} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, size\+\_\+t idx, \hyperlink{class_value}{Value} const \&v)
+\item 
+bool \hyperlink{class_c_edge_database_a0ddac66f89b497c36df8472cecdd4e39}{Set\+Value} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, const \+::std\+::wstring attrname, \hyperlink{class_value}{Value} const \&v)
+\end{DoxyCompactItemize}
+\subsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static \hyperlink{class_c_edge_database}{C\+Edge\+Database} $\ast$ \hyperlink{class_c_edge_database_af5701888a77a7298c912e1f5f8ac72f4}{get\+Instance} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_edge_database_a08466635640bd52b2f5a31418c7fc9e6}{E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R} \hyperlink{class_c_edge_database_a2a1689567a1355c92bb6bfd04a97a7d1}{edges}
+\item 
+enum C\+Edge\+Database\+:: \{ ... \}  \hyperlink{class_c_edge_database_a7eacf69de5cad8d2c2452c6c84c1e22a}{E\+D\+G\+E\+M\+A\+N\+A\+G\+E\+R\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E}
+\end{DoxyCompactItemize}
+\subsection*{Friends}
+\begin{DoxyCompactItemize}
+\item 
+class \hyperlink{class_c_edge_database_a8451ee9e81bc51a04afb10dc6ee7e07e}{C\+Object\+Database}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_c_edge_database_a08466635640bd52b2f5a31418c7fc9e6}{}\index{C\+Edge\+Database@{C\+Edge\+Database}!E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R@{E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R}}
+\index{E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R@{E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R}!C\+Edge\+Database@{C\+Edge\+Database}}
+\subsubsection[{E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}typedef \+::std\+::vector$<${\bf C\+Edge}$\ast$$>$ {\bf C\+Edge\+Database\+::\+E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R}}\label{class_c_edge_database_a08466635640bd52b2f5a31418c7fc9e6}
+
+
+\subsection{Member Enumeration Documentation}
+\hypertarget{class_c_edge_database_a0e2a4f3c8ec9f1bd854a942eaf5eb39a}{}\subsubsection[{anonymous enum}]{\setlength{\rightskip}{0pt plus 5cm}anonymous enum}\label{class_c_edge_database_a0e2a4f3c8ec9f1bd854a942eaf5eb39a}
+\begin{Desc}
+\item[Enumerator]\par
+\begin{description}
+\index{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+S\+O\+L\+I\+D@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+S\+O\+L\+I\+D}!C\+Edge\+Database@{C\+Edge\+Database}}\index{C\+Edge\+Database@{C\+Edge\+Database}!V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+S\+O\+L\+I\+D@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+S\+O\+L\+I\+D}}\item[{\em 
+\hypertarget{class_c_edge_database_a0e2a4f3c8ec9f1bd854a942eaf5eb39aa8140b7cc8f2a1eb98d4be088df6ca73c}{}V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+S\+O\+L\+I\+D\label{class_c_edge_database_a0e2a4f3c8ec9f1bd854a942eaf5eb39aa8140b7cc8f2a1eb98d4be088df6ca73c}
+}]\index{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H}!C\+Edge\+Database@{C\+Edge\+Database}}\index{C\+Edge\+Database@{C\+Edge\+Database}!V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H}}\item[{\em 
+\hypertarget{class_c_edge_database_a0e2a4f3c8ec9f1bd854a942eaf5eb39aabaacd270f9556f86810f1ff1d79f2513}{}V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H\label{class_c_edge_database_a0e2a4f3c8ec9f1bd854a942eaf5eb39aabaacd270f9556f86810f1ff1d79f2513}
+}]\index{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+O\+T@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+O\+T}!C\+Edge\+Database@{C\+Edge\+Database}}\index{C\+Edge\+Database@{C\+Edge\+Database}!V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+O\+T@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+O\+T}}\item[{\em 
+\hypertarget{class_c_edge_database_a0e2a4f3c8ec9f1bd854a942eaf5eb39aa2c1491dfca16cdf8f1f5152e4ea9b4a6}{}V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+O\+T\label{class_c_edge_database_a0e2a4f3c8ec9f1bd854a942eaf5eb39aa2c1491dfca16cdf8f1f5152e4ea9b4a6}
+}]\index{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H\+D\+O\+T@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H\+D\+O\+T}!C\+Edge\+Database@{C\+Edge\+Database}}\index{C\+Edge\+Database@{C\+Edge\+Database}!V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H\+D\+O\+T@{V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H\+D\+O\+T}}\item[{\em 
+\hypertarget{class_c_edge_database_a0e2a4f3c8ec9f1bd854a942eaf5eb39aa8c1174306f94a5133b7cbc5f1cb3094d}{}V\+M\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E\+\_\+\+D\+A\+S\+H\+D\+O\+T\label{class_c_edge_database_a0e2a4f3c8ec9f1bd854a942eaf5eb39aa8c1174306f94a5133b7cbc5f1cb3094d}
+}]\end{description}
+\end{Desc}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_edge_database_a4fcc966caac568398ebd877c71a9d90b}{}\index{C\+Edge\+Database@{C\+Edge\+Database}!````~C\+Edge\+Database@{$\sim$\+C\+Edge\+Database}}
+\index{````~C\+Edge\+Database@{$\sim$\+C\+Edge\+Database}!C\+Edge\+Database@{C\+Edge\+Database}}
+\subsubsection[{$\sim$\+C\+Edge\+Database(void)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Edge\+Database\+::$\sim$\+C\+Edge\+Database (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_edge_database_a4fcc966caac568398ebd877c71a9d90b}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_edge_database_abc72aaeb130d8f22ed6eadb8e6ee6b4b}{}\index{C\+Edge\+Database@{C\+Edge\+Database}!Clear@{Clear}}
+\index{Clear@{Clear}!C\+Edge\+Database@{C\+Edge\+Database}}
+\subsubsection[{Clear(void)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Edge\+Database\+::\+Clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_edge_database_abc72aaeb130d8f22ed6eadb8e6ee6b4b}
+\hypertarget{class_c_edge_database_a4c4fb5636a1075273fef3e6b1b2029fd}{}\index{C\+Edge\+Database@{C\+Edge\+Database}!Create\+Edge@{Create\+Edge}}
+\index{Create\+Edge@{Create\+Edge}!C\+Edge\+Database@{C\+Edge\+Database}}
+\subsubsection[{Create\+Edge(\+E\+D\+G\+E\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S $\ast$edge\+\_\+attribute\+\_\+map I\+N, C\+Graph\+Object $\ast$p\+Object O\+U\+T)}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Edge\+Database\+::\+Create\+Edge (
+\begin{DoxyParamCaption}
+\item[{{\bf E\+D\+G\+E\+\_\+\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$edge\+\_\+attribute\+\_\+map}]{I\+N, }
+\item[{{\bf C\+Graph\+Object} $\ast$p\+Object}]{O\+U\+T}
+\end{DoxyParamCaption}
+)}\label{class_c_edge_database_a4c4fb5636a1075273fef3e6b1b2029fd}
+\hypertarget{class_c_edge_database_aeced2ed86e44e317b24b6c71d535c6fc}{}\index{C\+Edge\+Database@{C\+Edge\+Database}!Destroy\+Edge@{Destroy\+Edge}}
+\index{Destroy\+Edge@{Destroy\+Edge}!C\+Edge\+Database@{C\+Edge\+Database}}
+\subsubsection[{Destroy\+Edge(size\+\_\+t uid)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Edge\+Database\+::\+Destroy\+Edge (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{uid}
+\end{DoxyParamCaption}
+)}\label{class_c_edge_database_aeced2ed86e44e317b24b6c71d535c6fc}
+\hypertarget{class_c_edge_database_af5701888a77a7298c912e1f5f8ac72f4}{}\index{C\+Edge\+Database@{C\+Edge\+Database}!get\+Instance@{get\+Instance}}
+\index{get\+Instance@{get\+Instance}!C\+Edge\+Database@{C\+Edge\+Database}}
+\subsubsection[{get\+Instance()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Edge\+Database} $\ast$ C\+Edge\+Database\+::get\+Instance (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [static]}}\label{class_c_edge_database_af5701888a77a7298c912e1f5f8ac72f4}
+\hypertarget{class_c_edge_database_abc2c33e5fac6cd4712e1beb7a59f1ba0}{}\index{C\+Edge\+Database@{C\+Edge\+Database}!Is\+In\+Edge@{Is\+In\+Edge}}
+\index{Is\+In\+Edge@{Is\+In\+Edge}!C\+Edge\+Database@{C\+Edge\+Database}}
+\subsubsection[{Is\+In\+Edge(int x, int y)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} C\+Edge\+Database\+::\+Is\+In\+Edge (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{class_c_edge_database_abc2c33e5fac6cd4712e1beb7a59f1ba0}
+\hypertarget{class_c_edge_database_a5e43cf15f3ddbf9ca3327855aaab8d38}{}\index{C\+Edge\+Database@{C\+Edge\+Database}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!C\+Edge\+Database@{C\+Edge\+Database}}
+\subsubsection[{Set\+Value(\+C\+Graph\+Object $\ast$, size\+\_\+t idx, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Edge\+Database\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{edge, }
+\item[{size\+\_\+t}]{idx, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_edge_database_a5e43cf15f3ddbf9ca3327855aaab8d38}
+
+
+Implements \hyperlink{class_database_base_a2cc8b3df7c16b9ee45dd432dd5020057}{Database\+Base}.
+
+\hypertarget{class_c_edge_database_a0ddac66f89b497c36df8472cecdd4e39}{}\index{C\+Edge\+Database@{C\+Edge\+Database}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!C\+Edge\+Database@{C\+Edge\+Database}}
+\subsubsection[{Set\+Value(\+C\+Graph\+Object $\ast$, const \+::std\+::wstring attrname, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Edge\+Database\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{edge, }
+\item[{const \+::std\+::wstring}]{attrname, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_edge_database_a0ddac66f89b497c36df8472cecdd4e39}
+
+
+Implements \hyperlink{class_database_base_aa59101d74cd7d347a62d238495bc9b0c}{Database\+Base}.
+
+
+
+\subsection{Friends And Related Function Documentation}
+\hypertarget{class_c_edge_database_a8451ee9e81bc51a04afb10dc6ee7e07e}{}\index{C\+Edge\+Database@{C\+Edge\+Database}!C\+Object\+Database@{C\+Object\+Database}}
+\index{C\+Object\+Database@{C\+Object\+Database}!C\+Edge\+Database@{C\+Edge\+Database}}
+\subsubsection[{C\+Object\+Database}]{\setlength{\rightskip}{0pt plus 5cm}friend class {\bf C\+Object\+Database}\hspace{0.3cm}{\ttfamily [friend]}}\label{class_c_edge_database_a8451ee9e81bc51a04afb10dc6ee7e07e}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_edge_database_a7eacf69de5cad8d2c2452c6c84c1e22a}{}\index{C\+Edge\+Database@{C\+Edge\+Database}!E\+D\+G\+E\+M\+A\+N\+A\+G\+E\+R\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E@{E\+D\+G\+E\+M\+A\+N\+A\+G\+E\+R\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E}}
+\index{E\+D\+G\+E\+M\+A\+N\+A\+G\+E\+R\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E@{E\+D\+G\+E\+M\+A\+N\+A\+G\+E\+R\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E}!C\+Edge\+Database@{C\+Edge\+Database}}
+\subsubsection[{E\+D\+G\+E\+M\+A\+N\+A\+G\+E\+R\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E}]{\setlength{\rightskip}{0pt plus 5cm}enum \{ ... \}   C\+Edge\+Database\+::\+E\+D\+G\+E\+M\+A\+N\+A\+G\+E\+R\+\_\+\+L\+I\+N\+E\+T\+Y\+P\+E}\label{class_c_edge_database_a7eacf69de5cad8d2c2452c6c84c1e22a}
+\hypertarget{class_c_edge_database_a2a1689567a1355c92bb6bfd04a97a7d1}{}\index{C\+Edge\+Database@{C\+Edge\+Database}!edges@{edges}}
+\index{edges@{edges}!C\+Edge\+Database@{C\+Edge\+Database}}
+\subsubsection[{edges}]{\setlength{\rightskip}{0pt plus 5cm}{\bf E\+D\+G\+E\+\_\+\+V\+E\+C\+T\+O\+R} C\+Edge\+Database\+::edges}\label{class_c_edge_database_a2a1689567a1355c92bb6bfd04a97a7d1}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+\hyperlink{_edge_database_8h}{Edge\+Database.\+h}\item 
+\hyperlink{_edge_database_8cpp}{Edge\+Database.\+cpp}\end{DoxyCompactItemize}

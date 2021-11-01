@@ -1,0 +1,279 @@
+\hypertarget{class_c_graph_object}{}\section{C\+Graph\+Object Class Reference}
+\label{class_c_graph_object}\index{C\+Graph\+Object@{C\+Graph\+Object}}
+
+
+{\ttfamily \#include $<$Graph\+Objects.\+h$>$}
+
+Inheritance diagram for C\+Graph\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_graph_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_graph_object_a8665e459fb29c8537a2e7a98b0ba57ec}{C\+Graph\+Object} (\+::std\+::wstring objecttypename, \hyperlink{_object_database_defines_8h_a842c5e2e69277690b064bf363c017980}{Object\+Type} object\+\_\+type)
+\item 
+\hyperlink{class_c_graph_object_af2a0b462c2cd7917bb8a11a7e957eea7}{$\sim$\+C\+Graph\+Object} ()
+\item 
+\hyperlink{class_c_graph_object_ab4415af501a73c42fc1d9967ffe838bd}{C\+Graph\+Object} (const \hyperlink{class_c_graph_object}{C\+Graph\+Object} \&object\+\_\+to\+\_\+copy, \hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} new\+U\+I\+D)
+\item 
+virtual \hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$ \hyperlink{class_c_graph_object_ad52779c03c6f16f194314642f667b4d5}{clone} (size\+\_\+t new\+Object\+U\+I\+D) const  =0
+\item 
+virtual bool \hyperlink{class_c_graph_object_a30e3d0d5391f1404f382dcdd501a85c7}{Point\+In\+Object} (int \&x, int \&y)
+\item 
+void \hyperlink{class_c_graph_object_a582e924439ad6eae2352e71e44a188c9}{Set\+Modified\+Flag} (bool bmodified)
+\item 
+bool \hyperlink{class_c_graph_object_af21160cb20a4c1bd860e41ccb581834d}{Get\+Modified\+Flag} ()
+\item 
+size\+\_\+t \hyperlink{class_c_graph_object_a1c53828d07ba5e0671b2c13690b1ca39}{Get\+Attribute\+Count} ()
+\item 
+void \hyperlink{class_c_graph_object_a0ca2e870485d1c71a876bf6ae86d7a28}{Get\+Attribute\+List} (\hyperlink{_object_database_defines_8h_a9375b9b0a96355d86fa7f021ab5023b9}{Attribute\+Filter} attribute\+Filter,\+::std\+::list$<$\+::std\+::wstring $>$ \&attrlist)
+\item 
+bool \hyperlink{class_c_graph_object_a1718b5eeb58fff04b5e71e818256bff4}{Insert\+Attribute} (\hyperlink{class_attribute}{Attribute} attribute)
+\item 
+bool \hyperlink{class_c_graph_object_a46a0d407469ed94dae527212bd225cda}{Is\+Attribute} (const \+::std\+::wstring \&attrname)
+\item 
+int \hyperlink{class_c_graph_object_ae12c75b2b9233a04e9823b90efea0b51}{Find\+Attribute} (const \+::std\+::wstring \&attrname)
+\item 
+bool \hyperlink{class_c_graph_object_ada27d286c916647eb2b3ec7849e4f16b}{Is\+Required\+Attribute} (const \+::std\+::wstring \&attrname)
+\item 
+\hyperlink{class_attribute}{Attribute} const \& \hyperlink{class_c_graph_object_a1a249af413ce2325356ef5f9227347ca}{Get\+Attribute} (size\+\_\+t attribute\+Index) const 
+\item 
+\hyperlink{class_attribute}{Attribute} const \& \hyperlink{class_c_graph_object_a5d8297161392a658c96bea8c8547ca56}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t attribute\+Index) const 
+\item 
+\hyperlink{class_value}{Value} \hyperlink{class_c_graph_object_a3b70297c6692855c1860a826ed31322c}{Get\+Value} (size\+\_\+t attribute\+Index) const 
+\item 
+\hyperlink{class_value}{Value} \hyperlink{class_c_graph_object_acaecc482dbd4fdc46c50c549041c4306}{Get\+Value} (const \+::std\+::wstring \&attrname)
+\item 
+\+::std\+::wstring \hyperlink{class_c_graph_object_ab0d003173c2a0ebbd97b72d307c6b1d6}{Get\+W\+String\+Value} (size\+\_\+t attribute\+Index)
+\item 
+\+::std\+::wstring \hyperlink{class_c_graph_object_afd44cd57cf3abc44bc88499487586a4e}{Get\+Object\+Type\+Name} ()
+\item 
+\hyperlink{_object_database_defines_8h_a842c5e2e69277690b064bf363c017980}{Object\+Type} \hyperlink{class_c_graph_object_a744507195862d2d4ed6aed9fba55b865}{Get\+Object\+Type} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_c_graph_object_a3d9abce9bd1df44161791c30b1765c0e}{Set\+Value} (size\+\_\+t attribute\+Index, \hyperlink{class_value}{Value} const \&v)
+\item 
+bool \hyperlink{class_c_graph_object_a338b81319cca78bd9399a9ea8d9517e7}{Set\+Value} (const \+::std\+::wstring \&attrname, \hyperlink{class_value}{Value} const \&v)
+\item 
+bool \hyperlink{class_c_graph_object_a419e59acb846c8b9e7d29bfc6e4b8e8d}{Set\+Value} (const \+::std\+::wstring \&attrname, const \+::std\+::wstring strvalue)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_c_graph_object}{C\+Graph\+Object} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_graph_object_a8665e459fb29c8537a2e7a98b0ba57ec}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!C\+Graph\+Object@{C\+Graph\+Object}}
+\index{C\+Graph\+Object@{C\+Graph\+Object}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{C\+Graph\+Object(\+::std\+::wstring objecttypename, Object\+Type object\+\_\+type)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Graph\+Object\+::\+C\+Graph\+Object (
+\begin{DoxyParamCaption}
+\item[{\+::std\+::wstring}]{objecttypename, }
+\item[{{\bf Object\+Type}}]{objecttype}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_object_a8665e459fb29c8537a2e7a98b0ba57ec}
+\hyperlink{class_c_graph_object}{C\+Graph\+Object} \hypertarget{class_c_graph_object_af2a0b462c2cd7917bb8a11a7e957eea7}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!````~C\+Graph\+Object@{$\sim$\+C\+Graph\+Object}}
+\index{````~C\+Graph\+Object@{$\sim$\+C\+Graph\+Object}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{$\sim$\+C\+Graph\+Object()}]{\setlength{\rightskip}{0pt plus 5cm}C\+Graph\+Object\+::$\sim$\+C\+Graph\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_object_af2a0b462c2cd7917bb8a11a7e957eea7}
+$\sim$\+C\+Graph\+Object \hypertarget{class_c_graph_object_ab4415af501a73c42fc1d9967ffe838bd}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!C\+Graph\+Object@{C\+Graph\+Object}}
+\index{C\+Graph\+Object@{C\+Graph\+Object}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{C\+Graph\+Object(const C\+Graph\+Object \&object\+\_\+to\+\_\+copy, O\+B\+J\+E\+C\+T\+U\+I\+D new\+U\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Graph\+Object\+::\+C\+Graph\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Graph\+Object} \&}]{object\+\_\+to\+\_\+copy, }
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{new\+U\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_object_ab4415af501a73c42fc1d9967ffe838bd}
+\hyperlink{class_c_graph_object}{C\+Graph\+Object} Copy Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_graph_object_ad52779c03c6f16f194314642f667b4d5}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!clone@{clone}}
+\index{clone@{clone}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{clone(size\+\_\+t new\+Object\+U\+I\+D) const  =0}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf C\+Graph\+Object}$\ast$ C\+Graph\+Object\+::clone (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{new\+Object\+U\+I\+D}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_c_graph_object_ad52779c03c6f16f194314642f667b4d5}
+
+
+Implemented in \hyperlink{class_c_vertex_aea6413396ee1db9d3ba01d224697c4f1}{C\+Vertex}, \hyperlink{class_c_group_a618ba91fd461bc8ee0706766ba9f0e77}{C\+Group}, \hyperlink{class_c_layer_a82c9b165460376072885934c4da4e39f}{C\+Layer}, and \hyperlink{class_c_edge_a82567d9c96ccb26d916b9932d34fc93f}{C\+Edge}.
+
+\hypertarget{class_c_graph_object_ae12c75b2b9233a04e9823b90efea0b51}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Find\+Attribute@{Find\+Attribute}}
+\index{Find\+Attribute@{Find\+Attribute}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Find\+Attribute(const \+::std\+::wstring \&attrname)}]{\setlength{\rightskip}{0pt plus 5cm}int C\+Graph\+Object\+::\+Find\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const \+::std\+::wstring \&}]{attrname}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_object_ae12c75b2b9233a04e9823b90efea0b51}
+Find\+Attribute
+
+find the attribute string name then return index number of the attribute \hypertarget{class_c_graph_object_a1a249af413ce2325356ef5f9227347ca}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Get\+Attribute@{Get\+Attribute}}
+\index{Get\+Attribute@{Get\+Attribute}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Get\+Attribute(size\+\_\+t attribute\+Index) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Attribute} const \& C\+Graph\+Object\+::\+Get\+Attribute (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{attribute\+Index}
+\end{DoxyParamCaption}
+) const}\label{class_c_graph_object_a1a249af413ce2325356ef5f9227347ca}
+Get\+Attribute
+
+Given an valid attribute index number, return a reference to the attribute object. \hypertarget{class_c_graph_object_a1c53828d07ba5e0671b2c13690b1ca39}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Get\+Attribute\+Count@{Get\+Attribute\+Count}}
+\index{Get\+Attribute\+Count@{Get\+Attribute\+Count}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Get\+Attribute\+Count()}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t C\+Graph\+Object\+::\+Get\+Attribute\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_object_a1c53828d07ba5e0671b2c13690b1ca39}
+\hypertarget{class_c_graph_object_a0ca2e870485d1c71a876bf6ae86d7a28}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Get\+Attribute\+List@{Get\+Attribute\+List}}
+\index{Get\+Attribute\+List@{Get\+Attribute\+List}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Get\+Attribute\+List(\+Attribute\+Filter attribute\+Filter,\+::std\+::list$<$\+::std\+::wstring $>$ \&attrlist)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Graph\+Object\+::\+Get\+Attribute\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf Attribute\+Filter}}]{attribute\+Filter, }
+\item[{\+::std\+::list$<$\+::std\+::wstring $>$ \&}]{attrlist}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_object_a0ca2e870485d1c71a876bf6ae86d7a28}
+\hypertarget{class_c_graph_object_af21160cb20a4c1bd860e41ccb581834d}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Get\+Modified\+Flag@{Get\+Modified\+Flag}}
+\index{Get\+Modified\+Flag@{Get\+Modified\+Flag}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Get\+Modified\+Flag()}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Graph\+Object\+::\+Get\+Modified\+Flag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_object_af21160cb20a4c1bd860e41ccb581834d}
+\hypertarget{class_c_graph_object_a744507195862d2d4ed6aed9fba55b865}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Get\+Object\+Type@{Get\+Object\+Type}}
+\index{Get\+Object\+Type@{Get\+Object\+Type}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Get\+Object\+Type()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\+Type} C\+Graph\+Object\+::\+Get\+Object\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_object_a744507195862d2d4ed6aed9fba55b865}
+\hypertarget{class_c_graph_object_afd44cd57cf3abc44bc88499487586a4e}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Get\+Object\+Type\+Name@{Get\+Object\+Type\+Name}}
+\index{Get\+Object\+Type\+Name@{Get\+Object\+Type\+Name}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Get\+Object\+Type\+Name()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::wstring C\+Graph\+Object\+::\+Get\+Object\+Type\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_object_afd44cd57cf3abc44bc88499487586a4e}
+Get\+Object\+Type\+Name
+
+Returns this objects type as a string, i.\+e. Vertex, Edge etc \hypertarget{class_c_graph_object_a3b70297c6692855c1860a826ed31322c}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Get\+Value(size\+\_\+t attribute\+Index) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Value} C\+Graph\+Object\+::\+Get\+Value (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{attribute\+Index}
+\end{DoxyParamCaption}
+) const}\label{class_c_graph_object_a3b70297c6692855c1860a826ed31322c}
+Get\+Value
+
+Given an attribute index, return a copy of the \hyperlink{class_value}{Value} \hypertarget{class_c_graph_object_acaecc482dbd4fdc46c50c549041c4306}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Get\+Value(const \+::std\+::wstring \&attrname)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Value} C\+Graph\+Object\+::\+Get\+Value (
+\begin{DoxyParamCaption}
+\item[{const \+::std\+::wstring \&}]{attrname}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_object_acaecc482dbd4fdc46c50c549041c4306}
+Get\+Value
+
+Given an attribute name as a string, return a copy of the \hyperlink{class_value}{Value} \hypertarget{class_c_graph_object_ab0d003173c2a0ebbd97b72d307c6b1d6}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Get\+W\+String\+Value@{Get\+W\+String\+Value}}
+\index{Get\+W\+String\+Value@{Get\+W\+String\+Value}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Get\+W\+String\+Value(size\+\_\+t attribute\+Index)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::wstring C\+Graph\+Object\+::\+Get\+W\+String\+Value (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{attribute\+Index}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_object_ab0d003173c2a0ebbd97b72d307c6b1d6}
+Get\+W\+String\+Value
+
+Given an attribute Index, return the attribute value as a string \hypertarget{class_c_graph_object_a1718b5eeb58fff04b5e71e818256bff4}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Insert\+Attribute@{Insert\+Attribute}}
+\index{Insert\+Attribute@{Insert\+Attribute}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Insert\+Attribute(\+Attribute attribute)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Graph\+Object\+::\+Insert\+Attribute (
+\begin{DoxyParamCaption}
+\item[{{\bf Attribute}}]{attribute}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_object_a1718b5eeb58fff04b5e71e818256bff4}
+\hypertarget{class_c_graph_object_a46a0d407469ed94dae527212bd225cda}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Is\+Attribute@{Is\+Attribute}}
+\index{Is\+Attribute@{Is\+Attribute}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Is\+Attribute(const \+::std\+::wstring \&attrname)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Graph\+Object\+::\+Is\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const \+::std\+::wstring \&}]{attrname}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_object_a46a0d407469ed94dae527212bd225cda}
+Is\+Attribute
+
+Given an attribute string name, if is an attribute in this object then return true, else false. \hypertarget{class_c_graph_object_ada27d286c916647eb2b3ec7849e4f16b}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Is\+Required\+Attribute@{Is\+Required\+Attribute}}
+\index{Is\+Required\+Attribute@{Is\+Required\+Attribute}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Is\+Required\+Attribute(const \+::std\+::wstring \&attrname)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Graph\+Object\+::\+Is\+Required\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const \+::std\+::wstring \&}]{attrname}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_object_ada27d286c916647eb2b3ec7849e4f16b}
+Is\+Required\+Attribute
+
+Given an attribute string name, if this attribute exsits and is a required attribute, return true. \hypertarget{class_c_graph_object_a5d8297161392a658c96bea8c8547ca56}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{operator[](size\+\_\+t attribute\+Index) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Attribute} const \& C\+Graph\+Object\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{attribute\+Index}
+\end{DoxyParamCaption}
+) const}\label{class_c_graph_object_a5d8297161392a658c96bea8c8547ca56}
+operator\mbox{[}\mbox{]}
+
+Given an valid attribute index number, return a reference to the attribute object. \hypertarget{class_c_graph_object_a30e3d0d5391f1404f382dcdd501a85c7}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Point\+In\+Object@{Point\+In\+Object}}
+\index{Point\+In\+Object@{Point\+In\+Object}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Point\+In\+Object(int \&x, int \&y)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Graph\+Object\+::\+Point\+In\+Object (
+\begin{DoxyParamCaption}
+\item[{int \&}]{x, }
+\item[{int \&}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_graph_object_a30e3d0d5391f1404f382dcdd501a85c7}
+
+
+Reimplemented in \hyperlink{class_c_vertex_aa3633f7a128829bb28cd8b28e4a759ed}{C\+Vertex}, and \hyperlink{class_c_edge_a31f695fca55a3776eeec9df2bea6edc9}{C\+Edge}.
+
+\hypertarget{class_c_graph_object_a582e924439ad6eae2352e71e44a188c9}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Set\+Modified\+Flag@{Set\+Modified\+Flag}}
+\index{Set\+Modified\+Flag@{Set\+Modified\+Flag}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Set\+Modified\+Flag(bool bmodified)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Graph\+Object\+::\+Set\+Modified\+Flag (
+\begin{DoxyParamCaption}
+\item[{bool}]{bmodified}
+\end{DoxyParamCaption}
+)}\label{class_c_graph_object_a582e924439ad6eae2352e71e44a188c9}
+\hypertarget{class_c_graph_object_a3d9abce9bd1df44161791c30b1765c0e}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Set\+Value(size\+\_\+t attribute\+Index, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Graph\+Object\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{attribute\+Index, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_graph_object_a3d9abce9bd1df44161791c30b1765c0e}
+Set\+Value
+
+Sets the attribute value, given an valid attribute index number and \hyperlink{class_value}{Value} \hypertarget{class_c_graph_object_a338b81319cca78bd9399a9ea8d9517e7}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Set\+Value(const \+::std\+::wstring \&attrname, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Graph\+Object\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{const \+::std\+::wstring \&}]{attrname, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_graph_object_a338b81319cca78bd9399a9ea8d9517e7}
+Set\+Value
+
+Sets the attribute value, given an valid attribute name (string) and \hyperlink{class_value}{Value} \hypertarget{class_c_graph_object_a419e59acb846c8b9e7d29bfc6e4b8e8d}{}\index{C\+Graph\+Object@{C\+Graph\+Object}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!C\+Graph\+Object@{C\+Graph\+Object}}
+\subsubsection[{Set\+Value(const \+::std\+::wstring \&attrname, const \+::std\+::wstring strvalue)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Graph\+Object\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{const \+::std\+::wstring \&}]{attrname, }
+\item[{const \+::std\+::wstring}]{strvalue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_c_graph_object_a419e59acb846c8b9e7d29bfc6e4b8e8d}
+Set\+Value (wstr, wstr)\+:
+
+Given a valid \hyperlink{class_attribute}{Attribute} name (string) and the value as a string, will perform the value string to valid type conversion if possible and sets the attribute value. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Data\+Objects/\hyperlink{_graph_objects_8h}{Graph\+Objects.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Data\+Objects/\hyperlink{_graph_objects_8cpp}{Graph\+Objects.\+cpp}\end{DoxyCompactItemize}

@@ -1,0 +1,176 @@
+\hypertarget{class_c_vertex_table}{}\section{C\+Vertex\+Table Class Reference}
+\label{class_c_vertex_table}\index{C\+Vertex\+Table@{C\+Vertex\+Table}}
+
+
+{\ttfamily \#include $<$Vertex\+Table.\+h$>$}
+
+Inheritance diagram for C\+Vertex\+Table\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_c_vertex_table}
+\end{center}
+\end{figure}
+\subsection*{Public Types}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+::std\+::vector$<$ \hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$ $>$ \hyperlink{class_c_vertex_table_a0d1b76467f2add225225fddebafc68f9}{V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R}
+\end{DoxyCompactItemize}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_vertex_table_a561b683b554bde1bab8232f695eccf95}{C\+Vertex\+Table} (\hyperlink{class_c_object_database}{C\+Object\+Database} $\ast$object\+Database, \hyperlink{class_c_graph_object_factory}{C\+Graph\+Object\+Factory} $\ast$object\+Factory)
+\item 
+\hyperlink{class_c_vertex_table_a2549a706288bf8b9d79fe9e936f6f7a0}{$\sim$\+C\+Vertex\+Table} (void)
+\item 
+\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_c_vertex_table_a28336d9d5b8c96b96cc4ca5a212f9b79}{Create\+Vertex} (\hyperlink{_object_database_defines_8h_afa099a55c5746eff5a0e1ffc04f53cc0}{Vertex\+Type} vertex\+Type, \hyperlink{_object_database_defines_8h_a52d1b76b66b20eeaf0c5dc8127da21d7}{O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$attribute\+Map I\+N, \hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$$\ast$p\+Object O\+U\+T)
+\item 
+\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_c_vertex_table_a1d9a7d718cd585f73b631caad3c3b98a}{Copy\+Vertex} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$source\+Object I\+N, \hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} dest\+Object\+U\+I\+D, \hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$$\ast$p\+Object O\+U\+T)
+\item 
+bool \hyperlink{class_c_vertex_table_af64831dc0288ce7a53f55c0a761254b7}{Destroy\+Vertex} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$p\+Object)
+\item 
+void \hyperlink{class_c_vertex_table_a624cc9a4efbda23ded23624c5ba25dbd}{Clear} ()
+\item 
+void \hyperlink{class_c_vertex_table_a7558c9c65ed11c4042cd180345b86f72}{Add\+Sibling} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$graph\+Object)
+\item 
+void \hyperlink{class_c_vertex_table_a337cbe4efe53ecef8c0e5194ab7ce42c}{Delete\+Sibling} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$graph\+Object)
+\item 
+\hyperlink{_object_database_defines_8h_a164ec120b01429b93c9cd0bef2a67e64}{O\+B\+J\+E\+C\+T\+U\+I\+D} \hyperlink{class_c_vertex_table_a5651a03dc41e43c424a001c099520cea}{Get\+Sibling} (\hyperlink{_object_database_defines_8h_afa099a55c5746eff5a0e1ffc04f53cc0}{Vertex\+Type} v\+Type, \hyperlink{_object_database_defines_8h_a9507b0b115184061c7002f25c82fc6d7}{Sibling\+Position} position)
+\item 
+\hyperlink{class_c_vertex}{C\+Vertex} $\ast$ \hyperlink{class_c_vertex_table_aab829e22fe07871940da87f676a62236}{Is\+In\+Vertex} (int x, int y)
+\item 
+bool \hyperlink{class_c_vertex_table_aeb0aa1231fb6a40b79dac9c43e9c1c2f}{Set\+Value} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, size\+\_\+t idx, \hyperlink{class_value}{Value} const \&v)
+\item 
+bool \hyperlink{class_c_vertex_table_aeaea5ff94d8535e89f60e51eeabfc9ae}{Set\+Value} (\hyperlink{class_c_graph_object}{C\+Graph\+Object} $\ast$, const \+::std\+::wstring \&attrname, \hyperlink{class_value}{Value} const \&v)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_c_vertex_table_a0d1b76467f2add225225fddebafc68f9}{V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R} \hyperlink{class_c_vertex_table_a57e0aed3f5222453d13ca5816477354b}{verticies}
+\end{DoxyCompactItemize}
+
+
+\subsection{Member Typedef Documentation}
+\hypertarget{class_c_vertex_table_a0d1b76467f2add225225fddebafc68f9}{}\index{C\+Vertex\+Table@{C\+Vertex\+Table}!V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R@{V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R}}
+\index{V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R@{V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R}!C\+Vertex\+Table@{C\+Vertex\+Table}}
+\subsubsection[{V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R}]{\setlength{\rightskip}{0pt plus 5cm}typedef \+::std\+::vector$<${\bf C\+Graph\+Object}$\ast$$>$ {\bf C\+Vertex\+Table\+::\+V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R}}\label{class_c_vertex_table_a0d1b76467f2add225225fddebafc68f9}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_c_vertex_table_a561b683b554bde1bab8232f695eccf95}{}\index{C\+Vertex\+Table@{C\+Vertex\+Table}!C\+Vertex\+Table@{C\+Vertex\+Table}}
+\index{C\+Vertex\+Table@{C\+Vertex\+Table}!C\+Vertex\+Table@{C\+Vertex\+Table}}
+\subsubsection[{C\+Vertex\+Table(\+C\+Object\+Database $\ast$object\+Database, C\+Graph\+Object\+Factory $\ast$object\+Factory)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Vertex\+Table\+::\+C\+Vertex\+Table (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Object\+Database} $\ast$}]{object\+Database, }
+\item[{{\bf C\+Graph\+Object\+Factory} $\ast$}]{object\+Factory}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [explicit]}}\label{class_c_vertex_table_a561b683b554bde1bab8232f695eccf95}
+\hypertarget{class_c_vertex_table_a2549a706288bf8b9d79fe9e936f6f7a0}{}\index{C\+Vertex\+Table@{C\+Vertex\+Table}!````~C\+Vertex\+Table@{$\sim$\+C\+Vertex\+Table}}
+\index{````~C\+Vertex\+Table@{$\sim$\+C\+Vertex\+Table}!C\+Vertex\+Table@{C\+Vertex\+Table}}
+\subsubsection[{$\sim$\+C\+Vertex\+Table(void)}]{\setlength{\rightskip}{0pt plus 5cm}C\+Vertex\+Table\+::$\sim$\+C\+Vertex\+Table (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_table_a2549a706288bf8b9d79fe9e936f6f7a0}
+
+
+\subsection{Member Function Documentation}
+\hypertarget{class_c_vertex_table_a7558c9c65ed11c4042cd180345b86f72}{}\index{C\+Vertex\+Table@{C\+Vertex\+Table}!Add\+Sibling@{Add\+Sibling}}
+\index{Add\+Sibling@{Add\+Sibling}!C\+Vertex\+Table@{C\+Vertex\+Table}}
+\subsubsection[{Add\+Sibling(\+C\+Graph\+Object $\ast$graph\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Vertex\+Table\+::\+Add\+Sibling (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{graph\+Object}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_table_a7558c9c65ed11c4042cd180345b86f72}
+\hypertarget{class_c_vertex_table_a624cc9a4efbda23ded23624c5ba25dbd}{}\index{C\+Vertex\+Table@{C\+Vertex\+Table}!Clear@{Clear}}
+\index{Clear@{Clear}!C\+Vertex\+Table@{C\+Vertex\+Table}}
+\subsubsection[{Clear()}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Vertex\+Table\+::\+Clear (
+\begin{DoxyParamCaption}
+\item[{void}]{}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_table_a624cc9a4efbda23ded23624c5ba25dbd}
+\hypertarget{class_c_vertex_table_a1d9a7d718cd585f73b631caad3c3b98a}{}\index{C\+Vertex\+Table@{C\+Vertex\+Table}!Copy\+Vertex@{Copy\+Vertex}}
+\index{Copy\+Vertex@{Copy\+Vertex}!C\+Vertex\+Table@{C\+Vertex\+Table}}
+\subsubsection[{Copy\+Vertex(\+C\+Graph\+Object $\ast$source\+Object I\+N, O\+B\+J\+E\+C\+T\+U\+I\+D dest\+Object\+U\+I\+D, C\+Graph\+Object $\ast$$\ast$p\+Object O\+U\+T)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} C\+Vertex\+Table\+::\+Copy\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$source\+Object}]{I\+N, }
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{dest\+Object\+U\+I\+D, }
+\item[{{\bf C\+Graph\+Object} $\ast$$\ast$p\+Object}]{O\+U\+T}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_table_a1d9a7d718cd585f73b631caad3c3b98a}
+\hypertarget{class_c_vertex_table_a28336d9d5b8c96b96cc4ca5a212f9b79}{}\index{C\+Vertex\+Table@{C\+Vertex\+Table}!Create\+Vertex@{Create\+Vertex}}
+\index{Create\+Vertex@{Create\+Vertex}!C\+Vertex\+Table@{C\+Vertex\+Table}}
+\subsubsection[{Create\+Vertex(\+Vertex\+Type vertex\+Type, O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S $\ast$attribute\+Map I\+N, C\+Graph\+Object $\ast$$\ast$p\+Object O\+U\+T)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} C\+Vertex\+Table\+::\+Create\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex\+Type}}]{vertex\+Type, }
+\item[{{\bf O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S} $\ast$attribute\+Map}]{I\+N, }
+\item[{{\bf C\+Graph\+Object} $\ast$$\ast$p\+Object}]{O\+U\+T}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_table_a28336d9d5b8c96b96cc4ca5a212f9b79}
+\hypertarget{class_c_vertex_table_a337cbe4efe53ecef8c0e5194ab7ce42c}{}\index{C\+Vertex\+Table@{C\+Vertex\+Table}!Delete\+Sibling@{Delete\+Sibling}}
+\index{Delete\+Sibling@{Delete\+Sibling}!C\+Vertex\+Table@{C\+Vertex\+Table}}
+\subsubsection[{Delete\+Sibling(\+C\+Graph\+Object $\ast$graph\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}void C\+Vertex\+Table\+::\+Delete\+Sibling (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{graph\+Object}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_table_a337cbe4efe53ecef8c0e5194ab7ce42c}
+\hypertarget{class_c_vertex_table_af64831dc0288ce7a53f55c0a761254b7}{}\index{C\+Vertex\+Table@{C\+Vertex\+Table}!Destroy\+Vertex@{Destroy\+Vertex}}
+\index{Destroy\+Vertex@{Destroy\+Vertex}!C\+Vertex\+Table@{C\+Vertex\+Table}}
+\subsubsection[{Destroy\+Vertex(\+C\+Graph\+Object $\ast$p\+Object)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Vertex\+Table\+::\+Destroy\+Vertex (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{p\+Object}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_table_af64831dc0288ce7a53f55c0a761254b7}
+\hypertarget{class_c_vertex_table_a5651a03dc41e43c424a001c099520cea}{}\index{C\+Vertex\+Table@{C\+Vertex\+Table}!Get\+Sibling@{Get\+Sibling}}
+\index{Get\+Sibling@{Get\+Sibling}!C\+Vertex\+Table@{C\+Vertex\+Table}}
+\subsubsection[{Get\+Sibling(\+Vertex\+Type v\+Type, Sibling\+Position position)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf O\+B\+J\+E\+C\+T\+U\+I\+D} C\+Vertex\+Table\+::\+Get\+Sibling (
+\begin{DoxyParamCaption}
+\item[{{\bf Vertex\+Type}}]{v\+Type, }
+\item[{{\bf Sibling\+Position}}]{position}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_table_a5651a03dc41e43c424a001c099520cea}
+\hypertarget{class_c_vertex_table_aab829e22fe07871940da87f676a62236}{}\index{C\+Vertex\+Table@{C\+Vertex\+Table}!Is\+In\+Vertex@{Is\+In\+Vertex}}
+\index{Is\+In\+Vertex@{Is\+In\+Vertex}!C\+Vertex\+Table@{C\+Vertex\+Table}}
+\subsubsection[{Is\+In\+Vertex(int x, int y)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf C\+Vertex} $\ast$ C\+Vertex\+Table\+::\+Is\+In\+Vertex (
+\begin{DoxyParamCaption}
+\item[{int}]{x, }
+\item[{int}]{y}
+\end{DoxyParamCaption}
+)}\label{class_c_vertex_table_aab829e22fe07871940da87f676a62236}
+Is\+In\+Vertex -\/ needs to be moved outside of Vertex\+Table (Vertex\+Table) so its not having to access Object\+Database -\/ should be autonomous \hypertarget{class_c_vertex_table_aeb0aa1231fb6a40b79dac9c43e9c1c2f}{}\index{C\+Vertex\+Table@{C\+Vertex\+Table}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!C\+Vertex\+Table@{C\+Vertex\+Table}}
+\subsubsection[{Set\+Value(\+C\+Graph\+Object $\ast$, size\+\_\+t idx, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Vertex\+Table\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{vertex, }
+\item[{size\+\_\+t}]{idx, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_vertex_table_aeb0aa1231fb6a40b79dac9c43e9c1c2f}
+
+
+Implements \hyperlink{class_table_base_a27162ca940b9977540202f4ce4a067b5}{Table\+Base}.
+
+\hypertarget{class_c_vertex_table_aeaea5ff94d8535e89f60e51eeabfc9ae}{}\index{C\+Vertex\+Table@{C\+Vertex\+Table}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!C\+Vertex\+Table@{C\+Vertex\+Table}}
+\subsubsection[{Set\+Value(\+C\+Graph\+Object $\ast$, const \+::std\+::wstring \&attrname, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool C\+Vertex\+Table\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{{\bf C\+Graph\+Object} $\ast$}]{vertex, }
+\item[{const \+::std\+::wstring \&}]{attrname, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_c_vertex_table_aeaea5ff94d8535e89f60e51eeabfc9ae}
+
+
+Implements \hyperlink{class_table_base_a4a4e674632425ee19c24fae2881caefc}{Table\+Base}.
+
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_c_vertex_table_a57e0aed3f5222453d13ca5816477354b}{}\index{C\+Vertex\+Table@{C\+Vertex\+Table}!verticies@{verticies}}
+\index{verticies@{verticies}!C\+Vertex\+Table@{C\+Vertex\+Table}}
+\subsubsection[{verticies}]{\setlength{\rightskip}{0pt plus 5cm}{\bf V\+E\+R\+T\+E\+X\+\_\+\+V\+E\+C\+T\+O\+R} C\+Vertex\+Table\+::verticies}\label{class_c_vertex_table_a57e0aed3f5222453d13ca5816477354b}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Tables/\hyperlink{_vertex_table_8h}{Vertex\+Table.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Tables/\hyperlink{_vertex_table_8cpp}{Vertex\+Table.\+cpp}\end{DoxyCompactItemize}

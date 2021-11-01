@@ -1,0 +1,5 @@
+General\Output Directory 
+$(SolutionDir)$(IntDir)
+
+Librarian\Output File
+$(SolutionDir)$(IntDir)$(TargetName)$(TargetExt)

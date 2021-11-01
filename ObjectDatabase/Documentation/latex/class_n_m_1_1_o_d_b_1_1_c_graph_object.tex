@@ -1,0 +1,279 @@
+\hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object}{}\section{N\+M\+:\+:O\+D\+B\+:\+:C\+Graph\+Object Class Reference}
+\label{class_n_m_1_1_o_d_b_1_1_c_graph_object}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+
+
+{\ttfamily \#include $<$Graph\+Objects.\+h$>$}
+
+Inheritance diagram for N\+M\+:\+:O\+D\+B\+:\+:C\+Graph\+Object\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=1.750000cm]{class_n_m_1_1_o_d_b_1_1_c_graph_object}
+\end{center}
+\end{figure}
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_a06700df2a7c050d93b0accd0e8642369}{C\+Graph\+Object} (\+::std\+::wstring objecttypename, \hyperlink{namespace_n_m_1_1_o_d_b_ac9f60beb4a1c8a6240dd0c8baa281345}{Object\+Type} object\+\_\+type)
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_ae80b46a15e4d793e295f5ee02f66cfe4}{$\sim$\+C\+Graph\+Object} ()
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_a6f43040764eb9614235394fd7054a999}{C\+Graph\+Object} (const \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object}{C\+Graph\+Object} \&object\+\_\+to\+\_\+copy, \hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{O\+B\+J\+E\+C\+T\+U\+I\+D} new\+U\+I\+D)
+\item 
+virtual \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object}{C\+Graph\+Object} $\ast$ \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_aa0ca9ee294c6b42e39fb2c3a6598b506}{clone} (size\+\_\+t new\+Object\+U\+I\+D) const  =0
+\item 
+virtual bool \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_a8069a2286005ece610484b60ee8c0fde}{Point\+In\+Object} (int \&x, int \&y)
+\item 
+void \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_a32778b91aca24bf7e1f1d06799e7e3c8}{Set\+Modified\+Flag} (bool bmodified)
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_ad8daa62d38568f2cc4742245b0b81b20}{Get\+Modified\+Flag} ()
+\item 
+size\+\_\+t \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_a8a85ff3c3d04bab0a6affed34c5acfec}{Get\+Attribute\+Count} ()
+\item 
+void \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_a60189d19350f322cf73dfa36559bf7d5}{Get\+Attribute\+List} (\hyperlink{namespace_n_m_1_1_o_d_b_a3c1c138c7d11b589aaa8863b6a8c1317}{Attribute\+Filter} attribute\+Filter,\+::std\+::list$<$\+::std\+::wstring $>$ \&attrlist)
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_a8c03cd8831fb6912dbfaa8aad56c424b}{Insert\+Attribute} (\hyperlink{class_n_m_1_1_o_d_b_1_1_attribute}{Attribute} attribute)
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_a204a1a4e1c62ea074aa0e3183a031759}{Is\+Attribute} (const \+::std\+::wstring \&attrname)
+\item 
+int \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_a5d3cc425d5b4d482ee94936f9224670d}{Find\+Attribute} (const \+::std\+::wstring \&attrname)
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_ac6caa398d4ff96211a0e704c77da7739}{Is\+Required\+Attribute} (const \+::std\+::wstring \&attrname)
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_attribute}{Attribute} const \& \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_a291fcbb04bfa5fb1ad20535ffa6001fc}{Get\+Attribute} (size\+\_\+t attribute\+Index) const 
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_attribute}{Attribute} const \& \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_a1e1680665f362ad704ae39061e43de9f}{operator\mbox{[}$\,$\mbox{]}} (size\+\_\+t attribute\+Index) const 
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_ab6c7879bcf22d59445eb237d9b8ce246}{Get\+Value} (size\+\_\+t attribute\+Index) const 
+\item 
+\hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_aea1695fee8940d9c6a97b9d647d87c2c}{Get\+Value} (const \+::std\+::wstring \&attrname)
+\item 
+\+::std\+::wstring \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_a6295db63db8cee39492f6c955078b605}{Get\+W\+String\+Value} (size\+\_\+t attribute\+Index)
+\item 
+\+::std\+::wstring \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_ae848454b3bcb590d24b7cbe864f8eaaa}{Get\+Object\+Type\+Name} ()
+\item 
+\hyperlink{namespace_n_m_1_1_o_d_b_ac9f60beb4a1c8a6240dd0c8baa281345}{Object\+Type} \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_ab0da8988916c6c8e2376f0c0e4ae22df}{Get\+Object\+Type} ()
+\end{DoxyCompactItemize}
+\subsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_a08b23d43253a196f369b8563eb113f94}{Set\+Value} (size\+\_\+t attribute\+Index, \hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} const \&v)
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_afacbf41e9fb2e87d5aeaaa8b46259815}{Set\+Value} (const \+::std\+::wstring \&attrname, \hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} const \&v)
+\item 
+bool \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object_a857d52bf7ad89fdcef601721eaeb627b}{Set\+Value} (const \+::std\+::wstring \&attrname, const \+::std\+::wstring strvalue)
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Class \hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object}{C\+Graph\+Object} 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_a06700df2a7c050d93b0accd0e8642369}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!C\+Graph\+Object@{C\+Graph\+Object}}
+\index{C\+Graph\+Object@{C\+Graph\+Object}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{C\+Graph\+Object(\+::std\+::wstring objecttypename, Object\+Type object\+\_\+type)}]{\setlength{\rightskip}{0pt plus 5cm}N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+C\+Graph\+Object (
+\begin{DoxyParamCaption}
+\item[{\+::std\+::wstring}]{objecttypename, }
+\item[{{\bf Object\+Type}}]{objecttype}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_a06700df2a7c050d93b0accd0e8642369}
+\hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object}{C\+Graph\+Object} \hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_ae80b46a15e4d793e295f5ee02f66cfe4}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!````~C\+Graph\+Object@{$\sim$\+C\+Graph\+Object}}
+\index{````~C\+Graph\+Object@{$\sim$\+C\+Graph\+Object}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{$\sim$\+C\+Graph\+Object()}]{\setlength{\rightskip}{0pt plus 5cm}N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::$\sim$\+C\+Graph\+Object (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_ae80b46a15e4d793e295f5ee02f66cfe4}
+$\sim$\+C\+Graph\+Object \hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_a6f43040764eb9614235394fd7054a999}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!C\+Graph\+Object@{C\+Graph\+Object}}
+\index{C\+Graph\+Object@{C\+Graph\+Object}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{C\+Graph\+Object(const C\+Graph\+Object \&object\+\_\+to\+\_\+copy, O\+B\+J\+E\+C\+T\+U\+I\+D new\+U\+I\+D)}]{\setlength{\rightskip}{0pt plus 5cm}N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+C\+Graph\+Object (
+\begin{DoxyParamCaption}
+\item[{const {\bf C\+Graph\+Object} \&}]{object\+\_\+to\+\_\+copy, }
+\item[{{\bf O\+B\+J\+E\+C\+T\+U\+I\+D}}]{new\+U\+I\+D}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_a6f43040764eb9614235394fd7054a999}
+\hyperlink{class_n_m_1_1_o_d_b_1_1_c_graph_object}{C\+Graph\+Object} Copy Constructor 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_aa0ca9ee294c6b42e39fb2c3a6598b506}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!clone@{clone}}
+\index{clone@{clone}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{clone(size\+\_\+t new\+Object\+U\+I\+D) const  =0}]{\setlength{\rightskip}{0pt plus 5cm}virtual {\bf C\+Graph\+Object}$\ast$ N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::clone (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{new\+Object\+U\+I\+D}
+\end{DoxyParamCaption}
+) const\hspace{0.3cm}{\ttfamily [pure virtual]}}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_aa0ca9ee294c6b42e39fb2c3a6598b506}
+
+
+Implemented in \hyperlink{class_n_m_1_1_o_d_b_1_1_c_vertex_afe1a131c1b47dc9953e5d164a380af68}{N\+M\+::\+O\+D\+B\+::\+C\+Vertex}, \hyperlink{class_n_m_1_1_o_d_b_1_1_c_group_a3e5d4ed073cad6a4ceb06cab70c84c21}{N\+M\+::\+O\+D\+B\+::\+C\+Group}, \hyperlink{class_n_m_1_1_o_d_b_1_1_c_layer_a683492260348c94f9f3660f55d1a2438}{N\+M\+::\+O\+D\+B\+::\+C\+Layer}, and \hyperlink{class_n_m_1_1_o_d_b_1_1_c_edge_a34f284806ef8d5ebea50011032ec1914}{N\+M\+::\+O\+D\+B\+::\+C\+Edge}.
+
+\hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_a5d3cc425d5b4d482ee94936f9224670d}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Find\+Attribute@{Find\+Attribute}}
+\index{Find\+Attribute@{Find\+Attribute}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Find\+Attribute(const \+::std\+::wstring \&attrname)}]{\setlength{\rightskip}{0pt plus 5cm}int N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Find\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const \+::std\+::wstring \&}]{attrname}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_a5d3cc425d5b4d482ee94936f9224670d}
+Find\+Attribute
+
+find the attribute string name then return index number of the attribute \hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_a291fcbb04bfa5fb1ad20535ffa6001fc}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Get\+Attribute@{Get\+Attribute}}
+\index{Get\+Attribute@{Get\+Attribute}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Get\+Attribute(size\+\_\+t attribute\+Index) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Attribute} const \& N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Get\+Attribute (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{attribute\+Index}
+\end{DoxyParamCaption}
+) const}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_a291fcbb04bfa5fb1ad20535ffa6001fc}
+Get\+Attribute
+
+Given an valid attribute index number, return a reference to the attribute object. \hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_a8a85ff3c3d04bab0a6affed34c5acfec}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Get\+Attribute\+Count@{Get\+Attribute\+Count}}
+\index{Get\+Attribute\+Count@{Get\+Attribute\+Count}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Get\+Attribute\+Count()}]{\setlength{\rightskip}{0pt plus 5cm}size\+\_\+t N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Get\+Attribute\+Count (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_a8a85ff3c3d04bab0a6affed34c5acfec}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_a60189d19350f322cf73dfa36559bf7d5}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Get\+Attribute\+List@{Get\+Attribute\+List}}
+\index{Get\+Attribute\+List@{Get\+Attribute\+List}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Get\+Attribute\+List(\+Attribute\+Filter attribute\+Filter,\+::std\+::list$<$\+::std\+::wstring $>$ \&attrlist)}]{\setlength{\rightskip}{0pt plus 5cm}void N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Get\+Attribute\+List (
+\begin{DoxyParamCaption}
+\item[{{\bf Attribute\+Filter}}]{attribute\+Filter, }
+\item[{\+::std\+::list$<$\+::std\+::wstring $>$ \&}]{attrlist}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_a60189d19350f322cf73dfa36559bf7d5}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_ad8daa62d38568f2cc4742245b0b81b20}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Get\+Modified\+Flag@{Get\+Modified\+Flag}}
+\index{Get\+Modified\+Flag@{Get\+Modified\+Flag}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Get\+Modified\+Flag()}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Get\+Modified\+Flag (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_ad8daa62d38568f2cc4742245b0b81b20}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_ab0da8988916c6c8e2376f0c0e4ae22df}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Get\+Object\+Type@{Get\+Object\+Type}}
+\index{Get\+Object\+Type@{Get\+Object\+Type}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Get\+Object\+Type()}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Object\+Type} N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Get\+Object\+Type (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_ab0da8988916c6c8e2376f0c0e4ae22df}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_ae848454b3bcb590d24b7cbe864f8eaaa}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Get\+Object\+Type\+Name@{Get\+Object\+Type\+Name}}
+\index{Get\+Object\+Type\+Name@{Get\+Object\+Type\+Name}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Get\+Object\+Type\+Name()}]{\setlength{\rightskip}{0pt plus 5cm}std\+::wstring N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Get\+Object\+Type\+Name (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_ae848454b3bcb590d24b7cbe864f8eaaa}
+Get\+Object\+Type\+Name
+
+Returns this objects type as a string, i.\+e. Vertex, Edge etc \hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_ab6c7879bcf22d59445eb237d9b8ce246}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Get\+Value(size\+\_\+t attribute\+Index) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Value} N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Get\+Value (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{attribute\+Index}
+\end{DoxyParamCaption}
+) const}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_ab6c7879bcf22d59445eb237d9b8ce246}
+Get\+Value
+
+Given an attribute index, return a copy of the \hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} \hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_aea1695fee8940d9c6a97b9d647d87c2c}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Get\+Value@{Get\+Value}}
+\index{Get\+Value@{Get\+Value}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Get\+Value(const \+::std\+::wstring \&attrname)}]{\setlength{\rightskip}{0pt plus 5cm}{\bf Value} N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Get\+Value (
+\begin{DoxyParamCaption}
+\item[{const \+::std\+::wstring \&}]{attrname}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_aea1695fee8940d9c6a97b9d647d87c2c}
+Get\+Value
+
+Given an attribute name as a string, return a copy of the \hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} \hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_a6295db63db8cee39492f6c955078b605}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Get\+W\+String\+Value@{Get\+W\+String\+Value}}
+\index{Get\+W\+String\+Value@{Get\+W\+String\+Value}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Get\+W\+String\+Value(size\+\_\+t attribute\+Index)}]{\setlength{\rightskip}{0pt plus 5cm}std\+::wstring N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Get\+W\+String\+Value (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{attribute\+Index}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_a6295db63db8cee39492f6c955078b605}
+Get\+W\+String\+Value
+
+Given an attribute Index, return the attribute value as a string \hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_a8c03cd8831fb6912dbfaa8aad56c424b}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Insert\+Attribute@{Insert\+Attribute}}
+\index{Insert\+Attribute@{Insert\+Attribute}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Insert\+Attribute(\+Attribute attribute)}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Insert\+Attribute (
+\begin{DoxyParamCaption}
+\item[{{\bf Attribute}}]{attribute}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_a8c03cd8831fb6912dbfaa8aad56c424b}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_a204a1a4e1c62ea074aa0e3183a031759}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Is\+Attribute@{Is\+Attribute}}
+\index{Is\+Attribute@{Is\+Attribute}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Is\+Attribute(const \+::std\+::wstring \&attrname)}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Is\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const \+::std\+::wstring \&}]{attrname}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_a204a1a4e1c62ea074aa0e3183a031759}
+Is\+Attribute
+
+Given an attribute string name, if is an attribute in this object then return true, else false. \hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_ac6caa398d4ff96211a0e704c77da7739}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Is\+Required\+Attribute@{Is\+Required\+Attribute}}
+\index{Is\+Required\+Attribute@{Is\+Required\+Attribute}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Is\+Required\+Attribute(const \+::std\+::wstring \&attrname)}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Is\+Required\+Attribute (
+\begin{DoxyParamCaption}
+\item[{const \+::std\+::wstring \&}]{attrname}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_ac6caa398d4ff96211a0e704c77da7739}
+Is\+Required\+Attribute
+
+Given an attribute string name, if this attribute exsits and is a required attribute, return true. \hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_a1e1680665f362ad704ae39061e43de9f}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!operator\mbox{[}$\,$\mbox{]}@{operator[]}}
+\index{operator\mbox{[}$\,$\mbox{]}@{operator[]}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{operator[](size\+\_\+t attribute\+Index) const }]{\setlength{\rightskip}{0pt plus 5cm}{\bf Attribute} const \& N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::operator\mbox{[}$\,$\mbox{]} (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{attribute\+Index}
+\end{DoxyParamCaption}
+) const}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_a1e1680665f362ad704ae39061e43de9f}
+operator\mbox{[}\mbox{]}
+
+Given an valid attribute index number, return a reference to the attribute object. \hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_a8069a2286005ece610484b60ee8c0fde}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Point\+In\+Object@{Point\+In\+Object}}
+\index{Point\+In\+Object@{Point\+In\+Object}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Point\+In\+Object(int \&x, int \&y)}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Point\+In\+Object (
+\begin{DoxyParamCaption}
+\item[{int \&}]{x, }
+\item[{int \&}]{y}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [virtual]}}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_a8069a2286005ece610484b60ee8c0fde}
+
+
+Reimplemented in \hyperlink{class_n_m_1_1_o_d_b_1_1_c_vertex_a5969c889748b2713e0b1742a136cdf05}{N\+M\+::\+O\+D\+B\+::\+C\+Vertex}, and \hyperlink{class_n_m_1_1_o_d_b_1_1_c_edge_ad232fb24c5a0077da58e45ef8a4399b9}{N\+M\+::\+O\+D\+B\+::\+C\+Edge}.
+
+\hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_a32778b91aca24bf7e1f1d06799e7e3c8}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Set\+Modified\+Flag@{Set\+Modified\+Flag}}
+\index{Set\+Modified\+Flag@{Set\+Modified\+Flag}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Set\+Modified\+Flag(bool bmodified)}]{\setlength{\rightskip}{0pt plus 5cm}void N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Set\+Modified\+Flag (
+\begin{DoxyParamCaption}
+\item[{bool}]{bmodified}
+\end{DoxyParamCaption}
+)}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_a32778b91aca24bf7e1f1d06799e7e3c8}
+\hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_a08b23d43253a196f369b8563eb113f94}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Set\+Value(size\+\_\+t attribute\+Index, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{size\+\_\+t}]{attribute\+Index, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_a08b23d43253a196f369b8563eb113f94}
+Set\+Value
+
+Sets the attribute value, given an valid attribute index number and \hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} \hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_afacbf41e9fb2e87d5aeaaa8b46259815}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Set\+Value(const \+::std\+::wstring \&attrname, Value const \&v)}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{const \+::std\+::wstring \&}]{attrname, }
+\item[{{\bf Value} const \&}]{v}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_afacbf41e9fb2e87d5aeaaa8b46259815}
+Set\+Value
+
+Sets the attribute value, given an valid attribute name (string) and \hyperlink{class_n_m_1_1_o_d_b_1_1_value}{Value} \hypertarget{class_n_m_1_1_o_d_b_1_1_c_graph_object_a857d52bf7ad89fdcef601721eaeb627b}{}\index{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}!Set\+Value@{Set\+Value}}
+\index{Set\+Value@{Set\+Value}!N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object@{N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object}}
+\subsubsection[{Set\+Value(const \+::std\+::wstring \&attrname, const \+::std\+::wstring strvalue)}]{\setlength{\rightskip}{0pt plus 5cm}bool N\+M\+::\+O\+D\+B\+::\+C\+Graph\+Object\+::\+Set\+Value (
+\begin{DoxyParamCaption}
+\item[{const \+::std\+::wstring \&}]{attrname, }
+\item[{const \+::std\+::wstring}]{strvalue}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [protected]}}\label{class_n_m_1_1_o_d_b_1_1_c_graph_object_a857d52bf7ad89fdcef601721eaeb627b}
+Set\+Value (wstr, wstr)\+:
+
+Given a valid \hyperlink{class_n_m_1_1_o_d_b_1_1_attribute}{Attribute} name (string) and the value as a string, will perform the value string to valid type conversion if possible and sets the attribute value. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Data\+Objects/\hyperlink{_graph_objects_8h}{Graph\+Objects.\+h}\item 
+C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Data\+Objects/\hyperlink{_graph_objects_8cpp}{Graph\+Objects.\+cpp}\end{DoxyCompactItemize}

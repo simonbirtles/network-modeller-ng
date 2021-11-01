@@ -1,0 +1,145 @@
+\hypertarget{_object_database_defines_8h}{}\section{C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Interfaces/\+Object\+Database\+Defines.h File Reference}
+\label{_object_database_defines_8h}\index{C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Interfaces/\+Object\+Database\+Defines.\+h@{C\+:/\+Users/\+Simon/\+Documents/\+Personal/\+Source Code/\+Projects/\+Network\+Modeller/\+Object\+Database/\+Interfaces/\+Object\+Database\+Defines.\+h}}
+{\ttfamily \#include \char`\"{}..\textbackslash{}\+Database\+Core\+Elements\textbackslash{}\+Real\+Value.\+h\char`\"{}}\\*
+{\ttfamily \#include $<$memory$>$}\\*
+{\ttfamily \#include $<$string$>$}\\*
+{\ttfamily \#include $<$vector$>$}\\*
+{\ttfamily \#include $<$map$>$}\\*
+\subsection*{Namespaces}
+\begin{DoxyCompactItemize}
+\item 
+ \hyperlink{namespace_n_m}{N\+M}
+\item 
+ \hyperlink{namespace_n_m_1_1_o_d_b}{N\+M\+::\+O\+D\+B}
+\end{DoxyCompactItemize}
+\subsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \+::std\+::wstring \hyperlink{namespace_n_m_1_1_o_d_b_a161b9ce7f87980e7c8eb8ff025ce2bfb}{N\+M\+::\+O\+D\+B\+::\+O\+D\+B\+W\+String}
+\item 
+typedef int \hyperlink{namespace_n_m_1_1_o_d_b_acf98aab2c033b53aaf56ea6f29bdfebc}{N\+M\+::\+O\+D\+B\+::\+O\+D\+B\+Int}
+\item 
+typedef double \hyperlink{namespace_n_m_1_1_o_d_b_aab2fa1265921c1a3dfe688e6d9ed74b0}{N\+M\+::\+O\+D\+B\+::\+O\+D\+B\+Double}
+\item 
+typedef bool \hyperlink{namespace_n_m_1_1_o_d_b_a9e7aa4d096ccb752b1251596f1728865}{N\+M\+::\+O\+D\+B\+::\+O\+D\+B\+Bool}
+\item 
+typedef long long \hyperlink{namespace_n_m_1_1_o_d_b_a3c16fb1fdbac58c8888df8dccc9e8353}{N\+M\+::\+O\+D\+B\+::\+O\+D\+B\+Long\+Long}
+\item 
+typedef Real\+Value$<$ O\+D\+B\+W\+String $>$ \hyperlink{namespace_n_m_1_1_o_d_b_a1253623839775f675b83137b1b1d2eea}{N\+M\+::\+O\+D\+B\+::real\+\_\+string}
+\item 
+typedef Real\+Value$<$ O\+D\+B\+Int $>$ \hyperlink{namespace_n_m_1_1_o_d_b_a26974c6ae050437cf6dd2c7e680e9f31}{N\+M\+::\+O\+D\+B\+::real\+\_\+int}
+\item 
+typedef Real\+Value$<$ O\+D\+B\+Double $>$ \hyperlink{namespace_n_m_1_1_o_d_b_a7ac7e14198555160d04917c61d489cd0}{N\+M\+::\+O\+D\+B\+::real\+\_\+double}
+\item 
+typedef Real\+Value$<$ O\+D\+B\+Bool $>$ \hyperlink{namespace_n_m_1_1_o_d_b_a35501430d0cd9713ef5d32a79e4f546e}{N\+M\+::\+O\+D\+B\+::real\+\_\+bool}
+\item 
+typedef Real\+Value$<$ O\+D\+B\+Long\+Long $>$ \hyperlink{namespace_n_m_1_1_o_d_b_afd47e24435091d2bb616b270d5e70f56}{N\+M\+::\+O\+D\+B\+::real\+\_\+longlong}
+\item 
+typedef O\+D\+B\+Int \hyperlink{namespace_n_m_1_1_o_d_b_a262b64fab56baaa96e18bac4ada88265}{N\+M\+::\+O\+D\+B\+::\+O\+B\+J\+E\+C\+T\+U\+I\+D}
+\item 
+typedef \+::std\+::shared\+\_\+ptr$<$ Value $>$ \hyperlink{namespace_n_m_1_1_o_d_b_a76ab348a70a5cf877035b8281bdd3f7b}{N\+M\+::\+O\+D\+B\+::\+S\+P\+V\+A\+L\+U\+E}
+\item 
+typedef \+::std\+::wstring \hyperlink{namespace_n_m_1_1_o_d_b_ab49df7074ab35e6849b911f49296fc6d}{N\+M\+::\+O\+D\+B\+::\+A\+T\+T\+R\+I\+B\+U\+T\+E\+N\+A\+M\+E}
+\item 
+typedef \+::std\+::wstring \hyperlink{namespace_n_m_1_1_o_d_b_a10ebd904480d7e3c24aae1b9a541244f}{N\+M\+::\+O\+D\+B\+::\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S\+T\+R\+I\+N\+G\+V\+A\+L\+U\+E}
+\item 
+typedef \+::std\+::map$<$ A\+T\+T\+R\+I\+B\+U\+T\+E\+N\+A\+M\+E, A\+T\+T\+R\+I\+B\+U\+T\+E\+S\+T\+R\+I\+N\+G\+V\+A\+L\+U\+E $>$ \hyperlink{namespace_n_m_1_1_o_d_b_a8770283da9792324e1afe8104d40123b}{N\+M\+::\+O\+D\+B\+::\+O\+B\+J\+E\+C\+T\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S}
+\item 
+typedef \+::std\+::tuple$<$\+::std\+::wstring,\+::std\+::wstring $>$ \hyperlink{namespace_n_m_1_1_o_d_b_a29a75b5b2c58f9f06906435b0cfbe0bc}{N\+M\+::\+O\+D\+B\+::\+A\+T\+T\+R\+\_\+\+V\+A\+L\+\_\+\+P\+A\+I\+R}
+\begin{DoxyCompactList}\small\item\em For X\+M\+L Document. \end{DoxyCompactList}\item 
+typedef \+::std\+::vector$<$ A\+T\+T\+R\+\_\+\+V\+A\+L\+\_\+\+P\+A\+I\+R $>$ \hyperlink{namespace_n_m_1_1_o_d_b_a1e2d4b975f511d2c5c16056f39548b52}{N\+M\+::\+O\+D\+B\+::\+A\+T\+T\+R\+I\+B\+U\+T\+E\+S}
+\item 
+typedef \+::std\+::vector$<$ A\+T\+T\+R\+I\+B\+U\+T\+E\+S $>$ \hyperlink{namespace_n_m_1_1_o_d_b_a613699879177c24fa47723325b9be6cb}{N\+M\+::\+O\+D\+B\+::\+N\+O\+D\+E\+S}
+\end{DoxyCompactItemize}
+\subsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \hyperlink{namespace_n_m_1_1_o_d_b_ac9f60beb4a1c8a6240dd0c8baa281345}{N\+M\+::\+O\+D\+B\+::\+Object\+Type} \{ \\*
+\hyperlink{namespace_n_m_1_1_o_d_b_ac9f60beb4a1c8a6240dd0c8baa281345a554481c225bae1bff5a2d15e6f8b7400}{N\+M\+::\+O\+D\+B\+::\+Object\+Type\+::\+Object\+Vertex} = 1, 
+\hyperlink{namespace_n_m_1_1_o_d_b_ac9f60beb4a1c8a6240dd0c8baa281345a397aca5cf8c70dcc546fd34c10f9f9c5}{N\+M\+::\+O\+D\+B\+::\+Object\+Type\+::\+Object\+Edge} = 2, 
+\hyperlink{namespace_n_m_1_1_o_d_b_ac9f60beb4a1c8a6240dd0c8baa281345a03d81c8b3dfdf88091a261d6a92f75a6}{N\+M\+::\+O\+D\+B\+::\+Object\+Type\+::\+Object\+Group} = 3, 
+\hyperlink{namespace_n_m_1_1_o_d_b_ac9f60beb4a1c8a6240dd0c8baa281345a00f6cdcdc37108f9d9eee06bdb05d31e}{N\+M\+::\+O\+D\+B\+::\+Object\+Type\+::\+Object\+Layer} = 4, 
+\\*
+\hyperlink{namespace_n_m_1_1_o_d_b_ac9f60beb4a1c8a6240dd0c8baa281345a950d7ba5dd3429e9e53e117271336ef6}{N\+M\+::\+O\+D\+B\+::\+Object\+Type\+::\+Object\+Invalid} = 255
+ \}\begin{DoxyCompactList}\small\item\em Object type deeply statically assigned to every created object. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespace_n_m_1_1_o_d_b_a74e0c94daaeea6f7e783c03a8c921022}{N\+M\+::\+O\+D\+B\+::\+Vertex\+Type} \{ \\*
+\hyperlink{namespace_n_m_1_1_o_d_b_a74e0c94daaeea6f7e783c03a8c921022a9cd72ef099fa539e3b793ffb8d36f0bd}{N\+M\+::\+O\+D\+B\+::\+Vertex\+Type\+::\+Router} = 1, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a74e0c94daaeea6f7e783c03a8c921022abbc155fb2b111bf61c4f5ff892915e6b}{N\+M\+::\+O\+D\+B\+::\+Vertex\+Type\+::\+Switch} = 2, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a74e0c94daaeea6f7e783c03a8c921022a3c1aac82863ed9e5a9aca8ce687f711d}{N\+M\+::\+O\+D\+B\+::\+Vertex\+Type\+::\+Interface} = 3, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a74e0c94daaeea6f7e783c03a8c921022a2e4b7e66cd3715235c82aa017ee1192e}{N\+M\+::\+O\+D\+B\+::\+Vertex\+Type\+::\+Hub}, 
+\\*
+\hyperlink{namespace_n_m_1_1_o_d_b_a74e0c94daaeea6f7e783c03a8c921022ad3b3350cb648f345b0a21a048df0cf45}{N\+M\+::\+O\+D\+B\+::\+Vertex\+Type\+::\+Repeater}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a74e0c94daaeea6f7e783c03a8c921022ac9e3acf12422cb8e37766fc783ec6d69}{N\+M\+::\+O\+D\+B\+::\+Vertex\+Type\+::\+Modem}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a74e0c94daaeea6f7e783c03a8c921022a220071ab44b426f80ef21f1c552c363c}{N\+M\+::\+O\+D\+B\+::\+Vertex\+Type\+::\+N\+I\+C}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a74e0c94daaeea6f7e783c03a8c921022ade8504b73ea228d0ea9bbce69752092e}{N\+M\+::\+O\+D\+B\+::\+Vertex\+Type\+::\+Bridge}
+ \}\begin{DoxyCompactList}\small\item\em Vertex Type. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068da}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type} \{ \\*
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daaf64f36f616e64cfb59796505c1a4e8e1}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+Backplane} = 1, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daa157d4fa155a471eb0023715782a949c2}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+D\+W\+D\+M}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daabe2ae05fb04ddcf6efa31e63e0f0e111}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+Ethernet}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daac4287f31832c171d30494384d34e6d97}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+S\+O\+N\+E\+T}, 
+\\*
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daad0c60e36ae4b8442ed85ce30caae7c95}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+S\+D\+H}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daa292f535a3b6fe8853df2f03c8ed890a1}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+A\+T\+M}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daaa9239e910fbb8ce36f850b3dbe6d98af}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+Frame\+Relay}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daace499dea30cfce118f4fe85da0227e83}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+T1}, 
+\\*
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daa48ed5d2db39237d7ae5e829b17581629}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+E1}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daa54b02ae91c8c6b0aac069c84b9f78178}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+T3}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daab29bcbb0f188e0093434a5f213285f46}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+E3}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daa6b76a4f6461388db72ddf5cc41979c4b}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+I\+S\+D\+N}, 
+\\*
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daab512600a0f150f5bdf9934d515aea5dd}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+S\+M\+D\+S}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daaed50e8c7eb72b1e8cd4f89af085a7c2a}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+A\+D\+S\+L}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daa56255bb2915ceb9e94fee2d2a750e61c}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+A\+D\+S\+L2}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daaef80bb8b076492a60807ff9ca10bee42}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+A\+D\+S\+L2plus}, 
+\\*
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daaa230ed6cdd0a223ddca6246ddfd9da79}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+V\+D\+S\+L}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a1ac3948936d4d0ab4367d35aa46068daa859d19d4cb0c9d5a26bcc86f4c8aad61}{N\+M\+::\+O\+D\+B\+::\+Edge\+Type\+::\+V\+D\+S\+L2}
+ \}\begin{DoxyCompactList}\small\item\em Edge Type. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespace_n_m_1_1_o_d_b_a1b474aa7e937112cda42381969dcb55e}{N\+M\+::\+O\+D\+B\+::\+Sibling\+Position} \{ \hyperlink{namespace_n_m_1_1_o_d_b_a1b474aa7e937112cda42381969dcb55ea7fb55ed0b7a30342ba6da306428cae04}{N\+M\+::\+O\+D\+B\+::\+Sibling\+Position\+::\+First}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a1b474aa7e937112cda42381969dcb55ead55b30607c2a9a2616347d6edb789f6b}{N\+M\+::\+O\+D\+B\+::\+Sibling\+Position\+::\+Last}
+ \}\begin{DoxyCompactList}\small\item\em Used when getting the first or last object for a Vertex\+Type. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespace_n_m_1_1_o_d_b_a3c1c138c7d11b589aaa8863b6a8c1317}{N\+M\+::\+O\+D\+B\+::\+Attribute\+Filter} \{ \\*
+\hyperlink{namespace_n_m_1_1_o_d_b_a3c1c138c7d11b589aaa8863b6a8c1317ab1c94ca2fbc3e78fc30069c8d0f01680}{N\+M\+::\+O\+D\+B\+::\+Attribute\+Filter\+::\+All}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a3c1c138c7d11b589aaa8863b6a8c1317ac5c2ba169fe9f4c9dd1a57a274b5f2c2}{N\+M\+::\+O\+D\+B\+::\+Attribute\+Filter\+::\+User\+Modify}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a3c1c138c7d11b589aaa8863b6a8c1317ab651efdb98a5d6bd2b3935d0c3f4a5e2}{N\+M\+::\+O\+D\+B\+::\+Attribute\+Filter\+::\+Required}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a3c1c138c7d11b589aaa8863b6a8c1317a32a7aaf47c67e07f529ea3feea00dec9}{N\+M\+::\+O\+D\+B\+::\+Attribute\+Filter\+::\+Serialize}, 
+\\*
+\hyperlink{namespace_n_m_1_1_o_d_b_a3c1c138c7d11b589aaa8863b6a8c1317ad0f2e5376298c880665077b565ffd7dd}{N\+M\+::\+O\+D\+B\+::\+Attribute\+Filter\+::\+Locked}
+ \}
+\item 
+enum \hyperlink{namespace_n_m_1_1_o_d_b_a0051eba4d616ecd0de959e3590185281}{N\+M\+::\+O\+D\+B\+::\+Border\+Line\+Type} \{ \hyperlink{namespace_n_m_1_1_o_d_b_a0051eba4d616ecd0de959e3590185281ae41480b6bbfbf7407974a88d3d34f4fa}{N\+M\+::\+O\+D\+B\+::\+Border\+Line\+Type\+::\+Solid} = 1, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a0051eba4d616ecd0de959e3590185281a3663598d5c5858b5a6040b1bbed4f187}{N\+M\+::\+O\+D\+B\+::\+Border\+Line\+Type\+::\+Dash} = 2, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a0051eba4d616ecd0de959e3590185281aaf6c6cf7a454b4ef4a850ac4d960a2cc}{N\+M\+::\+O\+D\+B\+::\+Border\+Line\+Type\+::\+Dot} = 3, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a0051eba4d616ecd0de959e3590185281aef1c598821948808c4dbd57821281a31}{N\+M\+::\+O\+D\+B\+::\+Border\+Line\+Type\+::\+Dash\+Dot} = 4
+ \}\begin{DoxyCompactList}\small\item\em Borders for drawn objects. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespace_n_m_1_1_o_d_b_abc8d78b50c080a27c6481599789409d1}{N\+M\+::\+O\+D\+B\+::\+Time\+Unit} \{ \\*
+\hyperlink{namespace_n_m_1_1_o_d_b_abc8d78b50c080a27c6481599789409d1a537c66b24ef5c83b7382cdc3f34885f2}{N\+M\+::\+O\+D\+B\+::\+Time\+Unit\+::\+Year} = 1, 
+\hyperlink{namespace_n_m_1_1_o_d_b_abc8d78b50c080a27c6481599789409d1a7cbb885aa1164b390a0bc050a64e1812}{N\+M\+::\+O\+D\+B\+::\+Time\+Unit\+::\+Month}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_abc8d78b50c080a27c6481599789409d1a03727ac48595a24daed975559c944a44}{N\+M\+::\+O\+D\+B\+::\+Time\+Unit\+::\+Day}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_abc8d78b50c080a27c6481599789409d1ab55e509c697e4cca0e1d160a7806698f}{N\+M\+::\+O\+D\+B\+::\+Time\+Unit\+::\+Hour}, 
+\\*
+\hyperlink{namespace_n_m_1_1_o_d_b_abc8d78b50c080a27c6481599789409d1a62902641c38f3a4a8eb3212454360e24}{N\+M\+::\+O\+D\+B\+::\+Time\+Unit\+::\+Minute}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_abc8d78b50c080a27c6481599789409d1ac22cf8376b1893dcfcef0649fe1a7d87}{N\+M\+::\+O\+D\+B\+::\+Time\+Unit\+::\+Second}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_abc8d78b50c080a27c6481599789409d1a709eac30ac1d033b2175f2499ea0ae81}{N\+M\+::\+O\+D\+B\+::\+Time\+Unit\+::\+Milli\+Second}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_abc8d78b50c080a27c6481599789409d1a298cf0d7bff35249758126269a6247bd}{N\+M\+::\+O\+D\+B\+::\+Time\+Unit\+::\+Micro\+Second}, 
+\\*
+\hyperlink{namespace_n_m_1_1_o_d_b_abc8d78b50c080a27c6481599789409d1a104e648645e4368817a2cffaf340b014}{N\+M\+::\+O\+D\+B\+::\+Time\+Unit\+::\+Nano\+Second}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_abc8d78b50c080a27c6481599789409d1a627cdccd0dd320d6d22faa5b1a7be331}{N\+M\+::\+O\+D\+B\+::\+Time\+Unit\+::\+Pico\+Second}
+ \}\begin{DoxyCompactList}\small\item\em Measurement Units for Time Intervals. \end{DoxyCompactList}
+\item 
+enum \hyperlink{namespace_n_m_1_1_o_d_b_a82ec977b166b6e4d8c1078f4b40cfeeb}{N\+M\+::\+O\+D\+B\+::\+Bandwidth\+Units} \{ \\*
+\hyperlink{namespace_n_m_1_1_o_d_b_a82ec977b166b6e4d8c1078f4b40cfeebaecf6fbc4690b6ecd2245d8db1602bda7}{N\+M\+::\+O\+D\+B\+::\+Bandwidth\+Units\+::bps} = 1, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a82ec977b166b6e4d8c1078f4b40cfeebab99d40c4c3087ba4b0f089a27c43edcf}{N\+M\+::\+O\+D\+B\+::\+Bandwidth\+Units\+::\+Kbps}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a82ec977b166b6e4d8c1078f4b40cfeebaa2f7c2a743a6cdf5ede1d4320346b574}{N\+M\+::\+O\+D\+B\+::\+Bandwidth\+Units\+::\+Mbps}, 
+\hyperlink{namespace_n_m_1_1_o_d_b_a82ec977b166b6e4d8c1078f4b40cfeebae6e66a64a195b5f506856d32a4e8031b}{N\+M\+::\+O\+D\+B\+::\+Bandwidth\+Units\+::\+Gbps}, 
+\\*
+\hyperlink{namespace_n_m_1_1_o_d_b_a82ec977b166b6e4d8c1078f4b40cfeeba50dbfff253c0cd0840f2c65b98182365}{N\+M\+::\+O\+D\+B\+::\+Bandwidth\+Units\+::\+Tbps}
+ \}\begin{DoxyCompactList}\small\item\em Measurement Units for Links. \end{DoxyCompactList}
+\end{DoxyCompactItemize}
